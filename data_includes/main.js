@@ -45,20 +45,22 @@ newButton("Continue")
 // Experiment
 PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
   row => PennController( "rating",
+
+
     newAudio("audioFilename", row.wavname)
         .play()
     ,
     newScale("likert", 5)
         .settings.log()
         .settings.keys("1","2","3","4","5")
-        .settings.labelsPosition("top")
-        .settings.before( newText("cold", "very cold") )    // Add a text element to the left
-        .settings.after(  newText("hot", "very hot")   )
+//        .settings.labelsPosition("top")
+        .settings.before( newText("acceptable", "completely acceptable") )    // Add a text element to the left
+        .settings.after(  newText("unacceptable", "completely unacceptable")   )
 //        .settings.size("auto")
         .print()
-        .wait(" ")
+        .wait()
     ,
-    getAudio("sentence")
+    getAudio("audioFilename")
        .wait("")
   )
   .log( "Item"   , row.item   )
