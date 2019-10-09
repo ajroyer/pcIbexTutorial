@@ -1,5 +1,17 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "consent" , "final" )
+PennController.Sequence( "welcome" , "consent" ,"instructionsPage" , "final" )
+
+//Welcome trial
+PennController( "welcome",
+    defaultText
+       .print()
+    ,
+    newText("<h1>Welcome!</h1>")
+    ,
+    newButton("Continue")
+      .print()
+      .wait()
+)
 
 PennController( "consent",
     defaultText
@@ -10,6 +22,7 @@ PennController( "consent",
     newText("<p> Below is a consent form you will need to read. After reading, please press the 'I consent to participating' button. If you do not consent, please close the page</p>")
     ,
     newHtml("consent", "consent.html")
+        .settings.css("border", "solid 5px black")
         .print()
     ,
     newButton("I consent to participating")
@@ -17,6 +30,19 @@ PennController( "consent",
         .wait()
 )
 .log( "uniqueid" , PennController.GetURLParameter( "id" ) )
+
+// Instructions
+
+PennController( "instructionsPage",
+  newHtml("instructions", "instructions.html")
+    .print()
+    ,
+newButton("Continue")
+    .print()
+    .wait()
+)
+
+
 
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
