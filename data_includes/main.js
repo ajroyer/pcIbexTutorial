@@ -48,10 +48,12 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
     newAudio("audioFilename", row.wavname)
         .play()
     ,
-    newScale("1","2","3","4","5 very acceptable")
+    newScale("likert", 5)
         .settings.log()
         .settings.keys("1","2","3","4","5")
         .settings.labelsPosition("top")
+        .settings.before( newText("cold", "very cold") )    // Add a text element to the left
+        .settings.after(  newText("hot", "very hot")   )
 //        .settings.size("auto")
         .print()
         .wait(" ")
