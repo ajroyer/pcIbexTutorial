@@ -42,7 +42,30 @@ newButton("Continue")
     .wait()
 )
 
-
+// Experiment
+PennController.Template( PennController.GetTable( "test-design.csv" ) ,
+  row => PennController( "rating",
+    newAudio("audioFilename", row.wavname)
+        .play()
+    ,
+    newScale("1 very unacceptable","","3 unsure","","5 very acceptable")
+        .settings.log()
+        .settings.keys("1","2","3","4","5")
+        .settings.labelsPosition("top")
+        .settings.size("auto")
+        .print()
+        .wait()
+    ,
+    getAudio("sentence")
+       .wait("")
+  )
+  .log( "Item"   , row.item   )
+  .log( "BreakLoc" , row.breakLoc )
+  .log( "Plurality" , row.plurality )
+  .log( "Grammaticality"  , row.grammaticality  )
+  .log( "Condition" , row.cond )
+  .log( "AudioFile", row.wavname )
+)
 
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
