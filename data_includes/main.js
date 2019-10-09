@@ -35,6 +35,10 @@ PennController( "consent",
 PennController( "instructionsPage",
   newHtml("instructions", "instructions.html")
     .print()
+    ,
+newButton("Continue")
+    .print()
+    .wait()   
 )
 
 
