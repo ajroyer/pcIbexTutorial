@@ -48,13 +48,13 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
     newAudio("audioFilename", row.wavname)
         .play()
     ,
-    newScale("1 very unacceptable","","3 unsure","","5 very acceptable")
+    newScale("1","2","3","4","5 very acceptable")
         .settings.log()
         .settings.keys("1","2","3","4","5")
         .settings.labelsPosition("top")
-        .settings.size("auto")
+//        .settings.size("auto")
         .print()
-        .wait()
+        .wait(" ")
     ,
     getAudio("sentence")
        .wait("")
