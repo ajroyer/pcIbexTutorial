@@ -1,5 +1,7 @@
 PennController.ResetPrefix(null)
+
 PennController.Sequence( "welcome" , randomize("experiment") , "send" , "final" )
+
 PennController( "welcome" ,
     defaultText
         .print()
@@ -24,7 +26,8 @@ PennController( "welcome" ,
         .set( getTextInput("ID") )
 )
 .log( "ID" , getVar("ID") )
-PennController.Template( 
+
+PennController.Template(
   variable => PennController( "experiment" ,
     newTimer(500)
         .start()
@@ -66,7 +69,9 @@ PennController.Template(
   .log( "Ending" , variable.Ending )
   .log( "Group"  , variable.Group  )
 )
+
 PennController.SendResults( "send" )
+
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
         .print()
