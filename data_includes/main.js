@@ -43,7 +43,7 @@ newButton("Continue")
 )
 
 // Experiment
-PennController.Template( PennController.GetTable( "test-design.csv" ) ,
+PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
   row => PennController( "rating",
     newAudio("audioFilename", row.wavname)
         .play()
