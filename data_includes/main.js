@@ -1,72 +1,23 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome" , randomize("experiment") , "send" , "final" )
-PennController( "welcome" ,
+PennController.Sequence( "consent" , "final" )
+
+PennController( "consent",
     defaultText
         .print()
     ,
-    newText("<p>Welcome!</p>")
+    newText("<h2>Consenting Process</h2>")
     ,
-    newText("<p>In this experiment, you will have to report which of two pictures matches a description.</p>")
+    newText("<p> Below is a consent form you will need to read. After reading, please press the 'I consent to participating' button. If you do not consent, please close the page</p>")
     ,
-    newText("<p>Press the <strong>F</strong> key for the picture on the left, or the <strong>J</strong> key for the picture on the right.</p>")
-    ,
-    newText("<p>Please enter your ID and then click the button below to start the experiment.</p>")
-    ,
-    newTextInput("ID")
+    newHtml("consent", "consent.html")
         .print()
     ,
-    newButton("Start")
+    newButton("I consent to participating")
         .print()
         .wait()
-    ,
-    newVar("ID")
-        .settings.global()
-        .set( getTextInput("ID") )
 )
-.log( "ID" , getVar("ID") )
-PennController.Template( 
-  variable => PennController( "experiment" ,
-    newTimer(500)
-        .start()
-        .wait()
-    ,
-    newAudio("description", variable.AudioFile)
-        .play()
-    ,
-    newText(variable.Description)
-        .unfold(2600)
-    ,
-    newImage("two", variable.PluralImageFile)
-        .settings.size(200,200)
-    ,
-    newImage("one", variable.SingularImageFile)
-        .settings.size(200,200)
-    ,
-    newCanvas(450,200)
-        .settings.add(   0 , 0 , getImage("two") )
-        .settings.add( 250 , 0 , getImage("one") )
-        .print()
-    ,
-    newSelector()
-        .settings.add( getImage("two") , getImage("one") )
-        .shuffle()
-        .settings.keys(          "F"    ,          "J"   )
-        .settings.log()
-        .wait()
-    ,
-    getAudio("description")
-       .wait("first")
-    ,
-    newTimer(500)
-        .start()
-        .wait()
-  )
-  .log( "ID"     , getVar("ID")    )
-  .log( "Item"   , variable.Item   )
-  .log( "Ending" , variable.Ending )
-  .log( "Group"  , variable.Group  )
-)
-PennController.SendResults( "send" )
+.log( "uniqueid" , PennController.GetURLParameter( "id" ) )
+
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
         .print()
