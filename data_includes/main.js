@@ -1,5 +1,17 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "consent" , "final" )
+PennController.Sequence( "welcome" , "consent" , "final" )
+
+ Welcome trial
+PennController( "welcome",
+    defaultText
+       .print()
+    ,
+    newText("<h1>Welcome!</h1>")
+    ,
+    newButton("Continue")
+      .print()
+      .wait()
+)
 
 PennController( "consent",
     defaultText
