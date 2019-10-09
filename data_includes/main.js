@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null)
 PennController.Sequence( "welcome" , "consent" , "final" )
 
- Welcome trial
+//Welcome trial
 PennController( "welcome",
     defaultText
        .print()
