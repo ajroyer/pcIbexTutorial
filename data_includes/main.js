@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome" , "consent" , "final" )
+PennController.Sequence( "welcome" , "consent" ,"instructionsPage" , "final" )
 
 //Welcome trial
 PennController( "welcome",
@@ -29,6 +29,14 @@ PennController( "consent",
         .wait()
 )
 .log( "uniqueid" , PennController.GetURLParameter( "id" ) )
+
+// Instructions
+
+PennController( "instructionsPage",
+  newHtml("instructions", "instructions.html")
+)
+
+
 
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
