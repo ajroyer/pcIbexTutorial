@@ -46,7 +46,13 @@ newButton("Continue")
 PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
   row => PennController( "rating",
 
-
+    newAudio("continue.wav")
+      .play
+    ,
+    newTimer("buffer",250)
+      .start()
+      .wait()
+    ,
     newAudio("audioFilename", row.wavname)
         .play()
     ,
@@ -61,7 +67,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
         .wait()
     ,
     getAudio("audioFilename")
-       .wait("")
+       .wait("1","2","3","4","5")
   )
   .log( "Item"   , row.item   )
   .log( "BreakLoc" , row.breakLoc )
