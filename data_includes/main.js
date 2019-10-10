@@ -70,7 +70,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
       .wait(getScale("likert").test.selected())
     ,
     getAudio("audioFilename")
-       .wait(getKey("space").test.selected())
+       .wait(getKey("space"))
 
   )
   .log( "Item"   , row.item   )
