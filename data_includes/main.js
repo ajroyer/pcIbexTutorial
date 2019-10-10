@@ -59,12 +59,11 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
     newScale("likert", "1","2","3","4","5")
         .settings.log()
         .settings.keys("1","2","3","4","5")
-//        .settings.labelsPosition("top")
-        .settings.before( newText("acceptable", "completely acceptable") )    // Add a text element to the left
+        .settings.labelsPosition("top")
+        .settings.before( newText("acceptable", "completely acceptable") )
         .settings.after(  newText("unacceptable", "completely unacceptable")   )
-//        .settings.size("auto")
+        .settings.size("auto")
         .print()
-        .wait()
     ,
     newKey("space"," ")
       .wait(getScale("likert").test.selected())
