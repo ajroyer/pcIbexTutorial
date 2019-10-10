@@ -56,7 +56,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
     newAudio("audioFilename", row.wavname)
         .play()
     ,
-    newScale("likert", 5)
+    newScale("likert", "1","2","3","4","5")
         .settings.log()
         .settings.keys("1","2","3","4","5")
 //        .settings.labelsPosition("top")
@@ -65,9 +65,14 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
 //        .settings.size("auto")
         .print()
         .wait()
+        .setVar("response")
+    ,
+    newKey(" ")
+      .wait(getScale("likert").test.selected())
     ,
     getAudio("audioFilename")
-       .wait("1","2","3","4","5")
+       .wait()
+        
   )
   .log( "Item"   , row.item   )
   .log( "BreakLoc" , row.breakLoc )
@@ -75,6 +80,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
   .log( "Grammaticality"  , row.grammaticality  )
   .log( "Condition" , row.cond )
   .log( "AudioFile", row.wavname )
+  .log( "Response", "response")
 )
 
 PennController( "final" ,
