@@ -47,7 +47,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
   row => PennController( "rating",
 
     newAudio("continue.wav")
-      .play
+      .play()
     ,
     newTimer("buffer",250)
       .start()
@@ -66,7 +66,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
         .print()
     ,
     newKey("space"," ")
-      .wait(getScale("likert").test.selected())
+      .wait(getScale("likert"))
     ,
     getAudio("audioFilename")
        .wait(getKey("space"))
