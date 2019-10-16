@@ -65,12 +65,14 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
         .settings.size("auto")
         .print()
     ,
+<<<<<<< HEAD
     newKey("space"," ")
       .wait(getScale("likert"))
     ,
+=======
+>>>>>>> 48cd7c08b81072bc7cdef6c2cf6b4fe4d0b12cc7
     getAudio("audioFilename")
-       .wait(getKey("space"))
-
+       .wait(getScale("likert").test.selected()))
   )
   .log( "Item"   , row.item   )
   .log( "BreakLoc" , row.breakLoc )
