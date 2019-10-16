@@ -55,7 +55,8 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
       .start()
       .wait()
     ,
-    getImage("x").remove
+    getImage("x")
+    .remove()
     ,
     newAudio("audioFilename", row.wavname)
         .play()
