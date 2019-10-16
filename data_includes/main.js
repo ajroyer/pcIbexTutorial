@@ -1,5 +1,7 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome" , "consent" ,"instructionsPage" , randomize("rating") , "final" )
+PennController.Sequence( "welcome" , "consent" ,"instructionsPage" , randomize("rating") , "send", "final" )
+
+PennController.SendResults( "send" )
 
 //Welcome trial
 PennController( "welcome",
