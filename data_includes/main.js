@@ -65,12 +65,11 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
         .settings.size("auto")
         .print()
     ,
+    getAudio("audioFilename")
+       .wait()
+    ,
     newKey("space"," ")
       .wait()
-    ,
-    getAudio("audioFilename")
-       .wait(getKey("space"))
-
   )
   .log( "Item"   , row.item   )
   .log( "BreakLoc" , row.breakLoc )
