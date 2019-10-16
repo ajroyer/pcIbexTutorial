@@ -46,10 +46,12 @@ newButton("Continue")
 PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
   row => PennController( "rating",
 
-    newAudio("continue.wav")
-      .play()
+//    newAudio("continue.wav")
+//      .play()
+    newImage("x.png")
+    .print()
     ,
-    newTimer("buffer",250)
+    newTimer("buffer",500)
       .start()
       .wait()
     ,
