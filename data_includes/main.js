@@ -47,7 +47,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
   row => PennController( "rating",
 
     newAudio("continue.wav")
-      .play
+      .play()
     ,
     newTimer("buffer",250)
       .start()
@@ -65,12 +65,8 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
         .settings.size("auto")
         .print()
     ,
-    newKey("space"," ")
-      .wait(getScale("likert").test.selected())
-    ,
     getAudio("audioFilename")
-       .wait(getKey("space"))
-
+       .wait(getScale("likert").test.selected()))
   )
   .log( "Item"   , row.item   )
   .log( "BreakLoc" , row.breakLoc )
