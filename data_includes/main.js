@@ -67,7 +67,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
         .settings.labelsPosition("top")
         .settings.before( newText("acceptable", "completely acceptable") )
         .settings.after(  newText("unacceptable", "completely unacceptable")   )
-        .settings.size("auto")
+        .settings.size(400,400)
         .print()
     ,
     getAudio("audioFilename")
