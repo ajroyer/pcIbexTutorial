@@ -10,12 +10,14 @@ PennController( "welcome",
     ,
     newButton("Continue")
       .print()
+      .settings.size(150,100)
       .wait()
 )
 
 PennController( "consent",
     defaultText
         .print()
+        .settings.css("font-size", "large")
     ,
     newText("<h2>Consenting Process</h2>")
     ,
@@ -67,14 +69,15 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
         .settings.labelsPosition("top")
         .settings.before( newText("acceptable", "completely acceptable") )
         .settings.after(  newText("unacceptable", "completely unacceptable")   )
-        .settings.size(400,400)
+        .settings.size(500)
+        .settings.css("font-size", "large")
         .print()
     ,
     getAudio("audioFilename")
        .wait()
     ,
     newKey("space"," ")
-      .wait(getScale("likert"))
+      .wait(getScale("likert").test.selected())
   )
   .log( "Item"   , row.item   )
   .log( "BreakLoc" , row.breakLoc )
