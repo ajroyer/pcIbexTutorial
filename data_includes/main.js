@@ -74,7 +74,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
        .wait()
     ,
     newKey("space"," ")
-      .wait()
+      .wait(getScale("likert"))
   )
   .log( "Item"   , row.item   )
   .log( "BreakLoc" , row.breakLoc )
