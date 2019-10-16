@@ -48,12 +48,14 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
 
 //    newAudio("continue.wav")
 //      .play()
-    newImage("x.png")
+    newImage("x", "x.png")
     .print()
     ,
     newTimer("buffer",500)
       .start()
       .wait()
+    ,
+    getImage("x").remove
     ,
     newAudio("audioFilename", row.wavname)
         .play()
