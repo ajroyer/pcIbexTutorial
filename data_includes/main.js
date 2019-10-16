@@ -29,6 +29,8 @@ PennController( "consent",
     ,
     newButton("I consent to participating")
         .print()
+        .settings.size(250,100)
+        .settings.center()
         .wait()
 )
 .log( "uniqueid" , PennController.GetURLParameter( "id" ) )
@@ -67,10 +69,10 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
         .settings.log()
         .settings.keys("1","2","3","4","5")
         .settings.labelsPosition("top")
-        .settings.before( newText("acceptable", "completely acceptable") )
-        .settings.after(  newText("unacceptable", "completely unacceptable")   )
+        .settings.before( newText("unacceptable", "completely unacceptable") )
+        .settings.after(  newText("acceptable", "completely acceptable")   )
         .settings.size(500)
-        .settings.css("font-size", "large")
+        .settings.css("font-size", "2em")
         .print()
     ,
     getAudio("audioFilename")
