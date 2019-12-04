@@ -99,7 +99,7 @@ PennController( "debriefing",
     ,
     newText("<p>Please answer the questions below about your experience participating in the experiment.</p>")
     ,
-    newText("<h3>When listening to the sentences and answering the questions, did anything about the sentences or questions stand out to you? Did you notice any type of patterns?</h3>")
+    newText("<h3>When listening to the sentences and answering the questions, did anything about the sentences <br> or questions stand out to you? Did you notice any type of patterns?</h3>")
     ,
     newTextInput("question1", "")
     .settings.log()
