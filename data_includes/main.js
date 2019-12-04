@@ -99,28 +99,36 @@ PennController( "debriefing",
     ,
     newText("<p>Please answer the questions below about your experience participating in the experiment.</p>")
     ,
-    newTextInput("question1", "When listening to the sentences and answering the questions, did anything about the sentences or questions stand out to you? Did you notice any type of patterns?")
+    newText("<h3>When listening to the sentences and answering the questions, did anything about the sentences or questions stand out to you? Did you notice any type of patterns?</h3>")
+    ,
+    newTextInput("question1", "")
     .settings.log()
     .settings.lines(2)
-    .settings.size(400, 200)
+    .settings.size(800, 200)
     .print()
     ,
-    newTextInput("question2", "What kind of strategy did you use for answering the questions?")
+    newText("<h3>What kind of strategy did you use for answering the questions?</h3>")
+    ,
+    newTextInput("question2", "")
     .settings.log()
     .settings.lines(2)
-    .settings.size(400, 200)
+    .settings.size(800, 200)
     .print()
     ,
-    newTextInput("question3", "What do you think the researchers are interested in testing in this study?")
+    newText("<h3>What do you think the researchers are interested in testing in this study?</h3>")
+    ,
+    newTextInput("question3", "")
     .settings.log()
     .settings.lines(2)
-    .settings.size(400, 200)
+    .settings.size(800, 200)
     .print()
     ,
-    newTextInput("question4", "What other thoughts or comments do you have about the experiment?")
+    newText("<h3>What other thoughts or comments do you have about the experiment?</h3>")
+    ,
+    newTextInput("question4", "")
     .settings.log()
     .settings.lines(2)
-    .settings.size(400, 200)
+    .settings.size(800, 200)
     .print()
     ,
     newButton("Submit responses")
