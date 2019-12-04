@@ -99,17 +99,31 @@ PennController( "debriefing",
     ,
     newText("<p>Please answer the questions below about your experience participating in the experiment.</p>")
     ,
-    newTextInput("question1", "Write here.")
+    newTextInput("question1", "When listening to the sentences and answering the questions, did anything about the sentences or questions stand out to you? Did you notice any type of patterns?")
     .settings.log()
-    .settings.lines(4)
+    .settings.lines(2)
     .settings.size(400, 200)
     .print()
     ,
-    newText("<p>Press the <strong>F</strong> key for the picture on the left, or the <strong>J</strong> key for the picture on the right.</p>")
+    newTextInput("question2", "What kind of strategy did you use for answering the questions?")
+    .settings.log()
+    .settings.lines(2)
+    .settings.size(400, 200)
+    .print()
     ,
-    newText("<p>Click the button below to start the experiment.</p>")
+    newTextInput("question3", "What do you think the researchers are interested in testing in this study?")
+    .settings.log()
+    .settings.lines(2)
+    .settings.size(400, 200)
+    .print()
     ,
-    newButton("Start")
+    newTextInput("question4", "What other thoughts or comments do you have about the experiment?")
+    .settings.log()
+    .settings.lines(2)
+    .settings.size(400, 200)
+    .print()
+    ,
+    newButton("Submit responses")
         .print()
         .wait()
 
