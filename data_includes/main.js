@@ -104,7 +104,7 @@ PennController( "debriefing",
     .settings.lines(4)
     .settings.size(400, 200)
     .print()
-
+    ,
     newText("<p>Press the <strong>F</strong> key for the picture on the left, or the <strong>J</strong> key for the picture on the right.</p>")
     ,
     newText("<p>Click the button below to start the experiment.</p>")
