@@ -113,6 +113,7 @@ PennController( "debriefing",
         .print()
         .wait()
 
+)
 
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
