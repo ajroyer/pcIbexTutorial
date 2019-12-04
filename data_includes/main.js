@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome" , "consent" ,"instructionsPage" , randomize("rating") , "send", "final" )
+PennController.Sequence( "welcome" , "consent" ,"instructionsPage" , randomize("rating") , "debriefing", "send", "final" )
 
 PennController.SendResults( "send" )
 
@@ -90,6 +90,29 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
   .log( "Condition" , row.cond )
   .log( "AudioFile", row.wavname )
 )
+
+PennController( "debriefing",
+    defaultText
+        .print()
+    ,
+    newText("<h1>Debriefing Questions</h1>")
+    ,
+    newText("<p>Please answer the questions below about your experience participating in the experiment.</p>")
+    ,
+    newTextInput("question1", "Write here.")
+    .settings.log()
+    .settings.lines(4)
+    .settings.size(400, 200)
+    .print()
+
+    newText("<p>Press the <strong>F</strong> key for the picture on the left, or the <strong>J</strong> key for the picture on the right.</p>")
+    ,
+    newText("<p>Click the button below to start the experiment.</p>")
+    ,
+    newButton("Start")
+        .print()
+        .wait()
+
 
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
