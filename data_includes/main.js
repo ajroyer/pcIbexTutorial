@@ -139,7 +139,7 @@ PennController( "debriefing",
     ,
     newTextInput("question1", "")
     .settings.log()
-    .settings.lines(2)
+    .settings.lines(0)
     .settings.size(800, 200)
     .print()
     ,
@@ -147,7 +147,7 @@ PennController( "debriefing",
     ,
     newTextInput("question2", "")
     .settings.log()
-    .settings.lines(2)
+    .settings.lines(0)
     .settings.size(800, 200)
     .print()
     ,
@@ -155,7 +155,7 @@ PennController( "debriefing",
     ,
     newTextInput("question3", "")
     .settings.log()
-    .settings.lines(2)
+    .settings.lines(0)
     .settings.size(800, 200)
     .print()
     ,
@@ -163,7 +163,7 @@ PennController( "debriefing",
     ,
     newTextInput("question4", "")
     .settings.log()
-    .settings.lines(2)
+    .settings.lines(0)
     .settings.size(800, 200)
     .print()
     ,
