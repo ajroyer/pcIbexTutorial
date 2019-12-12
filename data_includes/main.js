@@ -135,7 +135,7 @@ PennController( "debriefing",
     ,
     newText("<p>Please answer the questions below about your experience participating in the experiment.</p>")
     ,
-    newText("<h3>When listening to the sentences and answering the questions, did anything about the sentences <br> or questions stand out to you? Did you notice any type of patterns?</h3>")
+    newText("<h3>When listening to the sentences and answering the questions, did anything about the sentences <br> or questions stand out to you? Did you notice any type of patterns?<br></h3>")
     ,
     newTextInput("question1", "")
     .settings.log()
@@ -143,7 +143,7 @@ PennController( "debriefing",
     .settings.size(800, 200)
     .print()
     ,
-    newText("<h3>What kind of strategy did you use for answering the questions?</h3>")
+    newText("<h3>What kind of strategy did you use for answering the questions?<br></h3>")
     ,
     newTextInput("question2", "")
     .settings.log()
@@ -151,7 +151,7 @@ PennController( "debriefing",
     .settings.size(800, 200)
     .print()
     ,
-    newText("<h3>What do you think the researchers are interested in testing in this study?</h3>")
+    newText("<h3>What do you think the researchers are interested in testing in this study?<br></h3>")
     ,
     newTextInput("question3", "")
     .settings.log()
@@ -159,7 +159,7 @@ PennController( "debriefing",
     .settings.size(800, 200)
     .print()
     ,
-    newText("<h3>What other thoughts or comments do you have about the experiment?</h3>")
+    newText("<h3>What other thoughts or comments do you have about the experiment?<br></h3>")
     ,
     newTextInput("question4", "")
     .settings.log()
