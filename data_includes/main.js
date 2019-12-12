@@ -5,10 +5,8 @@ PennController.SendResults( "send" )
 
 //Welcome trial
 PennController( "welcome",
-    defaultText
-       .print()
-    ,
     newText("<h1>Welcome!</h1>")
+      .print()
     ,
     newTextInput("id")
       .settings.log()
