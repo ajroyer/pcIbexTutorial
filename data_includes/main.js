@@ -10,10 +10,27 @@ PennController( "welcome",
     ,
     newText("<h1>Welcome!</h1>")
     ,
-    newButton("Continue")
+    newTextInput("id")
+      .settings.log()
+      .settings.before( newText("before", "Please enter your Profilic ID: ") )
+      .print()
+    ,
+    newText("warning", "Please enter your ID first")
+      .settings.color("red")
+      .settings.bold()
+    ,
+    newButton("consent button", "Continue to consent page")
       .print()
       .settings.size(150,100)
-      .wait()
+      .wait(  // Make sure the TextInput has been filled
+        getTextInput("id")
+          .testNot.text("")
+          .failure( getText("warning").print() )
+      )
+    ,   // Create a Var element before going to the next screen
+    newVar("ParticipantID")
+      .settings.global()          // Make it globally accessible
+      .set( getTextInput("id") )  // And save the text from TextInput
 )
 
 PennController( "consent",
