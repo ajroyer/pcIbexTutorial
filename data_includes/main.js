@@ -121,12 +121,12 @@ PennController.Template( PennController.GetTable( "dialectdesign.csv" ) ,
     ,
     newText("<h3>'This sentence is acceptable to me and I could imagine myself saying it'</h3>")
     ,
-    newScale("dialectlikert", "1","2","3","4","5","6","7")
+    newScale("dialectlikert", "1","2","3","Unsure","5","6","7")
         .settings.log()
         .settings.keys("1","2","3","4","5","6","7")
         .settings.labelsPosition("top")
-        .settings.before( newText("Strongly Disagree", "Strongly Agree") )
-        .settings.after(  newText("Strongly Disagree", "Strongly Agree")   )
+        .settings.before( newText("Strongly Disagree", "Strongly Disagree") )
+        .settings.after(  newText("Strongly Agree", "Strongly Agree")   )
         .settings.size(500)
         .settings.css("font-size", "2em")
         .print()
