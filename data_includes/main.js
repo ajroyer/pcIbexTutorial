@@ -9,10 +9,6 @@ PennController( "welcome",
     newText("<h1>Welcome!</h1>")
       .print()
     ,
-    newAudio("hosttest","001_e_p_spl.wav")
-    .print()
-    .wait()
-    ,
     newTextInput("id")
       .settings.log()
       .settings.before( newText("before", "Please enter your Profilic ID: ") )
