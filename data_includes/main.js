@@ -3,7 +3,7 @@ PennController.Sequence( "welcome" , "consent" ,"instructionsPage", randomize("r
 
 PennController.SendResults( "send" );
 
-PennController.PreloadZip("http://processing.linguistics.ucla.edu/experiments/audio/ar_thesis/PilotAudio.zip");
+PennController.PreloadZip("https://processing.linguistics.ucla.edu/experiments/audio/ar_thesis/PilotAudio.zip");
 
 //Welcome trial
 PennController( "welcome",
