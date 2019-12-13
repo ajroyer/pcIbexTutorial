@@ -10,8 +10,8 @@ PennController( "welcome",
     newText("<h1>Welcome!</h1>")
       .print()
     ,
-    newAudio("hosttest","001_e_p_spl.wav")
-    .print()
+    newAudio("hosttest","005_e_p_spl.wav")
+    .play()
     .wait()
     ,
     newTextInput("id")
