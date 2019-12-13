@@ -2,8 +2,8 @@ PennController.ResetPrefix(null)
 PennController.Sequence( "welcome" , "consent" ,"instructionsPage" , "debriefing", "send", "final" )
 
 PennController.SendResults( "send" )
-PennController.AddHost("https://raw.githubusercontent.com/ajroyer/pcIbexTutorial/tree/master/PilotAudio/")
 
+PennController.PreloadZip("https://www.dropbox.com/s/ww35nd9b1t3jtp6/PilotAudio.zip?raw=1")
 
 //Welcome trial
 PennController( "welcome",
