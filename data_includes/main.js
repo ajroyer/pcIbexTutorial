@@ -13,7 +13,7 @@ PennController( "welcome",
       .settings.before( newText("before", "Please enter your Profilic ID: ") )
       .print()
     ,
-    newText("warning", "Please enter your ID first")
+    newText("warning", "<br>Please enter your ID first")
       .settings.color("red")
       .settings.bold()
     ,
@@ -29,7 +29,7 @@ PennController( "welcome",
     newVar("ParticipantID")
       .settings.global()          // Make it globally accessible
       .set( getTextInput("id") )  // And save the text from TextInput
-)
+).log( "ParticipantID", getVar("ParticipantID") );
 
 PennController( "consent",
     defaultText
