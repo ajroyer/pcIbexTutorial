@@ -3,7 +3,6 @@ PennController.Sequence( "welcome" , "consent" ,"instructionsPage" , "debriefing
 
 PennController.SendResults( "send" )
 
-PennController.PreloadZip("https://www.dropbox.com/s/ww35nd9b1t3jtp6/PilotAudio.zip?raw=1")
 
 //Welcome trial
 PennController( "welcome",
