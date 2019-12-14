@@ -3,11 +3,11 @@ PennController.Sequence( "welcome" , "consent" ,"instructionsPage" , "debriefing
 
 PennController.SendResults( "send" )
 
-PennController.PreloadZip("https://github.com/ajroyer/pcIbexTutorial/blob/master/PilotAudio-001-015.zip?raw=true")
-PennController.PreloadZip("https://github.com/ajroyer/pcIbexTutorial/blob/master/PilotAudio-016-030.zip?raw=true")
-PennController.PreloadZip("https://github.com/ajroyer/pcIbexTutorial/blob/master/PilotAudio-031-045.zip?raw=true")
-PennController.PreloadZip("https://github.com/ajroyer/pcIbexTutorial/blob/master/PilotAudio-046-060.zip?raw=true")
-PennController.PreloadZip("https://github.com/ajroyer/pcIbexTutorial/blob/master/PilotAudio-fillers.zip?raw=true")
+PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-001-015.zip")
+PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-016-030.zip")
+PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-031-045.zip")
+PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-046-060.zip")
+PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-fillers.zip")
 
 //Welcome trial
 PennController( "welcome",
