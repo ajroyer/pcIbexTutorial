@@ -14,9 +14,6 @@ PennController( "welcome",
     newText("<h1>Welcome!</h1>")
       .print()
     ,
-    newAudio("hostaudio","001_e_p_spl.wav")
-    .print()
-    ,
     newTextInput("id")
       .settings.log()
       .settings.before( newText("before", "Please enter your Profilic ID: ") )
@@ -91,14 +88,14 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
     newAudio("audioFilename", row.wavname)
         .play()
     ,
-    newScale("likert", "1","2","3","4","5")
+    newScale("likert", "Completely<br>Acceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Unacceptable<br>1")
         .settings.log()
-        .settings.keys("1","2","3","4","5")
+        .settings.keys("1","2","3","4","5","6","7")
         .settings.labelsPosition("top")
         .settings.before( newText("unacceptable", "completely unacceptable") )
         .settings.after(  newText("acceptable", "completely acceptable")   )
         .settings.size(500)
-        .settings.css("font-size", "2em")
+        .settings.css("font-size", "40px";)
         .print()
     ,
     getAudio("audioFilename")
