@@ -95,7 +95,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
         .settings.before( newText("unacceptable", "completely unacceptable") )
         .settings.after(  newText("acceptable", "completely acceptable")   )
         .settings.size(500)
-        .settings.css("font-size", "40px";)
+        .settings.css("font-size", "2.5em"; "font-weight", "bold" )
         .print()
     ,
     getAudio("audioFilename")
