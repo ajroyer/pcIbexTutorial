@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith(crit_e),startsWith(crit_l),startsWith(crit_n)),rshuffle(startsWith(fill_e),startsWith(fill_l),startsWith(fill_n))) , "debriefing", "send", "final" )
+PennController.Sequence( "welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing", "send", "final" )
 
 PennController.SendResults( "send" )
 
