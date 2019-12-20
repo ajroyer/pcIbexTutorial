@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome" , "consent" ,"instructionsPage", randomize("rating") , "debriefing", "send", "final" )
+PennController.Sequence( "welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith(crit_e),startsWith(crit_l),startsWith(crit_n)),rshuffle(startsWith(fill_e),startsWith(fill_l),startsWith(fill_n))) , "debriefing", "send", "final" )
 
 PennController.SendResults( "send" )
 
@@ -71,7 +71,7 @@ newButton("Continue")
 
 // Experiment
 PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
-  row => PennController( "rating",
+  row => PennController( row.cond,
 
 //    newAudio("continue.wav")
 //      .play()
@@ -88,7 +88,7 @@ PennController.Template( PennController.GetTable( "testdesign.csv" ) ,
     newAudio("audioFilename", row.wavname)
         .play()
     ,
-    newScale("likert", "Completely<br>Acceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Unacceptable<br>1")
+    newScale("likert", "Completely<br>Unacceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Acceptable<br>7")
         .settings.log()
         .settings.keys("1","2","3","4","5","6","7")
         .settings.labelsPosition("top")
