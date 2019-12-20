@@ -14,7 +14,7 @@ PennController( "welcome",
     newText("<h1>Welcome!</h1>")
       .print()
     ,
-    newAudio("hostaudio","001_e_p-spl.wav")
+    newAudio("hostaudio","001_e_p_spl.wav")
     .print()
     ,
     newTextInput("id")
