@@ -1,4 +1,4 @@
-Group,item,breakLoc,plurality,grammaticality,cond,wavname,sentence,question,answerCorrect,answerIncorrect
+list,item,breakLoc,plurality,grammaticality,cond,wavname,sentence,question,answerCorrect,answerIncorrect
 1,1,e,s,g,crit_e_s,001_e_p_spl.wav,This is sentence 001.,Question?,correct,wrong
 2,1,e,p,u,crit_e_p,001_e_s_spl.wav,This is sentence 001.,Question?,correct,wrong
 3,1,l,s,g,crit_l_s,001_l_p_spl.wav,This is sentence 001.,Question?,correct,wrong
