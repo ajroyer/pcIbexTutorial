@@ -71,7 +71,7 @@ newButton("Continue")
 
 // Experiment
 PennController.Template(
-  PennController.GetTable( "testdesign.csv" ) 
+  PennController.GetTable( "testdesign.csv" )
                   .setGroupColumn( "list" ),
   row => PennController( row.cond,
 
@@ -106,6 +106,7 @@ PennController.Template(
     newKey("space"," ")
       .wait(getScale("likert").test.selected())
   )
+  .log( "List" , row.list )
   .log( "Item"   , row.item   )
   .log( "BreakLoc" , row.breakLoc )
   .log( "Plurality" , row.plurality )
