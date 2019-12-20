@@ -70,9 +70,9 @@ newButton("Continue")
 )
 
 // Experiment
-PennController.Template( PennController.GetTable( "testdesign.csv" )
-                                       .setGroupColumn( "Group" )
-,
+PennController.Template(
+  PennController.GetTable( "testdesign.csv" ) 
+                  .setGroupColumn( "list" ),
   row => PennController( row.cond,
 
 //    newAudio("continue.wav")
