@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null)
 
 //Set the sequence of presentation for the experiment
-PennController.Sequence( rshuffle("d_s","d_p") ,"welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing",  "send", "final" )
+PennController.Sequence( randomize("dialect") ,"welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing",  "send", "final" )
 
 
 // Set the command for sending the results
@@ -135,7 +135,6 @@ PennController.Template(
 
 
 
-
 //Dialect survey
 PennController.Template( PennController.GetTable( "dialectdesign.csv" ),
                                         .setGroupColumn( "list" ),
@@ -184,20 +183,25 @@ PennController.Template( PennController.GetTable( "dialectdesign.csv" ),
     newAudio("audioFilename", row.wavname)
         .play()
     ,
-    getAudio("audioFilename")
-       .wait()
-    ,
+//    getAudio("DialectaudioFilename")
+//       .wait()
+//    ,
     newKey("space"," ")
-      .wait(getScale("AcceptableToMe").test.selected())
-      .wait(getScale("AcceptableToFriends").test.selected())
+//      .wait(getScale("AcceptableToMe").test.selected())
+//      .wait(getScale("AcceptableToFriends").test.selected())
   )
-  .log( "DialectList" , row.list)
-  .log( "dialectItem"   , row.item   )
-  .log( "DialectPlurality" , row.plur )
-  .log( "DialectCond", row.cond )
-  .log( "DialectAudioFile", row.wavname )
+//  .log( "DialectList" , row.list)
+//  .log( "dialectItem"   , row.item   )
+//  .log( "DialectPlurality" , row.plur )
+//  .log( "DialectCond", row.cond )
+//  .log( "DialectAudioFile", row.wavname )
 )
 
+
+
+
+
+//Debreifing questionnaire
 PennController( "debriefing",
     defaultText
         .print()
@@ -244,6 +248,23 @@ PennController( "debriefing",
 
 )
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Confirmation of participation
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
         .print()
