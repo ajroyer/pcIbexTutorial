@@ -23,10 +23,14 @@ PennController( "welcome",
       .settings.center()
       .print()
     ,
-    newTextInput("id")
-      .settings.log()
-      .settings.before( newText("before", "Please enter your Profilic ID: ") )
+    newCanvas("welcomescreen", 720,150)
       .print()
+      .settings.add( 0,50,newTextInput("id")
+                              .settings.log()
+                              .settings.before( newText("before", "Please enter your Profilic ID: ") )
+                              .print()
+                    )
+      .settings.center()
     ,
     newText("warning", "<br>Please enter your ID first")
       .settings.color("red")
@@ -128,12 +132,12 @@ PennController.Template(
         .settings.labelsPosition("top")
         .settings.size(720)
         .settings.center()
-        .settings.css("font-size", "1.5em")
+        .settings.cssContainer("font-size", "2em")
         .print()
     ,
-    newText("spaceToCont", "Please press the spacebar after<br>you make your selection to continue")
+    newText("spaceToCont", "<br><br><br>Press spacebar to continue")
       .print()
-      .settings.css("font-size", "2em")
+      .settings.css("font-size", "1.5em")
       .settings.center()
     ,
     getAudio("audioFilename")
