@@ -86,23 +86,63 @@ newButton("Continue")
 
 
 
+// Experiment
+PennController.Template(
+  PennController.GetTable( "testdesign.csv" )
+                  .setGroupColumn( "list" ),
+  row => PennController( row.cond,
 
-// Exp
-
+//    newAudio("continue.wav")
+//      .play()
+    newImage("x", "x.png")
+    .print()
+    ,
+    newTimer("buffer",500)
+      .start()
+      .wait()
+    ,
+    getImage("x")
+    .remove()
+    ,
+    newAudio("audioFilename", row.wavname)
+        .play()
+    ,
+    newScale("likert", "Completely<br>Unacceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Acceptable<br>7")
+        .settings.log()
+        .settings.keys("1","2","3","4","5","6","7")
+        .settings.labelsPosition("top")
+        .settings.size(500)
+        .print()
+    ,
+    getAudio("audioFilename")
+       .wait()
+    ,
+    newKey("space"," ")
+      .wait(getScale("likert").test.selected())
+  )
+  .log( "List" , row.list )
+  .log( "Item"   , row.item   )
+  .log( "BreakLoc" , row.breakLoc )
+  .log( "Plurality" , row.plurality )
+  .log( "Grammaticality"  , row.grammaticality  )
+  .log( "Condition" , row.cond )
+  .log( "AudioFile", row.wavname )
+)
 
 
 //Dialect survey
 PennController.Template(
-  PennController.GetTable( "dialectdesign.csv" ),
-  row => PennController( row.Dcond,
-    newAudio("audioFilename", row.Dwavname)
+  PennController.GetTable( "dialectdesign.csv" )
+                .setGroupColumn( "list" ),
+  row => PennController( row.cond,
+    newAudio("audioFilename", row.wavname)
         .play()
     ,
     newText("<h2>On a scale of 1 (Strongly diagree) to 7 (Strongly agree),<br>rate how much you agree with the statements below</h2>")
     ,
     newText("<h3>This sentence is acceptable to me</h3>")
     ,
-    newScale("AcceptableToMe", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
+    newScale("dialectLikert", "Completely<br>Unacceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Acceptable<br>7")
         .settings.log()
         .settings.keys("1","2","3","4","5","6","7")
         .settings.labelsPosition("top")
@@ -110,8 +150,13 @@ PennController.Template(
         .print()
     ,
     newKey("space"," ")
-      .wait()
+      .wait(getScale("dialectLikert").test.selected())
   )
+  .log( "DS-Condition" , row.cond )
+  .log( "DS-AudioFile", row.wavname )
+  .log( "DS-List" , row.list )
+  .log( "DS-Item"   , row.item   )
+  .log( "DS-Plurality" , row.plurality )
 )
 
 

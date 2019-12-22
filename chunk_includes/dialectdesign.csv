@@ -1,4 +1,4 @@
-Dlist,Ditem,plur,Dwavname,Dcond
+list1,item,plurality,wavname,cond
 list1,1,s,dialect_01_s.wav,d_s
 list2,1,p,dialect_01_p.wav,d_p
 list1,2,s,dialect_02_s.wav,d_s
