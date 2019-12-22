@@ -52,7 +52,7 @@ PennController( "welcome",
 PennController( "consent",
     defaultText
         .print()
-        .settings.css("font-size", "large")
+        .settings.css("font-size", "50px")
     ,
     newText("<h2>Consenting Process</h2>")
     ,
@@ -74,42 +74,22 @@ PennController( "consent",
 
 // Instructions
 PennController( "instruct1",
-  newText("part1", "")
-    .print()
-    ,
-newButton("Continue")
-    .print()
-    .wait()
-    ,
-newKey("space", " ")
-  .wait()
-)
-
-PennController( "instruct2",
-  newText("part2", "instruct2")
-    .print()
-    ,
-    newButton("Continue")
-        .print()
-        .wait()
-        ,
-    newKey("space", " ")
+  PennController( "consent",
+  defaultText
+      .print()
+      .settings.css("font-size", "50px")
+  ,
+  newText("title", "<h1>Instructions</h1>")
+  ,
+  newText("part1","<p>Thanks for choosing to participate in this experiment</p>")
+  ,
+  newButton("Continue")
+      .print()
       .wait()
-
-)
-
-PennController( "instruct3",
-  newText("part3", "")
-    .print()
-    ,
-    newButton("Continue")
-        .print()
-        .wait()
-        ,
-    newKey("space", " ")
+  ,
+  newKey("space", " ")
       .wait()
 )
-
 
 
 
