@@ -52,14 +52,16 @@ PennController( "welcome",
 PennController( "consent",
     defaultText
         .print()
-        .settings.css("font-size", "50px")
+        .settings.css("font-size", "1.5em")
+        .settings.center()
     ,
     newText("<h2>Consenting Process</h2>")
     ,
     newText("<p> Below is a consent form you will need to read. After reading, please press the 'I consent to participating' button. If you do not consent, please close the page</p>")
     ,
     newHtml("consent", "consent.html")
-        .settings.css("border", "solid 5px black")
+        .settings.css("font-size", "1em")
+        .settings.size(250,100)
         .print()
     ,
     newButton("I consent to participating")
