@@ -120,13 +120,15 @@ PennController.Template(
         .settings.log()
         .settings.keys("1","2","3","4","5","6","7")
         .settings.labelsPosition("top")
-        .settings.size(500)
+        .settings.size(720)
         .settings.center()
         .settings.css("font-size", "1.5em")
         .print()
     ,
-    newText("spaceToCont", "Please press the spacebar afte<br>you make your selection to continue")
+    newText("spaceToCont", "Please press the spacebar after<br>you make your selection to continue")
       .print()
+      .settings.css("font-size", "2em")
+      .settings.center()
     ,
     getAudio("audioFilename")
        .wait()
