@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null)
 
 //Set the sequence of presentation for the experiment
-PennController.Sequence( randomize(startsWith("d_")) ,"welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing",  "send", "final" )
+PennController.Sequence( "welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing", randomize(startsWith("d_")),  "send", "final" )
 
 
 // Set the command for sending the results
@@ -170,9 +170,9 @@ PennController( "debriefing",
     ,
     newText("<h1>Debriefing Questions</h1>")
     ,
-    newText("<p>Please answer the questions below about your experience participating in the experiment.</p>")
+    newText("<h2>Please answer all of the questions below about your experience participating in the experiment.</h2>")
     ,
-    newText("<h3>When listening to the sentences and answering the questions, did anything about the sentences <br> or questions stand out to you? Did you notice any type of patterns?<br></h3>")
+    newText("<h3>Did anything about the sentences or questions stand out to you? Did you notice any type of patterns?</h3>")
     ,
     newTextInput("question1", "")
     .settings.log()
