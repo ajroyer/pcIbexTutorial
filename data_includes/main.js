@@ -139,7 +139,7 @@ PennController.Template(
 PennController.Template(
   PennController.GetTable( "dialectdesign.csv" )
                 .setGroupColumn( "list" ),
-  row => PennController( row.cond,
+  row => PennController( row.Dcond,
 
 //    newAudio("continue.wav")
 //      .play()
@@ -150,7 +150,7 @@ PennController.Template(
     newScale("AcceptableToMe", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
         .settings.log()
 //        .settings.keys("1","2","3","4","5","6","7")
-        .settings.labelsPosition("top")
+        .settings.labelsPosition("top")s
         .settings.before( newText("Strongly Agree", "Strongly Agree") )
         .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
         .settings.size(500)
@@ -181,7 +181,7 @@ PennController.Template(
 //        .settings.css("font-size", "2em")
 //        .print()
 //    ,
-    newAudio("audioFilename", row.wavname)
+    newAudio("audioFilename", row.Dwavname)
         .play()
     ,
 //    getAudio("DialectaudioFilename")
