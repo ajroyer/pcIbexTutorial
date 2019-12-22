@@ -139,12 +139,12 @@ PennController.Template(
 PennController.Template( PennController.GetTable( "dialectdesign.csv" )
 //                                        .setGroupColumn( "list" ),
   row => PennController( "dialect",
-    newAudio("DialectaudioFilename", row.wavname)
+    newAudio("DialectaudioFilename", "dialect_01_s.wav")
         .play()
     ,
-    getAudio("DialectaudioFilename")
-       .wait()
-    ,
+//    getAudio("DialectaudioFilename")
+//       .wait()
+//    ,
     newKey("space"," ")
 //      .wait(getScale("AcceptableToMe").test.selected())
 //      .wait(getScale("AcceptableToFriends").test.selected())
