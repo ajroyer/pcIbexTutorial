@@ -191,6 +191,34 @@ PennController( "debriefing",
 //Instructions for Dialect Survery
 
 
+//Dialect survey
+PennController.Template(
+  PennController.GetTable( "dialectdesign.csv" )
+                .setGroupColumn( "list" ),
+  row => PennController( row.cond,
+    newAudio("audioFilename", row.wavname)
+        .play()
+    ,
+    newScale("dialectLikert", "Completely<br>Unacceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Acceptable<br>7")
+        .settings.log()
+        .settings.keys("1","2","3","4","5","6","7")
+        .settings.labelsPosition("top")
+        .settings.size(500)
+        .print()
+    ,
+    newText("spaceToCont", "Please press the spacebar afte<br>you make your selection to continue")
+      .print()
+    ,
+    newKey("space"," ")
+      .wait(getScale("dialectLikert").test.selected())
+  )
+  .log( "DS-Condition" , row.cond )
+  .log( "DS-AudioFile", row.wavname )
+  .log( "DS-List" , row.list )
+  .log( "DS-Item"   , row.item   )
+  .log( "DS-Plurality" , row.plurality )
+)
+
 
 
 
