@@ -115,64 +115,6 @@ PennController.Template(
   .log( "AudioFile", row.wavname )
 )
 
-PennController.Template( PennController.GetTable( "dialectdesign.csv" )
-                                        .setGroupColumn( "list" ),
-  row => PennController( row.plurality,
-
-//    newAudio("continue.wav")
-//      .play()
-    newText("<h2>On a scale of 1 (Strongly diagree) to 7 (Strongly agree),<br>rate how much you agree with the statements below</h2>")
-    ,
-    newText("<h3>'This sentence is acceptable to me'</h3>")
-    ,
-    newScale("AcceptableToMe", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
-        .settings.log()
-//        .settings.keys("1","2","3","4","5","6","7")
-        .settings.labelsPosition("top")
-        .settings.before( newText("Strongly Agree", "Strongly Agree") )
-        .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
-        .settings.size(500)
-        .settings.css("font-size", "2em")
-        .print()
-        ,
-    newText("<h3>'I have friends and family who may find this sentence acceptable'</h3>")
-    ,
-    newScale("AcceptableToFriends", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
-        .settings.log()
-//        .settings.keys("1","2","3","4","5","6","7")
-        .settings.labelsPosition("top")
-        .settings.before( newText("Strongly Agree", "Strongly Agree") )
-        .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
-        .settings.size(500)
-        .settings.css("font-size", "2em")
-        .print()
-//        ,
-//    newText("<h3>''</h3>")
-//    ,
-//    newScale("AcceptableToOthers", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
-//        .settings.log()
-//        .settings.keys("1","2","3","4","5","6","7")
-//        .settings.labelsPosition("top")
-//        .settings.before( newText("Strongly Agree", "Strongly Agree") )
-//        .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
-//        .settings.size(500)
-//        .settings.css("font-size", "2em")
-//        .print()
-//    ,
-    newAudio("audioFilename", row.wavname)
-        .play()
-    ,
-    getAudio("audioFilename")
-       .wait()
-    ,
-    newKey("space"," ")
-      .wait(getScale("dialectlikert").test.selected())
-  )
-  .log( "List" , row.list)
-  .log( "Item"   , row.item   )
-  .log( "Plurality" , row.plurality )
-  .log( "AudioFile", row.wavname )
-)
 
 PennController( "debriefing",
     defaultText
