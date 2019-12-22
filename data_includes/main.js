@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null)
 
 //Set the sequence of presentation for the experiment
-PennController.Sequence( rshuffle("d_s","d_p") ,"welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing",  "send", "final" )
+PennController.Sequence( "welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing", randomize(startsWith("d_")),  "send", "final" )
 
 
 // Set the command for sending the results
@@ -74,16 +74,6 @@ PennController( "consent",
 
 
 
-// Instructions
-PennController( "instructionsPage",
-  newHtml("instructions", "instructions.html")
-    .print()
-    ,
-newButton("Continue")
-    .print()
-    .wait()
-)
-
 
 
 
@@ -112,11 +102,11 @@ PennController.Template(
         .settings.log()
         .settings.keys("1","2","3","4","5","6","7")
         .settings.labelsPosition("top")
-        .settings.before( newText("unacceptable", "completely unacceptable") )
-        .settings.after(  newText("acceptable", "completely acceptable")   )
         .settings.size(500)
-        .settings.css("font-size", "40px")
         .print()
+    ,
+    newText("spaceToCont", "Please press the spacebar afte<br>you make your selection to continue")
+      .print()
     ,
     getAudio("audioFilename")
        .wait()
@@ -136,52 +126,55 @@ PennController.Template(
 
 
 
-PennController( "debriefing",
-    defaultText
-        .print()
-    ,
-    newText("<h1>Debriefing Questions</h1>")
-    ,
-    newText("<p>Please answer the questions below about your experience participating in the experiment.</p>")
-    ,
-    newText("<h3>When listening to the sentences and answering the questions, did anything about the sentences <br> or questions stand out to you? Did you notice any type of patterns?<br></h3>")
-    ,
-    newTextInput("question1", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
-    ,
-    newText("<h3>What kind of strategy did you use for answering the questions?<br></h3>")
-    ,
-    newTextInput("question2", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
-    ,
-    newText("<h3>What do you think the researchers are interested in testing in this study?<br></h3>")
-    ,
-    newTextInput("question3", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
-    ,
-    newText("<h3>What other thoughts or comments do you have about the experiment?<br></h3>")
-    ,
-    newTextInput("question4", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
-    ,
-    newButton("Submit responses")
-        .print()
-        .wait()
 
+
+//Dialect survey
+PennController.Template(
+  PennController.GetTable( "dialectdesign.csv" )
+                .setGroupColumn( "list" ),
+  row => PennController( row.cond,
+    newAudio("audioFilename", row.wavname)
+        .play()
+    ,
+    newScale("dialectLikert", "Completely<br>Unacceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Acceptable<br>7")
+        .settings.log()
+        .settings.keys("1","2","3","4","5","6","7")
+        .settings.labelsPosition("top")
+        .settings.size(500)
+        .print()
+    ,
+    newText("spaceToCont", "Please press the spacebar afte<br>you make your selection to continue")
+      .print()
+    ,
+    newKey("space"," ")
+      .wait(getScale("dialectLikert").test.selected())
+  )
+  .log( "DS-Condition" , row.cond )
+  .log( "DS-AudioFile", row.wavname )
+  .log( "DS-List" , row.list )
+  .log( "DS-Item"   , row.item   )
+  .log( "DS-Plurality" , row.plurality )
 )
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Confirmation of participation
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
         .print()
