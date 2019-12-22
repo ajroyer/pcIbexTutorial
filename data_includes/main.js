@@ -157,16 +157,6 @@ PennController.Template(
         .settings.css("font-size", "2em")
         .print()
     ,
-    newText("<h3>'I have friends and family who may find this sentence acceptable'</h3>")
-    ,
-    newScale("AcceptableToFriends", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
-        .settings.log()
-        .settings.labelsPosition("top")
-        .settings.before( newText("Strongly Agree", "Strongly Agree") )
-        .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
-        .settings.size(500)
-        .settings.css("font-size", "2em")
-    ,
     newAudio("audioFilename", row.Dwavname)
         .play()
     ,
