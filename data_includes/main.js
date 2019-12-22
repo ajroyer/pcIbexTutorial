@@ -74,7 +74,6 @@ PennController( "consent",
 
 // Instructions
 PennController( "instruct1",
-  PennController( "consent",
   defaultText
       .print()
       .settings.css("font-size", "50px")
