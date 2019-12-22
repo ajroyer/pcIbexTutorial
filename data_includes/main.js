@@ -206,7 +206,9 @@ PennController.Template(
         .settings.size(500)
         .print()
     ,
-    newText("spaceToCont", "Please press the spacebar afte<br>you make your selection to continue")
+    newText("spaceToCont", "<br><br><br><br><br>Please press the spacebar afte<br>you make your selection to continue")
+      ,settings.center()
+      .settings.bold()
       .print()
     ,
     newKey("space"," ")
