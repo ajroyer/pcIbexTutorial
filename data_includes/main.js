@@ -74,43 +74,6 @@ PennController( "consent",
 
 
 
-// Instructions
-PennController( "instruct1",
-  newText("part1", "")
-    .print()
-    ,
-newButton("Continue")
-    .print()
-    .wait()
-    ,
-newKey("space", " ")
-  .wait()
-)
-
-PennController( "instruct2",
-  newText("part2", "instruct2")
-    .print()
-    ,
-    newButton("Continue")
-        .print()
-        .wait()
-        ,
-    newKey("space", " ")
-      .wait()
-
-)
-
-PennController( "instruct3",
-  newText("part3", "")
-    .print()
-    ,
-    newButton("Continue")
-        .print()
-        .wait()
-        ,
-    newKey("space", " ")
-      .wait() 
-)
 
 
 
@@ -194,55 +157,6 @@ PennController.Template(
 )
 
 
-
-
-
-//Debreifing questionnaire
-PennController( "debriefing",
-    defaultText
-        .print()
-    ,
-    newText("<h1>Debriefing Questions</h1>")
-    ,
-    newText("<h2>Please answer all of the questions below about your experience participating in the experiment.</h2>")
-    ,
-    newText("<h3>Did anything about the sentences or questions stand out to you? Did you notice any type of patterns?</h3>")
-    ,
-    newTextInput("question1", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
-    ,
-    newText("<h3>What kind of strategy did you use for answering the questions?<br></h3>")
-    ,
-    newTextInput("question2", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
-    ,
-    newText("<h3>What do you think the researchers are interested in testing in this study?<br></h3>")
-    ,
-    newTextInput("question3", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
-    ,
-    newText("<h3>What other thoughts or comments do you have about the experiment?<br></h3>")
-    ,
-    newTextInput("question4", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
-    ,
-    newButton("Submit responses")
-        .print()
-        .wait()
-
-)
 
 
 
