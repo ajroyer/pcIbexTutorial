@@ -87,51 +87,7 @@ newButton("Continue")
 
 
 
-// Experiment
-PennController.Template(
-  PennController.GetTable( "testdesign.csv" )
-                  .setGroupColumn( "list" ),
-  row => PennController( row.cond,
-
-//    newAudio("continue.wav")
-//      .play()
-    newImage("x", "x.png")
-    .print()
-    ,
-    newTimer("buffer",500)
-      .start()
-      .wait()
-    ,
-    getImage("x")
-    .remove()
-    ,
-    newAudio("audioFilename", row.wavname)
-        .play()
-    ,
-    newScale("likert", "Completely<br>Unacceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Acceptable<br>7")
-        .settings.log()
-        .settings.keys("1","2","3","4","5","6","7")
-        .settings.labelsPosition("top")
-        .settings.before( newText("unacceptable", "completely unacceptable") )
-        .settings.after(  newText("acceptable", "completely acceptable")   )
-        .settings.size(500)
-        .settings.css("font-size", "40px")
-        .print()
-    ,
-    getAudio("audioFilename")
-       .wait()
-    ,
-    newKey("space"," ")
-      .wait(getScale("likert").test.selected())
-  )
-  .log( "List" , row.list )
-  .log( "Item"   , row.item   )
-  .log( "BreakLoc" , row.breakLoc )
-  .log( "Plurality" , row.plurality )
-  .log( "Grammaticality"  , row.grammaticality  )
-  .log( "Condition" , row.cond )
-  .log( "AudioFile", row.wavname )
-)
+// Exp
 
 
 
