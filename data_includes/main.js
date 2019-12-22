@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null)
 
 //Set the sequence of presentation for the experiment
-PennController.Sequence( randomize("dialect") ,"welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing",  "send", "final" )
+PennController.Sequence( rshuffle("d_s","d_p") ,"welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing",  "send", "final" )
 
 
 // Set the command for sending the results
