@@ -156,37 +156,21 @@ PennController.Template(
         .settings.size(500)
         .settings.css("font-size", "2em")
         .print()
-        ,
+    ,
     newText("<h3>'I have friends and family who may find this sentence acceptable'</h3>")
     ,
     newScale("AcceptableToFriends", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
         .settings.log()
-//        .settings.keys("1","2","3","4","5","6","7")
         .settings.labelsPosition("top")
         .settings.before( newText("Strongly Agree", "Strongly Agree") )
         .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
         .settings.size(500)
         .settings.css("font-size", "2em")
-        .print()
-//        ,
-//    newText("<h3>''</h3>")
-//    ,
-//    newScale("AcceptableToOthers", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
-//        .settings.log()
-//        .settings.keys("1","2","3","4","5","6","7")
-//        .settings.labelsPosition("top")
-//        .settings.before( newText("Strongly Agree", "Strongly Agree") )
-//        .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
-//        .settings.size(500)
-//        .settings.css("font-size", "2em")
-//        .print()
-//    ,
+    ,
     newAudio("audioFilename", row.Dwavname)
         .play()
     ,
-//    getAudio("DialectaudioFilename")
-//       .wait()
-//    ,
+
     newKey("space"," ")
 //      .wait(getScale("AcceptableToMe").test.selected())
 //      .wait(getScale("AcceptableToFriends").test.selected())
