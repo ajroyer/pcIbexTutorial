@@ -1,8 +1,15 @@
 PennController.ResetPrefix(null)
+
+//Set the sequence of presentation for the experiment
 PennController.Sequence( "welcome" , "consent" ,"instructionsPage", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "debriefing",  "send", "final" )
 
+
+// Set the command for sending the results
 PennController.SendResults( "send" )
 
+
+
+//Preload all of the criticl and filler stimuli audio files
 PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-001-015.zip")
 PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-016-030.zip")
 PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-031-045.zip")
@@ -37,6 +44,11 @@ PennController( "welcome",
       .set( getTextInput("id") )  // And save the text from TextInput
 ).log( "ParticipantID", getVar("ParticipantID") );
 
+
+
+
+
+//Collect consent from the participant
 PennController( "consent",
     defaultText
         .print()
@@ -58,8 +70,11 @@ PennController( "consent",
 )
 .log( "uniqueid" , PennController.GetURLParameter( "id" ) )
 
-// Instructions
 
+
+
+
+// Instructions
 PennController( "instructionsPage",
   newHtml("instructions", "instructions.html")
     .print()
@@ -68,6 +83,9 @@ newButton("Continue")
     .print()
     .wait()
 )
+
+
+
 
 // Experiment
 PennController.Template(
@@ -115,6 +133,68 @@ PennController.Template(
   .log( "AudioFile", row.wavname )
 )
 
+
+
+
+//Dialect survey
+PennController.Template( PennController.GetTable( "dialectdesign.csv" )
+                                        .setGroupColumn( "list" ),
+  row => PennController( row.cond,
+
+//    newAudio("continue.wav")
+//      .play()
+    newText("<h2>On a scale of 1 (Strongly diagree) to 7 (Strongly agree),<br>rate how much you agree with the statements below</h2>")
+    ,
+    newText("<h3>'This sentence is acceptable to me'</h3>")
+    ,
+    newScale("AcceptableToMe", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
+        .settings.log()
+//        .settings.keys("1","2","3","4","5","6","7")
+        .settings.labelsPosition("top")
+        .settings.before( newText("Strongly Agree", "Strongly Agree") )
+        .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
+        .settings.size(500)
+        .settings.css("font-size", "2em")
+        .print()
+        ,
+    newText("<h3>'I have friends and family who may find this sentence acceptable'</h3>")
+    ,
+    newScale("AcceptableToFriends", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
+        .settings.log()
+//        .settings.keys("1","2","3","4","5","6","7")
+        .settings.labelsPosition("top")
+        .settings.before( newText("Strongly Agree", "Strongly Agree") )
+        .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
+        .settings.size(500)
+        .settings.css("font-size", "2em")
+        .print()
+//        ,
+//    newText("<h3>''</h3>")
+//    ,
+//    newScale("AcceptableToOthers", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
+//        .settings.log()
+//        .settings.keys("1","2","3","4","5","6","7")
+//        .settings.labelsPosition("top")
+//        .settings.before( newText("Strongly Agree", "Strongly Agree") )
+//        .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
+//        .settings.size(500)
+//        .settings.css("font-size", "2em")
+//        .print()
+//    ,
+    newAudio("audioFilename", row.wavname)
+        .play()
+    ,
+    getAudio("audioFilename")
+       .wait()
+    ,
+    newKey("space"," ")
+      .wait(getScale("dialectlikert").test.selected())
+  )
+  .log( "List" , row.list)
+  .log( "Item"   , row.item   )
+  .log( "Plurality" , row.plurality )
+  .log( "AudioFile", row.wavname )
+)
 
 PennController( "debriefing",
     defaultText
