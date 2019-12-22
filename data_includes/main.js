@@ -75,13 +75,41 @@ PennController( "consent",
 
 
 // Instructions
-PennController( "instructionsPage",
-  newHtml("instructions", "instructions.html")
+PennController( "instruct1",
+  newText("part1", "")
     .print()
     ,
 newButton("Continue")
     .print()
     .wait()
+    ,
+newKey("space", " ")
+  .wait()
+)
+
+PennController( "instruct2",
+  newText("part2", "instruct2")
+    .print()
+    ,
+    newButton("Continue")
+        .print()
+        .wait()
+        ,
+    newKey("space", " ")
+      .wait()
+
+)
+
+PennController( "instruct3",
+  newText("part3", "")
+    .print()
+    ,
+    newButton("Continue")
+        .print()
+        .wait()
+        ,
+    newKey("space", " ")
+      .wait() 
 )
 
 
@@ -114,6 +142,9 @@ PennController.Template(
         .settings.size(500)
         .print()
     ,
+    newText("spaceToCont", "Please press the spacebar afte<br>you make your selection to continue")
+      .print()
+    ,
     getAudio("audioFilename")
        .wait()
     ,
@@ -130,6 +161,10 @@ PennController.Template(
 )
 
 
+
+
+
+
 //Dialect survey
 PennController.Template(
   PennController.GetTable( "dialectdesign.csv" )
@@ -138,16 +173,15 @@ PennController.Template(
     newAudio("audioFilename", row.wavname)
         .play()
     ,
-    newText("<h2>On a scale of 1 (Strongly diagree) to 7 (Strongly agree),<br>rate how much you agree with the statements below</h2>")
-    ,
-    newText("<h3>This sentence is acceptable to me</h3>")
-    ,
     newScale("dialectLikert", "Completely<br>Unacceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Acceptable<br>7")
         .settings.log()
         .settings.keys("1","2","3","4","5","6","7")
         .settings.labelsPosition("top")
         .settings.size(500)
         .print()
+    ,
+    newText("spaceToCont", "Please press the spacebar afte<br>you make your selection to continue")
+      .print()
     ,
     newKey("space"," ")
       .wait(getScale("dialectLikert").test.selected())
