@@ -100,16 +100,13 @@ PennController.Template(
     ,
     newText("<h2>On a scale of 1 (Strongly diagree) to 7 (Strongly agree),<br>rate how much you agree with the statements below</h2>")
     ,
-    newText("<h3>'This sentence is acceptable to me'</h3>")
+    newText("<h3>This sentence is acceptable to me</h3>")
     ,
     newScale("AcceptableToMe", "Strongly<br>Disagree<br>1","2","3","Unsure<br>4","5","6","Strongly<br>Agree<br>7")
         .settings.log()
-    //        .settings.keys("1","2","3","4","5","6","7")
-        .settings.labelsPosition("top")s
-        .settings.before( newText("Strongly Agree", "Strongly Agree") )
-        .settings.after(  newText("Strongly Disagree", "Strongly Disagree")   )
+        .settings.keys("1","2","3","4","5","6","7")
+        .settings.labelsPosition("top")
         .settings.size(500)
-        .settings.css("font-size", "2em")
         .print()
     ,
     newKey("space"," ")
