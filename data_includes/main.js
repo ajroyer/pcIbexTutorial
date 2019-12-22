@@ -52,8 +52,7 @@ PennController( "welcome",
 PennController( "consent",
     defaultText
         .print()
-        .settings.css("font-size", "1.5em")
-        .settings.center()
+        .settings.css("font-size", "3em")
     ,
     newText("<h2>Consenting Process</h2>")
     ,
