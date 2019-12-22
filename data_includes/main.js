@@ -19,6 +19,8 @@ PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-fillers.zip")
 //Welcome trial
 PennController( "welcome",
     newText("<h1>Welcome!</h1>")
+      .settings.css("font-size", "2em")
+      .settings.center()
       .print()
     ,
     newTextInput("id")
@@ -30,8 +32,10 @@ PennController( "welcome",
       .settings.color("red")
       .settings.bold()
     ,
-    newButton("consent button", "Continue to consent page")
+    newButton("consent button", "Submit")
       .print()
+      .settings.css("font-size", "2em")
+      .settings.center()
       .settings.size(150,100)
       .wait(  // Make sure the TextInput has been filled
         getTextInput("id")
