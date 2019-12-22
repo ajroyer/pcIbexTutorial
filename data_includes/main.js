@@ -180,10 +180,10 @@ PennController.Template( PennController.GetTable( "dialectdesign.csv" )
 //        .settings.css("font-size", "2em")
 //        .print()
     ,
-    newAudio("audioFilename", row.wavname)
+    newAudio("DialectaudioFilename", row.wavname)
         .play()
     ,
-    getAudio("audioFilename")
+    getAudio("DialectaudioFilename")
        .wait()
     ,
     newKey("space"," ")
