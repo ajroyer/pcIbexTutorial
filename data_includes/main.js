@@ -57,17 +57,19 @@ PennController( "consent",
     ,
     newText("<h2>Consenting Process</h2>")
     ,
-    newText("<p> Below is a consent form you will need to read. After reading, please press the 'I consent to participating' button. If you do not consent, please close the page</p>")
+    newText("<p> Below is a consent form you will need to read.<br>After reading, please press the 'I consent to participating' button.<br>If you do not consent, please close this page</p>")
     ,
     newHtml("consent", "consent.html")
         .settings.css("font-size", "1em")
-        .settings.size(250,100)
+        .settings.size(720,1280)
+        .settings.center()
         .print()
     ,
-    newButton("I consent to participating")
+    newButton("I consent")
         .print()
-        .settings.size(250,100)
+        .settings.size(200,100)
         .settings.center()
+        .settings.css("font-size","2em")
         .wait()
 )
 .log( "uniqueid" , PennController.GetURLParameter( "id" ) )
@@ -78,7 +80,7 @@ PennController( "consent",
 PennController( "instruct1",
   defaultText
       .print()
-      .settings.css("font-size", "50px")
+      .settings.css("font-size", "1.5em")
   ,
   newText("title", "<h1>Instructions</h1>")
   ,
@@ -120,6 +122,8 @@ PennController.Template(
         .settings.keys("1","2","3","4","5","6","7")
         .settings.labelsPosition("top")
         .settings.size(500)
+        .settings.center()
+        .settings.css("font-size", "1.5em")
         .print()
     ,
     newText("spaceToCont", "Please press the spacebar afte<br>you make your selection to continue")
