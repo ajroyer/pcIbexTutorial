@@ -31,6 +31,8 @@ PennController( "welcome",
     newText("warning", "<br>Please enter your ID first")
       .settings.color("red")
       .settings.bold()
+      .settings.css("font-size", "2em")
+      .settings.center()
     ,
     newButton("consent button", "Submit")
       .print()
