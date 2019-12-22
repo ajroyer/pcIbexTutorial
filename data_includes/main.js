@@ -136,7 +136,9 @@ PennController.Template(
 
 
 //Dialect survey
-PennController.Template( PennController.GetTable( "dialectdesign.csv" ).setGroupColumn( "list" ),
+PennController.Template(
+  PennController.GetTable( "dialectdesign.csv" )
+                .setGroupColumn( "list" ),
   row => PennController( row.cond,
 
 //    newAudio("continue.wav")
