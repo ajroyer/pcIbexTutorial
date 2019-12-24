@@ -1,15 +1,14 @@
+//Required at the start of the file
 PennController.ResetPrefix(null)
 
 //Set the sequence of presentation for the experiment
 PennController.Sequence( "welcome" , "consent" ,"instruct1", "instruct2", "instruct3", "instruct4", "prac1", "prac1Q", "prac2", "prac3", "prac4", "prac4Q", "instruct5", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "instruct6" , "debriefing", "instruct7" , randomize("d_s","d_p") , "send", "final" )
 
-
-// Set the command for sending the results
+//Create the command for sending the results
 PennController.SendResults( "send" )
 
-
-
 //Preload all of the criticl and filler stimuli audio files
+//URL *must* be https secured because PCIbex Farm is https secured
 PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-001-015.zip")
 PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-016-030.zip")
 PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-031-045.zip")
@@ -18,17 +17,21 @@ PennController.PreloadZip("https://ajroyer.github.io/PilotAudio-fillers.zip")
 
 //Welcome trial
 PennController( "welcome",
+    //Create title for page
     newText("<h1>Welcome!</h1>")
       .settings.css("font-size", "2em")
       .settings.center()
       .print()
     ,
+    //Create reminder about headphones
     newText("headphones", "This experiment requires that you listen to audio through headphones, not speakers.")
       .print()
       .settings.color("red")
       .settings.center()
       .settings.css("font-size","1.5em")
     ,
+    //Make canvas for no real reason other than it was in the original tutorial
+    //It would also be fine just ot input the "newTextInput" in along side the "newText" commands
     newCanvas("welcomescreen", 720,100)
       .print()
       .settings.add( 0,50,newTextInput("profilicid")
@@ -38,6 +41,7 @@ PennController( "welcome",
                     )
       .settings.center()
     ,
+    //Create warning text
     newText("warning", "<br>Please enter your Proflic ID before continuing")
       .settings.color("red")
       .settings.bold()
@@ -52,6 +56,7 @@ PennController( "welcome",
       .wait(  // Make sure the TextInput has been filled
         getTextInput("profilicid")
           .testNot.text("")
+          //If the text input has anything in it, all is good, elsewise, print the warning message
           .failure( getText("warning").print() )
       )
     ,   // Create a Var element before going to the next screen
@@ -482,24 +487,24 @@ PennController("prac4Q",
 
 PennController( "instruct5",
   defaultText
-      .print()
-      .settings.css("font-size", "1.5em")
-      .settings.center()
+    .print()
+    .settings.css("font-size", "1.5em")
+    .settings.center()
   ,
   newText("title", "<h1>Instructions</h1>")
   ,
   newText("details1","<p> You have completed the practice trials!</p>")
-  .settings.size(720,100)
+    .settings.size(720,100)
   ,
   newText("details2", "<p> If the audio was too soft or loud in the practice trials, please adjust your volume level accordingly before beginning the experiment.</p>")
-  .settings.size(720,100)
+    .settings.size(720,100)
   ,
   newButton("Start Experiment")
-      .print()
-      .settings.size(200,100)
-      .settings.center()
-      .settings.css("font-size","2em")
-      .wait()
+    .print()
+    .settings.size(200,100)
+    .settings.center()
+    .settings.css("font-size","2em")
+    .wait()
 
 )
 
@@ -517,27 +522,27 @@ PennController.Template(
 //    newAudio("continue.wav")
 //      .play()
     newImage("x", "x.png")
-    .print()
-    .settings.center()
+      .print()
+      .settings.center()
     ,
     newTimer("buffer",500)
       .start()
       .wait()
     ,
     getImage("x")
-    .remove()
+      .remove()
     ,
     newAudio("audioFilename", row.wavname)
-        .play()
+      .play()
     ,
     newScale("likert", "Completely<br>Unacceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Acceptable<br>7")
-        .settings.log()
-        .settings.keys("1","2","3","4","5","6","7")
-        .settings.labelsPosition("top")
-        .settings.size(720)
-        .settings.center()
-        .settings.cssContainer("font-size", "3em")
-        .print()
+      .settings.log()
+      .settings.keys("1","2","3","4","5","6","7")
+      .settings.labelsPosition("top")
+      .settings.size(720)
+      .settings.center()
+      .settings.cssContainer("font-size", "3em")
+      .print()
     ,
     newText("spaceToCont", "<br><br><br>Press spacebar to continue")
       .print()
@@ -566,69 +571,73 @@ PennController.Template(
 
 PennController( "instruct6",
   defaultText
-      .print()
-      .settings.css("font-size", "1.5em")
-      .settings.center()
+    .print()
+    .settings.css("font-size", "1.5em")
+    .settings.center()
 
   ,
   newText("title", "<h1>Instructions</h1>")
   ,
   newText("details1", "<p> You have completed the first task! Next, you will be answering a few questions about the task you just completed.</p>")
-  .settings.size(720,150)
+    .settings.size(720,150)
   ,
   newButton("Continue")
-      .print()
-      .settings.size(200,100)
-      .settings.center()
-      .settings.css("font-size","2em")
-      .wait()
+    .print()
+    .settings.size(200,100)
+    .settings.center()
+    .settings.css("font-size","2em")
+    .wait()
 
 )
 
 //Debreifing questionnaire
 PennController( "debriefing",
     defaultText
+      .settings.center()
+      .settings.css("font-size", "1.5em")
+
         .print()
     ,
     newText("<h1>Debriefing Questions</h1>")
     ,
     newText("<h2>Please answer all of the questions below about your experience participating in the previous task.</h2>")
     ,
-    newText("<h3>Did anything about the sentences or questions stand out to you? Did you notice any type of patterns?</h3>")
+    newText("<p>Did anything about the sentences or questions stand out to you? Did you notice any type of patterns?</p>")
     ,
     newTextInput("question1", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
+      .settings.log()
+      .settings.lines(0)
+      .settings.size(720, 50)
+      .print()
     ,
-    newText("<h3>What kind of strategy did you use for answering the questions?<br></h3>")
+    newText("<p>What kind of strategy did you use for answering the questions?<br></p>")
     ,
     newTextInput("question2", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
+      .settings.log()
+      .settings.lines(0)
+      .settings.size(720, 50)
+      .print()
     ,
-    newText("<h3>What do you think the researchers are interested in testing in this study?<br></h3>")
+    newText("<p>What do you think the researchers are interested in testing in this study?<br></p>")
     ,
     newTextInput("question3", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
+      .settings.log()
+      .settings.lines(0)
+      .settings.size(720, 50)
+      .print()
     ,
-    newText("<h3>What other thoughts or comments do you have about the experiment?<br></h3>")
+    newText("<p>What other thoughts or comments do you have about the experiment?<br></p>")
     ,
     newTextInput("question4", "")
-    .settings.log()
-    .settings.lines(0)
-    .settings.size(800, 200)
-    .print()
+      .settings.log()
+      .settings.lines(0)
+      .settings.size(720, 50)
+      .print()
     ,
     newButton("Submit responses")
-        .print()
-        .wait()
+      .settings.size(200,100)
+      .print()
+      .wait()
 
 )
 
