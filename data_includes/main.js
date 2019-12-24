@@ -739,7 +739,7 @@ PennController( "instruct7",
   ,
   newText("title", "<h1>Instructions</h1>")
   ,
-  newText("details1", "<p> For your last task, you will judge the acceptability of a few sentences just as you did in the previous experiment.</p>")
+  newText("details1", "<p> For your last task, you will judge the acceptability of a few sentences just as you did in the previous experiment. This time though, you will only have 'Acceptable', 'Unsure', and 'Unacceptable' as your choices.</p>")
   .settings.size(720,150)
   ,
   newButton("Start Task")
@@ -759,9 +759,9 @@ PennController.Template(
     newAudio("audioFilename", row.wavname)
         .play()
     ,
-    newScale("dialectLikert", "Completely<br>Unacceptable<br>1","2","3","Unsure<br>4","5","6","Completely<br>Acceptable<br>7")
+    newScale("dialectLikert", "Unacceptable","Unsure","Acceptable",)
         .settings.log()
-        .settings.keys("1","2","3","4","5","6","7")
+        .settings.keys("1","2","3")
         .settings.labelsPosition("top")
         .settings.size(720)
         .print()
