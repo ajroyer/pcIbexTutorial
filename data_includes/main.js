@@ -598,13 +598,13 @@ PennController.Template(
           .settings.css("font-size","2em")
           .print()
         ,
-        newCanvas(500,300)
+        newCanvas(500,400)
           .settings.add( -100, 50, getText("correct"))
           .settings.add( 250, 50, getText("incorrect"))
           .settings.center()
           .print()
         ,
-        newCanvas(500,300)
+        newCanvas(500,400)
           .settings.add( -50, 150, getText("f"))
           .settings.add( 300, 150, getText("j"))
           .settings.center()
