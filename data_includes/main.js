@@ -552,8 +552,82 @@ PennController.Template(
     getAudio("audioFilename")
        .wait()
     ,
+    newText("questionOrNah",row.question)
+    ,
     newKey("space"," ")
       .wait(getScale("likert").test.selected())
+    ,
+    getText("questionOrNah")
+      .testNot.text("NA")
+      .success(
+        getScale("likert")
+          .remove()
+        ,
+        getText("spaceToCont")
+          .remove()
+        ,
+        getImage("x")
+          .print()
+          .settings.center()
+        ,
+        newTimer("buffer2",500)
+          .start()
+          .wait()
+        ,
+        getImage("x")
+          .remove()
+        ,
+        newText("correct", row.answerCorrect)
+          .settings.css("font-size","2em")
+          .settings.center()
+        ,
+        newText("incorrect", row.answerIncorrect)
+          .settings.css("font-size","2em")
+          .settings.center()
+        ,
+        newText("f","'F'")
+          .settings.css("font-size","1em")
+          .settings.center()
+        ,
+        newText("j","'J'")
+          .settings.css("font-size","1em")
+          .settings.center()
+        ,
+        getText("questionOrNah")
+          .settings.center()
+          .settings.css("font-size","2em")
+          .print()
+        ,
+        newCanvas(500,300)
+          .settings.add( -100, 50, getText("correct"))
+          .settings.add( 250, 50, getText("incorrect"))
+          .settings.center()
+          .print()
+        ,
+        newCanvas(500,300)
+          .settings.add( -50, 100, getText("f"))
+          .settings.add( 300, 100, getText("j"))
+          .settings.center()
+          .print()
+        ,
+        newSelector()
+          .settings.add( getText("correct"), getText("incorrect"))
+          .shuffle()
+          .settings.keys( "F", "J")
+          .settings.log()
+          .wait()
+
+
+      )
+
+
+
+
+
+
+
+
+
 
 // Useful for .success and .failure -> https://www.pcibex.net/wiki/ontology/
 
