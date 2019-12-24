@@ -106,7 +106,7 @@ PennController( "instruct1",
   ,
   newText("title", "<h1>Instructions</h1>")
   ,
-  newText("part1","<p>Thank you for choosing to participate in this experiment. In this experiment, you will be completing two tasks.</p>")
+  newText("part1","<p>Thank you for choosing to participate. In this experiment, you will be completing two tasks.</p>")
     .settings.size(720,50)
   ,
   newText("details1", "<p>Your first task is to listen to a series of sentences and judge how 'acceptable' each sentence is for you as a speaker of English.</p>")
@@ -115,10 +115,10 @@ PennController( "instruct1",
   newText("detailsfsf3","<p> When making your judgements on the acceptability of the sentences, please disregard any lessons you may have been taught about what 'proper' English is supposed to be.</p>")
     .settings.size(720,150)
   ,
-  newText("details324", "<p>You are to rely on your own intuitions as a native speaker of English. Your intuitions about what sounds more or less accetable are neither right nor wrong.</p>")
+  newText("details324", "<p>You are to rely on your own intuitions as a native speaker of English. Your intuitions about what sounds more or less accetable are not necessarily right or wrong.</p>")
     .settings.size(720,125)
   ,
-  newText("details2", "<p>After about half of the sentences, you will be asked a comprehension question about the sentence you just heard, so make sure you are paying attention to what you hear.</p>")
+  newText("details2", "<p> About half of the sentences are followed by a comprehension question about the sentence you just heard, so make sure you are paying attention.</p>")
     .settings.size(720,150)
   ,
   newButton("Continue")
@@ -193,7 +193,7 @@ PennController( "instruct4",
   newText("details2", "<p> After the sentence has played, rate how acceptable you find it to be on a scale from 1 to 7. You may either use your mouse or the number keys on your keyboard to make your selection. Press the spacebar to continue to the next trial.</p>")
   .settings.size(720,150)
   ,
-  newText("details3", "<p> Occasionally a question will appear after you have made your judgmenet. You will have two answers to choose from for the question. You may either use your mouse or the 'F' and 'J' keys on your keyboard to make your selection. </p>")
+  newText("details3", "<p> Occasionally a question will appear after you have made your judgement. You will have two answers to choose from for the question. You may either use your mouse or the 'F' and 'J' keys on your keyboard to make your selection. </p>")
   .settings.size(720,150)
   ,
   newText("details9", "<p> Before beginning, take a moment to adjust your volume to a comfortable level. </p>")
@@ -515,7 +515,7 @@ PennController( "instruct5",
 
 // Experiment
 PennController.Template(
-  PennController.GetTable( "testdesign.csv" )
+  PennController.GetTable( "fulldesign.csv" )
                   .setGroupColumn( "list" ),
   row => PennController( row.cond,
 
@@ -558,7 +558,7 @@ PennController.Template(
       .wait(getScale("likert").test.selected())
     ,
     getText("questionOrNah")
-      .testNot.text("NA")
+      .testNot.text("")
       .success(
         getScale("likert")
           .remove()
