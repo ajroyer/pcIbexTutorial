@@ -595,49 +595,63 @@ PennController( "debriefing",
     defaultText
       .settings.center()
       .settings.css("font-size", "1.5em")
-
-        .print()
+      .settings.size(720,75)
+    ,
+    defaultTextInput
+      .settings.log()
+      .settings.lines(0)
+      .settings.size(720, 75)
+      .settings.center()
+      .print()
     ,
     newText("<h1>Debriefing Questions</h1>")
+      .print()
     ,
-    newText("<h2>Please answer all of the questions below about your experience participating in the previous task.</h2>")
+    newText("<h3>Please answer all of the questions below about your experience participating in the previous task.</h2>")
+      .print()
     ,
-    newText("<p>Did anything about the sentences or questions stand out to you? Did you notice any type of patterns?</p>")
+    newText("q1text","<p>Q1: Did anything about the sentences or questions stand out to you?<br>Did you notice any patterns?</p>")
+      .print()
     ,
     newTextInput("question1", "")
-      .settings.log()
-      .settings.lines(0)
-      .settings.size(720, 50)
-      .print()
     ,
-    newText("<p>What kind of strategy did you use for answering the questions?<br></p>")
+    newText("q2text","<p>Q2: What kind of strategy did you use for answering the questions?<br></p>")
+      .print()
     ,
     newTextInput("question2", "")
-      .settings.log()
-      .settings.lines(0)
-      .settings.size(720, 50)
-      .print()
     ,
-    newText("<p>What do you think the researchers are interested in testing in this study?<br></p>")
+    newText("q3text","<p>Q3: What do you think the researchers are interested in testing in this study?<br></p>")
+      .print()
     ,
     newTextInput("question3", "")
-      .settings.log()
-      .settings.lines(0)
-      .settings.size(720, 50)
-      .print()
     ,
-    newText("<p>What other thoughts or comments do you have about the experiment?<br></p>")
+    newText("q4text","<p>Q4: What other thoughts or comments do you have about the experiment?<br></p>")
+      .print()
     ,
     newTextInput("question4", "")
-      .settings.log()
-      .settings.lines(0)
-      .settings.size(720, 50)
-      .print()
+    ,
+    newText("warn", "Please fill in answers to all questions before continuing.")
+    .settings.color("red")
+    .settings.bold()
     ,
     newButton("Submit responses")
       .settings.size(200,100)
+      .settings.css("font-size","2em")
+      .settings.center()
       .print()
-      .wait()
+      .wait(
+            getTextInput("question1")
+              .testNot.text("")
+              .and(getTextInput("question2")
+                      .testNot.text(""))
+              .and(getTextInput("question3")
+                      .testNot.text(""))
+              .and(getTextInput("question4")
+                      .testNot.text(""))
+              //If the text input has anything in it, all is good, elsewise, print the warning message
+              .failure( getText("warn").print() )
+
+      )
 
 )
 
