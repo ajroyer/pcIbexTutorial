@@ -605,8 +605,8 @@ PennController.Template(
           .print()
         ,
         newCanvas(500,300)
-          .settings.add( -50, 100, getText("f"))
-          .settings.add( 300, 100, getText("j"))
+          .settings.add( -50, 150, getText("f"))
+          .settings.add( 300, 150, getText("j"))
           .settings.center()
           .print()
         ,
