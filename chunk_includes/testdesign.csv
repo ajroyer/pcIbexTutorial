@@ -1,109 +1,1081 @@
-list,item,breakLoc,plurality,grammaticality,cond,wavname,sentence,question,answerCorrect,answerIncorrect
-list1,item1,e,s,g,crit_e_s,001_e_p_spl.wav,This is sentence 001.,Question?,correct,wrong
-list2,item1,e,p,u,crit_e_p,001_e_s_spl.wav,This is sentence 001.,Question?,correct,wrong
-list3,item1,l,s,g,crit_l_s,001_l_p_spl.wav,This is sentence 001.,Question?,correct,wrong
-list4,item1,l,p,u,crit_l_p,001_l_s_spl.wav,This is sentence 001.,Question?,correct,wrong
-list5,item1,n,s,g,crit_n_s,001_n_p_spl.wav,This is sentence 001.,Question?,correct,wrong
-list6,item1,n,p,u,crit_n_p,001_n_s_spl.wav,This is sentence 001.,Question?,correct,wrong
-list2,item1,e,s,g,crit_e_s,002_e_p_spl.wav,This is sentence 002.,Question?,correct,wrong
-list3,item2,e,p,u,crit_e_p,002_e_s_spl.wav,This is sentence 002.,Question?,correct,wrong
-list4,item2,l,s,g,crit_l_s,002_l_p_spl.wav,This is sentence 002.,Question?,correct,wrong
-list5,item2,l,p,u,crit_l_p,002_l_s_spl.wav,This is sentence 002.,Question?,correct,wrong
-list6,item2,n,s,g,crit_n_s,002_n_p_spl.wav,This is sentence 002.,Question?,correct,wrong
-list1,item2,n,p,u,crit_n_p,002_n_s_spl.wav,This is sentence 002.,Question?,correct,wrong
-list3,item3,e,s,g,crit_e_s,003_e_p_spl.wav,This is sentence 003.,NA,NA,NA
-list4,item3,e,p,u,crit_e_p,003_e_s_spl.wav,This is sentence 003.,NA,NA,NA
-list5,item3,l,s,g,crit_l_s,003_l_p_spl.wav,This is sentence 003.,NA,NA,NA
-list6,item3,l,p,u,crit_l_p,003_l_s_spl.wav,This is sentence 003.,NA,NA,NA
-list1,item3,n,s,g,crit_n_s,003_n_p_spl.wav,This is sentence 003.,NA,NA,NA
-list2,item3,n,p,u,crit_n_p,003_n_s_spl.wav,This is sentence 003.,NA,NA,NA
-list4,item4,e,s,g,crit_e_s,004_e_p_spl.wav,This is sentence 004.,NA,NA,NA
-list5,item4,e,p,u,crit_e_p,004_e_s_spl.wav,This is sentence 004.,NA,NA,NA
-list6,item4,l,s,g,crit_l_s,004_l_p_spl.wav,This is sentence 004.,NA,NA,NA
-list1,item4,l,p,u,crit_l_p,004_l_s_spl.wav,This is sentence 004.,NA,NA,NA
-list2,item4,n,s,g,crit_n_s,004_n_p_spl.wav,This is sentence 004.,NA,NA,NA
-list3,item4,n,p,u,crit_n_p,004_n_s_spl.wav,This is sentence 004.,NA,NA,NA
-list5,item5,e,s,g,crit_e_s,005_e_p_spl.wav,This is sentence 005.,NA,NA,NA
-list6,item5,e,p,u,crit_e_p,005_e_s_spl.wav,This is sentence 005.,NA,NA,NA
-list1,item5,l,s,g,crit_l_s,005_l_p_spl.wav,This is sentence 005.,NA,NA,NA
-list2,item5,l,p,u,crit_l_p,005_l_s_spl.wav,This is sentence 005.,NA,NA,NA
-list3,item5,n,s,g,crit_n_s,005_n_p_spl.wav,This is sentence 005.,NA,NA,NA
-list4,item5,n,p,u,crit_n_p,005_n_s_spl.wav,This is sentence 005.,NA,NA,NA
-list6,item6,e,s,g,crit_e_s,006_e_p_spl.wav,This is sentence 006.,NA,NA,NA
-list1,item6,e,p,u,crit_e_p,006_e_s_spl.wav,This is sentence 006.,NA,NA,NA
-list2,item6,l,s,g,crit_l_s,006_l_p_spl.wav,This is sentence 006.,NA,NA,NA
-list3,item6,l,p,u,crit_l_p,006_l_s_spl.wav,This is sentence 006.,NA,NA,NA
-list4,item6,n,s,g,crit_n_s,006_n_p_spl.wav,This is sentence 006.,NA,NA,NA
-list5,item6,n,p,u,crit_n_p,006_n_s_spl.wav,This is sentence 006.,NA,NA,NA
-list1,item61,e,NA,g,fill_e_NA,061_l_g-spl.wav,This is sentence 061.,Question?,correct,wrong
-list1,item62,l,NA,g,fill_l_NA,062_l_g-spl.wav,This is sentence 062.,Question?,correct,wrong
-list1,item63,n,NA,g,fill_n_NA,063_l_g-spl.wav,This is sentence 063.,Question?,correct,wrong
-list1,item64,e,NA,u,fill_e_NA,064_l_g-spl.wav,This is sentence 064.,Question?,correct,wrong
-list1,item65,l,NA,u,fill_l_NA,065_l_g-spl.wav,This is sentence 065.,Question?,correct,wrong
-list1,item66,n,NA,u,fill_n_NA,066_l_g-spl.wav,This is sentence 066.,Question?,correct,wrong
-list1,item67,e,NA,g,fill_e_NA,067_l_g-spl.wav,This is sentence 067.,NA,NA,NA
-list1,item68,l,NA,g,fill_l_NA,068_l_g-spl.wav,This is sentence 068.,Question?,correct,wrong
-list1,item69,n,NA,g,fill_n_NA,069_l_g-spl.wav,This is sentence 069.,NA,NA,NA
-list1,item70,e,NA,u,fill_e_NA,070_n_g.wav,This is sentence 070.,NA,NA,NA
-list1,item71,l,NA,u,fill_l_NA,071_n_g.wav,This is sentence 071.,Question?,correct,wrong
-list1,item72,n,NA,u,fill_n_NA,072_n_g.wav,This is sentence 072.,NA,NA,NA
-list2,item61,e,NA,g,fill_e_NA,061_l_g-spl.wav,This is sentence 061.,Question?,correct,wrong
-list2,item62,l,NA,g,fill_l_NA,062_l_g-spl.wav,This is sentence 062.,Question?,correct,wrong
-list2,item63,n,NA,g,fill_n_NA,063_l_g-spl.wav,This is sentence 063.,Question?,correct,wrong
-list2,item64,e,NA,u,fill_e_NA,064_l_g-spl.wav,This is sentence 064.,Question?,correct,wrong
-list2,item65,l,NA,u,fill_l_NA,065_l_g-spl.wav,This is sentence 065.,Question?,correct,wrong
-list2,item66,n,NA,u,fill_n_NA,066_l_g-spl.wav,This is sentence 066.,Question?,correct,wrong
-list2,item67,e,NA,g,fill_e_NA,067_l_g-spl.wav,This is sentence 067.,NA,NA,NA
-list2,item68,l,NA,g,fill_l_NA,068_l_g-spl.wav,This is sentence 068.,Question?,correct,wrong
-list2,item69,n,NA,g,fill_n_NA,069_l_g-spl.wav,This is sentence 069.,NA,NA,NA
-list2,item70,e,NA,u,fill_e_NA,070_n_g.wav,This is sentence 070.,NA,NA,NA
-list2,item71,l,NA,u,fill_l_NA,071_n_g.wav,This is sentence 071.,Question?,correct,wrong
-list2,item72,n,NA,u,fill_n_NA,072_n_g.wav,This is sentence 072.,NA,NA,NA
-list3,item61,e,NA,g,fill_e_NA,061_l_g-spl.wav,This is sentence 061.,Question?,correct,wrong
-list3,item62,l,NA,g,fill_l_NA,062_l_g-spl.wav,This is sentence 062.,Question?,correct,wrong
-list3,item63,n,NA,g,fill_n_NA,063_l_g-spl.wav,This is sentence 063.,Question?,correct,wrong
-list3,item64,e,NA,u,fill_e_NA,064_l_g-spl.wav,This is sentence 064.,Question?,correct,wrong
-list3,item65,l,NA,u,fill_l_NA,065_l_g-spl.wav,This is sentence 065.,Question?,correct,wrong
-list3,item66,n,NA,u,fill_n_NA,066_l_g-spl.wav,This is sentence 066.,Question?,correct,wrong
-list3,item67,e,NA,g,fill_e_NA,067_l_g-spl.wav,This is sentence 067.,NA,NA,NA
-list3,item68,l,NA,g,fill_l_NA,068_l_g-spl.wav,This is sentence 068.,Question?,correct,wrong
-list3,item69,n,NA,g,fill_n_NA,069_l_g-spl.wav,This is sentence 069.,NA,NA,NA
-list3,item70,e,NA,u,fill_e_NA,070_n_g.wav,This is sentence 070.,NA,NA,NA
-list3,item71,l,NA,u,fill_l_NA,071_n_g.wav,This is sentence 071.,Question?,correct,wrong
-list3,item72,n,NA,u,fill_n_NA,072_n_g.wav,This is sentence 072.,NA,NA,NA
-list4,item61,e,NA,g,fill_e_NA,061_l_g-spl.wav,This is sentence 061.,Question?,correct,wrong
-list4,item62,l,NA,g,fill_l_NA,062_l_g-spl.wav,This is sentence 062.,Question?,correct,wrong
-list4,item63,n,NA,g,fill_n_NA,063_l_g-spl.wav,This is sentence 063.,Question?,correct,wrong
-list4,item64,e,NA,u,fill_e_NA,064_l_g-spl.wav,This is sentence 064.,Question?,correct,wrong
-list4,item65,l,NA,u,fill_l_NA,065_l_g-spl.wav,This is sentence 065.,Question?,correct,wrong
-list4,item66,n,NA,u,fill_n_NA,066_l_g-spl.wav,This is sentence 066.,Question?,correct,wrong
-list4,item67,e,NA,g,fill_e_NA,067_l_g-spl.wav,This is sentence 067.,NA,NA,NA
-list4,item68,l,NA,g,fill_l_NA,068_l_g-spl.wav,This is sentence 068.,Question?,correct,wrong
-list4,item69,n,NA,g,fill_n_NA,069_l_g-spl.wav,This is sentence 069.,NA,NA,NA
-list4,item70,e,NA,u,fill_e_NA,070_n_g.wav,This is sentence 070.,NA,NA,NA
-list4,item71,l,NA,u,fill_l_NA,071_n_g.wav,This is sentence 071.,Question?,correct,wrong
-list4,item72,n,NA,u,fill_n_NA,072_n_g.wav,This is sentence 072.,NA,NA,NA
-list5,item61,e,NA,g,fill_e_NA,061_l_g-spl.wav,This is sentence 061.,Question?,correct,wrong
-list5,item62,l,NA,g,fill_l_NA,062_l_g-spl.wav,This is sentence 062.,Question?,correct,wrong
-list5,item63,n,NA,g,fill_n_NA,063_l_g-spl.wav,This is sentence 063.,Question?,correct,wrong
-list5,item64,e,NA,u,fill_e_NA,064_l_g-spl.wav,This is sentence 064.,Question?,correct,wrong
-list5,item65,l,NA,u,fill_l_NA,065_l_g-spl.wav,This is sentence 065.,Question?,correct,wrong
-list5,item66,n,NA,u,fill_n_NA,066_l_g-spl.wav,This is sentence 066.,Question?,correct,wrong
-list5,item67,e,NA,g,fill_e_NA,067_l_g-spl.wav,This is sentence 067.,NA,NA,NA
-list5,item68,l,NA,g,fill_l_NA,068_l_g-spl.wav,This is sentence 068.,Question?,correct,wrong
-list5,item69,n,NA,g,fill_n_NA,069_l_g-spl.wav,This is sentence 069.,NA,NA,NA
-list5,item70,e,NA,u,fill_e_NA,070_n_g.wav,This is sentence 070.,NA,NA,NA
-list5,item71,l,NA,u,fill_l_NA,071_n_g.wav,This is sentence 071.,Question?,correct,wrong
-list5,item72,n,NA,u,fill_n_NA,072_n_g.wav,This is sentence 072.,NA,NA,NA
-list6,item61,e,NA,g,fill_e_NA,061_l_g-spl.wav,This is sentence 061.,Question?,correct,wrong
-list6,item62,l,NA,g,fill_l_NA,062_l_g-spl.wav,This is sentence 062.,Question?,correct,wrong
-list6,item63,n,NA,g,fill_n_NA,063_l_g-spl.wav,This is sentence 063.,Question?,correct,wrong
-list6,item64,e,NA,u,fill_e_NA,064_l_g-spl.wav,This is sentence 064.,Question?,correct,wrong
-list6,item65,l,NA,u,fill_l_NA,065_l_g-spl.wav,This is sentence 065.,Question?,correct,wrong
-list6,item66,n,NA,u,fill_n_NA,066_l_g-spl.wav,This is sentence 066.,Question?,correct,wrong
-list6,item67,e,NA,g,fill_e_NA,067_l_g-spl.wav,This is sentence 067.,NA,NA,NA
-list6,item68,l,NA,g,fill_l_NA,068_l_g-spl.wav,This is sentence 068.,Question?,correct,wrong
-list6,item69,n,NA,g,fill_n_NA,069_l_g-spl.wav,This is sentence 069.,NA,NA,NA
-list6,item70,e,NA,u,fill_e_NA,070_n_g.wav,This is sentence 070.,NA,NA,NA
-list6,item71,l,NA,u,fill_l_NA,071_n_g.wav,This is sentence 071.,Question?,correct,wrong
-list6,item72,n,NA,u,fill_n_NA,072_n_g.wav,This is sentence 072.,NA,NA,NA
+list,item,breakLoc,plurality,grammaticality,cond,wavname,question,answerCorrect,answerIncorrect
+list1,001T,e,p,g,crit_e_p,001_e_p_spl.wav,,,
+list2,001T,e,s,u,crit_e_s,001_e_s_spl.wav,,,
+list3,001T,l,p,g,crit_l_p,001_l_p_spl.wav,,,
+list4,001T,l,s,u,crit_l_s,001_l_s_spl.wav,,,
+list5,001T,n,p,g,crit_n_p,001_n_p_spl.wav,,,
+list6,001T,n,s,u,crit_n_s,001_n_s_spl.wav,,,
+list2,002T,e,p,g,crit_e_p,002_e_p_spl.wav,,,
+list3,002T,e,s,u,crit_e_s,002_e_s_spl.wav,,,
+list4,002T,l,p,g,crit_l_p,002_l_p_spl.wav,,,
+list5,002T,l,s,u,crit_l_s,002_l_s_spl.wav,,,
+list6,002T,n,p,g,crit_n_p,002_n_p_spl.wav,,,
+list1,002T,n,s,u,crit_n_s,002_n_s_spl.wav,,,
+list3,003T,e,p,g,crit_e_p,003_e_p_spl.wav,,,
+list4,003T,e,s,u,crit_e_s,003_e_s_spl.wav,,,
+list5,003T,l,p,g,crit_l_p,003_l_p_spl.wav,,,
+list6,003T,l,s,u,crit_l_s,003_l_s_spl.wav,,,
+list1,003T,n,p,g,crit_n_p,003_n_p_spl.wav,,,
+list2,003T,n,s,u,crit_n_s,003_n_s_spl.wav,,,
+list4,004T,e,p,g,crit_e_p,004_e_p_spl.wav,,,
+list5,004T,e,s,u,crit_e_s,004_e_s_spl.wav,,,
+list6,004T,l,p,g,crit_l_p,004_l_p_spl.wav,,,
+list1,004T,l,s,u,crit_l_s,004_l_s_spl.wav,,,
+list2,004T,n,p,g,crit_n_p,004_n_p_spl.wav,,,
+list3,004T,n,s,u,crit_n_s,004_n_s_spl.wav,,,
+list5,005T,e,p,g,crit_e_p,005_e_p_spl.wav,What were the police officer like?,shady,upstanding
+list6,005T,e,s,u,crit_e_s,005_e_s_spl.wav,What were the police officer like?,shady,upstanding
+list1,005T,l,p,g,crit_l_p,005_l_p_spl.wav,What were the police officer like?,shady,upstanding
+list2,005T,l,s,u,crit_l_s,005_l_s_spl.wav,What were the police officer like?,shady,upstanding
+list3,005T,n,p,g,crit_n_p,005_n_p_spl.wav,What were the police officer like?,shady,upstanding
+list4,005T,n,s,u,crit_n_s,005_n_s_spl.wav,What were the police officer like?,shady,upstanding
+list6,006T,e,p,g,crit_e_p,006_e_p_spl.wav,Who is the offer for?,buyer,seller
+list1,006T,e,s,u,crit_e_s,006_e_s_spl.wav,Who is the offer for?,buyer,seller
+list2,006T,l,p,g,crit_l_p,006_l_p_spl.wav,Who is the offer for?,buyer,seller
+list3,006T,l,s,u,crit_l_s,006_l_s_spl.wav,Who is the offer for?,buyer,seller
+list4,006T,n,p,g,crit_n_p,006_n_p_spl.wav,Who is the offer for?,buyer,seller
+list5,006T,n,s,u,crit_n_s,006_n_s_spl.wav,Who is the offer for?,buyer,seller
+list1,007T,e,p,g,crit_e_p,007_e_p_spl.wav,,,
+list2,007T,e,s,u,crit_e_s,007_e_s_spl.wav,,,
+list3,007T,l,p,g,crit_l_p,007_l_p_spl.wav,,,
+list4,007T,l,s,u,crit_l_s,007_l_s_spl.wav,,,
+list5,007T,n,p,g,crit_n_p,007_n_p_spl.wav,,,
+list6,007T,n,s,u,crit_n_s,007_n_s_spl.wav,,,
+list2,008T,e,p,g,crit_e_p,008_e_p_spl.wav,When was the painting done?,before quarter,after quarter
+list3,008T,e,s,u,crit_e_s,008_e_s_spl.wav,When was the painting done?,before quarter,after quarter
+list4,008T,l,p,g,crit_l_p,008_l_p_spl.wav,When was the painting done?,before quarter,after quarter
+list5,008T,l,s,u,crit_l_s,008_l_s_spl.wav,When was the painting done?,before quarter,after quarter
+list6,008T,n,p,g,crit_n_p,008_n_p_spl.wav,When was the painting done?,before quarter,after quarter
+list1,008T,n,s,u,crit_n_s,008_n_s_spl.wav,When was the painting done?,before quarter,after quarter
+list3,009T,e,p,g,crit_e_p,009_e_p_spl.wav,Who forgot?,king and queen,prince and princess
+list4,009T,e,s,u,crit_e_s,009_e_s_spl.wav,Who forgot?,king and queen,prince and princess
+list5,009T,l,p,g,crit_l_p,009_l_p_spl.wav,Who forgot?,king and queen,prince and princess
+list6,009T,l,s,u,crit_l_s,009_l_s_spl.wav,Who forgot?,king and queen,prince and princess
+list1,009T,n,p,g,crit_n_p,009_n_p_spl.wav,Who forgot?,king and queen,prince and princess
+list2,009T,n,s,u,crit_n_s,009_n_s_spl.wav,Who forgot?,king and queen,prince and princess
+list4,010T,e,p,g,crit_e_p,010_e_p_spl.wav,,,
+list5,010T,e,s,u,crit_e_s,010_e_s_spl.wav,,,
+list6,010T,l,p,g,crit_l_p,010_l_p_spl.wav,,,
+list1,010T,l,s,u,crit_l_s,010_l_s_spl.wav,,,
+list2,010T,n,p,g,crit_n_p,010_n_p_spl.wav,,,
+list3,010T,n,s,u,crit_n_s,010_n_s_spl.wav,,,
+list5,011T,e,p,g,crit_e_p,011_e_p_spl.wav,,,
+list6,011T,e,s,u,crit_e_s,011_e_s_spl.wav,,,
+list1,011T,l,p,g,crit_l_p,011_l_p_spl.wav,,,
+list2,011T,l,s,u,crit_l_s,011_l_s_spl.wav,,,
+list3,011T,n,p,g,crit_n_p,011_n_p_spl.wav,,,
+list4,011T,n,s,u,crit_n_s,011_n_s_spl.wav,,,
+list6,012T,e,p,g,crit_e_p,012_e_p_spl.wav,What is the entrance to?,storage room,break room
+list1,012T,e,s,u,crit_e_s,012_e_s_spl.wav,What is the entrance to?,storage room,break room
+list2,012T,l,p,g,crit_l_p,012_l_p_spl.wav,What is the entrance to?,storage room,break room
+list3,012T,l,s,u,crit_l_s,012_l_s_spl.wav,What is the entrance to?,storage room,break room
+list4,012T,n,p,g,crit_n_p,012_n_p_spl.wav,What is the entrance to?,storage room,break room
+list5,012T,n,s,u,crit_n_s,012_n_s_spl.wav,What is the entrance to?,storage room,break room
+list1,013T,e,p,g,crit_e_p,013_e_p_spl.wav,,,
+list2,013T,e,s,u,crit_e_s,013_e_s_spl.wav,,,
+list3,013T,l,p,g,crit_l_p,013_l_p_spl.wav,,,
+list4,013T,l,s,u,crit_l_s,013_l_s_spl.wav,,,
+list5,013T,n,p,g,crit_n_p,013_n_p_spl.wav,,,
+list6,013T,n,s,u,crit_n_s,013_n_s_spl.wav,,,
+list2,014T,e,p,g,crit_e_p,014_e_p_spl.wav,Who is the owner?,boss,CEO
+list3,014T,e,s,u,crit_e_s,014_e_s_spl.wav,Who is the owner?,boss,CEO
+list4,014T,l,p,g,crit_l_p,014_l_p_spl.wav,Who is the owner?,boss,CEO
+list5,014T,l,s,u,crit_l_s,014_l_s_spl.wav,Who is the owner?,boss,CEO
+list6,014T,n,p,g,crit_n_p,014_n_p_spl.wav,Who is the owner?,boss,CEO
+list1,014T,n,s,u,crit_n_s,014_n_s_spl.wav,Who is the owner?,boss,CEO
+list3,015T,e,p,g,crit_e_p,015_e_p_spl.wav,,,
+list4,015T,e,s,u,crit_e_s,015_e_s_spl.wav,,,
+list5,015T,l,p,g,crit_l_p,015_l_p_spl.wav,,,
+list6,015T,l,s,u,crit_l_s,015_l_s_spl.wav,,,
+list1,015T,n,p,g,crit_n_p,015_n_p_spl.wav,,,
+list2,015T,n,s,u,crit_n_s,015_n_s_spl.wav,,,
+list4,016T,e,p,g,crit_e_p,016_e_p_spl.wav,,,
+list5,016T,e,s,u,crit_e_s,016_e_s_spl.wav,,,
+list6,016T,l,p,g,crit_l_p,016_l_p_spl.wav,,,
+list1,016T,l,s,u,crit_l_s,016_l_s_spl.wav,,,
+list2,016T,n,p,g,crit_n_p,016_n_p_spl.wav,,,
+list3,016T,n,s,u,crit_n_s,016_n_s_spl.wav,,,
+list5,017T,e,p,g,crit_e_p,017_e_p_spl.wav,How much money did the company spend?,billions,millions
+list6,017T,e,s,u,crit_e_s,017_e_s_spl.wav,How much money did the company spend?,billions,millions
+list1,017T,l,p,g,crit_l_p,017_l_p_spl.wav,How much money did the company spend?,billions,millions
+list2,017T,l,s,u,crit_l_s,017_l_s_spl.wav,How much money did the company spend?,billions,millions
+list3,017T,n,p,g,crit_n_p,017_n_p_spl.wav,How much money did the company spend?,billions,millions
+list4,017T,n,s,u,crit_n_s,017_n_s_spl.wav,How much money did the company spend?,billions,millions
+list6,018T,e,p,g,crit_e_p,018_e_p_spl.wav,,,
+list1,018T,e,s,u,crit_e_s,018_e_s_spl.wav,,,
+list2,018T,l,p,g,crit_l_p,018_l_p_spl.wav,,,
+list3,018T,l,s,u,crit_l_s,018_l_s_spl.wav,,,
+list4,018T,n,p,g,crit_n_p,018_n_p_spl.wav,,,
+list5,018T,n,s,u,crit_n_s,018_n_s_spl.wav,,,
+list1,019T,e,p,g,crit_e_p,019_e_p_spl.wav,,,
+list2,019T,e,s,u,crit_e_s,019_e_s_spl.wav,,,
+list3,019T,l,p,g,crit_l_p,019_l_p_spl.wav,,,
+list4,019T,l,s,u,crit_l_s,019_l_s_spl.wav,,,
+list5,019T,n,p,g,crit_n_p,019_n_p_spl.wav,,,
+list6,019T,n,s,u,crit_n_s,019_n_s_spl.wav,,,
+list2,020T,e,p,g,crit_e_p,020_e_p_spl.wav,,,
+list3,020T,e,s,u,crit_e_s,020_e_s_spl.wav,,,
+list4,020T,l,p,g,crit_l_p,020_l_p_spl.wav,,,
+list5,020T,l,s,u,crit_l_s,020_l_s_spl.wav,,,
+list6,020T,n,p,g,crit_n_p,020_n_p_spl.wav,,,
+list1,020T,n,s,u,crit_n_s,020_n_s_spl.wav,,,
+list3,021T,e,p,g,crit_e_p,021_e_p_spl.wav,,,
+list4,021T,e,s,u,crit_e_s,021_e_s_spl.wav,,,
+list5,021T,l,p,g,crit_l_p,021_l_p_spl.wav,,,
+list6,021T,l,s,u,crit_l_s,021_l_s_spl.wav,,,
+list1,021T,n,p,g,crit_n_p,021_n_p_spl.wav,,,
+list2,021T,n,s,u,crit_n_s,021_n_s_spl.wav,,,
+list4,022T,e,p,g,crit_e_p,022_e_p_spl.wav,Who was mending small cuts?,hikers,climbers
+list5,022T,e,s,u,crit_e_s,022_e_s_spl.wav,Who was mending small cuts?,hikers,climbers
+list6,022T,l,p,g,crit_l_p,022_l_p_spl.wav,Who was mending small cuts?,hikers,climbers
+list1,022T,l,s,u,crit_l_s,022_l_s_spl.wav,Who was mending small cuts?,hikers,climbers
+list2,022T,n,p,g,crit_n_p,022_n_p_spl.wav,Who was mending small cuts?,hikers,climbers
+list3,022T,n,s,u,crit_n_s,022_n_s_spl.wav,Who was mending small cuts?,hikers,climbers
+list5,023T,e,p,g,crit_e_p,023_e_p_spl.wav,,,
+list6,023T,e,s,u,crit_e_s,023_e_s_spl.wav,,,
+list1,023T,l,p,g,crit_l_p,023_l_p_spl.wav,,,
+list2,023T,l,s,u,crit_l_s,023_l_s_spl.wav,,,
+list3,023T,n,p,g,crit_n_p,023_n_p_spl.wav,,,
+list4,023T,n,s,u,crit_n_s,023_n_s_spl.wav,,,
+list6,024T,e,p,g,crit_e_p,024_e_p_spl.wav,,,
+list1,024T,e,s,u,crit_e_s,024_e_s_spl.wav,,,
+list2,024T,l,p,g,crit_l_p,024_l_p_spl.wav,,,
+list3,024T,l,s,u,crit_l_s,024_l_s_spl.wav,,,
+list4,024T,n,p,g,crit_n_p,024_n_p_spl.wav,,,
+list5,024T,n,s,u,crit_n_s,024_n_s_spl.wav,,,
+list1,025T,e,p,g,crit_e_p,025_e_p_spl.wav,,,
+list2,025T,e,s,u,crit_e_s,025_e_s_spl.wav,,,
+list3,025T,l,p,g,crit_l_p,025_l_p_spl.wav,,,
+list4,025T,l,s,u,crit_l_s,025_l_s_spl.wav,,,
+list5,025T,n,p,g,crit_n_p,025_n_p_spl.wav,,,
+list6,025T,n,s,u,crit_n_s,025_n_s_spl.wav,,,
+list2,026T,e,p,g,crit_e_p,026_e_p_spl.wav,Who had the problem?,cartographer,explorer
+list3,026T,e,s,u,crit_e_s,026_e_s_spl.wav,Who had the problem?,cartographer,explorer
+list4,026T,l,p,g,crit_l_p,026_l_p_spl.wav,Who had the problem?,cartographer,explorer
+list5,026T,l,s,u,crit_l_s,026_l_s_spl.wav,Who had the problem?,cartographer,explorer
+list6,026T,n,p,g,crit_n_p,026_n_p_spl.wav,Who had the problem?,cartographer,explorer
+list1,026T,n,s,u,crit_n_s,026_n_s_spl.wav,Who had the problem?,cartographer,explorer
+list3,027T,e,p,g,crit_e_p,027_e_p_spl.wav,,,
+list4,027T,e,s,u,crit_e_s,027_e_s_spl.wav,,,
+list5,027T,l,p,g,crit_l_p,027_l_p_spl.wav,,,
+list6,027T,l,s,u,crit_l_s,027_l_s_spl.wav,,,
+list1,027T,n,p,g,crit_n_p,027_n_p_spl.wav,,,
+list2,027T,n,s,u,crit_n_s,027_n_s_spl.wav,,,
+list4,028T,e,p,g,crit_e_p,028_e_p_spl.wav,,,
+list5,028T,e,s,u,crit_e_s,028_e_s_spl.wav,,,
+list6,028T,l,p,g,crit_l_p,028_l_p_spl.wav,,,
+list1,028T,l,s,u,crit_l_s,028_l_s_spl.wav,,,
+list2,028T,n,p,g,crit_n_p,028_n_p_spl.wav,,,
+list3,028T,n,s,u,crit_n_s,028_n_s_spl.wav,,,
+list5,029T,e,p,g,crit_e_p,029_e_p_spl.wav,,,
+list6,029T,e,s,u,crit_e_s,029_e_s_spl.wav,,,
+list1,029T,l,p,g,crit_l_p,029_l_p_spl.wav,,,
+list2,029T,l,s,u,crit_l_s,029_l_s_spl.wav,,,
+list3,029T,n,p,g,crit_n_p,029_n_p_spl.wav,,,
+list4,029T,n,s,u,crit_n_s,029_n_s_spl.wav,,,
+list6,030T,e,p,g,crit_e_p,030_e_p_spl.wav,,,
+list1,030T,e,s,u,crit_e_s,030_e_s_spl.wav,,,
+list2,030T,l,p,g,crit_l_p,030_l_p_spl.wav,,,
+list3,030T,l,s,u,crit_l_s,030_l_s_spl.wav,,,
+list4,030T,n,p,g,crit_n_p,030_n_p_spl.wav,,,
+list5,030T,n,s,u,crit_n_s,030_n_s_spl.wav,,,
+list1,031T,e,p,g,crit_e_p,031_e_p_spl.wav,Who made deserved thanks?,editor,author
+list2,031T,e,s,u,crit_e_s,031_e_s_spl.wav,Who made deserved thanks?,editor,author
+list3,031T,l,p,g,crit_l_p,031_l_p_spl.wav,Who made deserved thanks?,editor,author
+list4,031T,l,s,u,crit_l_s,031_l_s_spl.wav,Who made deserved thanks?,editor,author
+list5,031T,n,p,g,crit_n_p,031_n_p_spl.wav,Who made deserved thanks?,editor,author
+list6,031T,n,s,u,crit_n_s,031_n_s_spl.wav,Who made deserved thanks?,editor,author
+list2,032T,e,p,g,crit_e_p,032_e_p_spl.wav,Whose confidence is boosted?,shareholders,investors
+list3,032T,e,s,u,crit_e_s,032_e_s_spl.wav,Whose confidence is boosted?,shareholders,investors
+list4,032T,l,p,g,crit_l_p,032_l_p_spl.wav,Whose confidence is boosted?,shareholders,investors
+list5,032T,l,s,u,crit_l_s,032_l_s_spl.wav,Whose confidence is boosted?,shareholders,investors
+list6,032T,n,p,g,crit_n_p,032_n_p_spl.wav,Whose confidence is boosted?,shareholders,investors
+list1,032T,n,s,u,crit_n_s,032_n_s_spl.wav,Whose confidence is boosted?,shareholders,investors
+list3,033T,e,p,g,crit_e_p,033_e_p_spl.wav,,,
+list4,033T,e,s,u,crit_e_s,033_e_s_spl.wav,,,
+list5,033T,l,p,g,crit_l_p,033_l_p_spl.wav,,,
+list6,033T,l,s,u,crit_l_s,033_l_s_spl.wav,,,
+list1,033T,n,p,g,crit_n_p,033_n_p_spl.wav,,,
+list2,033T,n,s,u,crit_n_s,033_n_s_spl.wav,,,
+list4,034T,e,p,g,crit_e_p,034_e_p_spl.wav,,,
+list5,034T,e,s,u,crit_e_s,034_e_s_spl.wav,,,
+list6,034T,l,p,g,crit_l_p,034_l_p_spl.wav,,,
+list1,034T,l,s,u,crit_l_s,034_l_s_spl.wav,,,
+list2,034T,n,p,g,crit_n_p,034_n_p_spl.wav,,,
+list3,034T,n,s,u,crit_n_s,034_n_s_spl.wav,,,
+list5,035T,e,p,g,crit_e_p,035_e_p_spl.wav,,,
+list6,035T,e,s,u,crit_e_s,035_e_s_spl.wav,,,
+list1,035T,l,p,g,crit_l_p,035_l_p_spl.wav,,,
+list2,035T,l,s,u,crit_l_s,035_l_s_spl.wav,,,
+list3,035T,n,p,g,crit_n_p,035_n_p_spl.wav,,,
+list4,035T,n,s,u,crit_n_s,035_n_s_spl.wav,,,
+list6,036T,e,p,g,crit_e_p,036_e_p_spl.wav,,,
+list1,036T,e,s,u,crit_e_s,036_e_s_spl.wav,,,
+list2,036T,l,p,g,crit_l_p,036_l_p_spl.wav,,,
+list3,036T,l,s,u,crit_l_s,036_l_s_spl.wav,,,
+list4,036T,n,p,g,crit_n_p,036_n_p_spl.wav,,,
+list5,036T,n,s,u,crit_n_s,036_n_s_spl.wav,,,
+list1,037T,e,p,g,crit_e_p,037_e_p_spl.wav,,,
+list2,037T,e,s,u,crit_e_s,037_e_s_spl.wav,,,
+list3,037T,l,p,g,crit_l_p,037_l_p_spl.wav,,,
+list4,037T,l,s,u,crit_l_s,037_l_s_spl.wav,,,
+list5,037T,n,p,g,crit_n_p,037_n_p_spl.wav,,,
+list6,037T,n,s,u,crit_n_s,037_n_s_spl.wav,,,
+list2,038T,e,p,g,crit_e_p,038_e_p_spl.wav,,,
+list3,038T,e,s,u,crit_e_s,038_e_s_spl.wav,,,
+list4,038T,l,p,g,crit_l_p,038_l_p_spl.wav,,,
+list5,038T,l,s,u,crit_l_s,038_l_s_spl.wav,,,
+list6,038T,n,p,g,crit_n_p,038_n_p_spl.wav,,,
+list1,038T,n,s,u,crit_n_s,038_n_s_spl.wav,,,
+list3,039T,e,p,g,crit_e_p,039_e_p_spl.wav,,,
+list4,039T,e,s,u,crit_e_s,039_e_s_spl.wav,,,
+list5,039T,l,p,g,crit_l_p,039_l_p_spl.wav,,,
+list6,039T,l,s,u,crit_l_s,039_l_s_spl.wav,,,
+list1,039T,n,p,g,crit_n_p,039_n_p_spl.wav,,,
+list2,039T,n,s,u,crit_n_s,039_n_s_spl.wav,,,
+list4,040T,e,p,g,crit_e_p,040_e_p_spl.wav,,,
+list5,040T,e,s,u,crit_e_s,040_e_s_spl.wav,,,
+list6,040T,l,p,g,crit_l_p,040_l_p_spl.wav,,,
+list1,040T,l,s,u,crit_l_s,040_l_s_spl.wav,,,
+list2,040T,n,p,g,crit_n_p,040_n_p_spl.wav,,,
+list3,040T,n,s,u,crit_n_s,040_n_s_spl.wav,,,
+list5,041T,e,p,g,crit_e_p,041_e_p_spl.wav,Who was terrified?,children,adults
+list6,041T,e,s,u,crit_e_s,041_e_s_spl.wav,Who was terrified?,children,adults
+list1,041T,l,p,g,crit_l_p,041_l_p_spl.wav,Who was terrified?,children,adults
+list2,041T,l,s,u,crit_l_s,041_l_s_spl.wav,Who was terrified?,children,adults
+list3,041T,n,p,g,crit_n_p,041_n_p_spl.wav,Who was terrified?,children,adults
+list4,041T,n,s,u,crit_n_s,041_n_s_spl.wav,Who was terrified?,children,adults
+list6,042T,e,p,g,crit_e_p,042_e_p_spl.wav,What channel is broadcasting?,ESPN,FOX
+list1,042T,e,s,u,crit_e_s,042_e_s_spl.wav,What channel is broadcasting?,ESPN,FOX
+list2,042T,l,p,g,crit_l_p,042_l_p_spl.wav,What channel is broadcasting?,ESPN,FOX
+list3,042T,l,s,u,crit_l_s,042_l_s_spl.wav,What channel is broadcasting?,ESPN,FOX
+list4,042T,n,p,g,crit_n_p,042_n_p_spl.wav,What channel is broadcasting?,ESPN,FOX
+list5,042T,n,s,u,crit_n_s,042_n_s_spl.wav,What channel is broadcasting?,ESPN,FOX
+list1,043T,e,p,g,crit_e_p,043_e_p_spl.wav,,,
+list2,043T,e,s,u,crit_e_s,043_e_s_spl.wav,,,
+list3,043T,l,p,g,crit_l_p,043_l_p_spl.wav,,,
+list4,043T,l,s,u,crit_l_s,043_l_s_spl.wav,,,
+list5,043T,n,p,g,crit_n_p,043_n_p_spl.wav,,,
+list6,043T,n,s,u,crit_n_s,043_n_s_spl.wav,,,
+list2,044T,e,p,g,crit_e_p,044_e_p_spl.wav,,,
+list3,044T,e,s,u,crit_e_s,044_e_s_spl.wav,,,
+list4,044T,l,p,g,crit_l_p,044_l_p_spl.wav,,,
+list5,044T,l,s,u,crit_l_s,044_l_s_spl.wav,,,
+list6,044T,n,p,g,crit_n_p,044_n_p_spl.wav,,,
+list1,044T,n,s,u,crit_n_s,044_n_s_spl.wav,,,
+list3,045T,e,p,g,crit_e_p,045_e_p_spl.wav,,,
+list4,045T,e,s,u,crit_e_s,045_e_s_spl.wav,,,
+list5,045T,l,p,g,crit_l_p,045_l_p_spl.wav,,,
+list6,045T,l,s,u,crit_l_s,045_l_s_spl.wav,,,
+list1,045T,n,p,g,crit_n_p,045_n_p_spl.wav,,,
+list2,045T,n,s,u,crit_n_s,045_n_s_spl.wav,,,
+list4,046T,e,p,g,crit_e_p,046_e_p_spl.wav,,,
+list5,046T,e,s,u,crit_e_s,046_e_s_spl.wav,,,
+list6,046T,l,p,g,crit_l_p,046_l_p_spl.wav,,,
+list1,046T,l,s,u,crit_l_s,046_l_s_spl.wav,,,
+list2,046T,n,p,g,crit_n_p,046_n_p_spl.wav,,,
+list3,046T,n,s,u,crit_n_s,046_n_s_spl.wav,,,
+list5,047T,e,p,g,crit_e_p,047_e_p_spl.wav,,,
+list6,047T,e,s,u,crit_e_s,047_e_s_spl.wav,,,
+list1,047T,l,p,g,crit_l_p,047_l_p_spl.wav,,,
+list2,047T,l,s,u,crit_l_s,047_l_s_spl.wav,,,
+list3,047T,n,p,g,crit_n_p,047_n_p_spl.wav,,,
+list4,047T,n,s,u,crit_n_s,047_n_s_spl.wav,,,
+list6,048T,e,p,g,crit_e_p,048_e_p_spl.wav,,,
+list1,048T,e,s,u,crit_e_s,048_e_s_spl.wav,,,
+list2,048T,l,p,g,crit_l_p,048_l_p_spl.wav,,,
+list3,048T,l,s,u,crit_l_s,048_l_s_spl.wav,,,
+list4,048T,n,p,g,crit_n_p,048_n_p_spl.wav,,,
+list5,048T,n,s,u,crit_n_s,048_n_s_spl.wav,,,
+list1,049T,e,p,g,crit_e_p,049_e_p_spl.wav,What is entering?,machinery,workers
+list2,049T,e,s,u,crit_e_s,049_e_s_spl.wav,What is entering?,machinery,workers
+list3,049T,l,p,g,crit_l_p,049_l_p_spl.wav,What is entering?,machinery,workers
+list4,049T,l,s,u,crit_l_s,049_l_s_spl.wav,What is entering?,machinery,workers
+list5,049T,n,p,g,crit_n_p,049_n_p_spl.wav,What is entering?,machinery,workers
+list6,049T,n,s,u,crit_n_s,049_n_s_spl.wav,What is entering?,machinery,workers
+list2,050T,e,p,g,crit_e_p,050_e_p_spl.wav,,,
+list3,050T,e,s,u,crit_e_s,050_e_s_spl.wav,,,
+list4,050T,l,p,g,crit_l_p,050_l_p_spl.wav,,,
+list5,050T,l,s,u,crit_l_s,050_l_s_spl.wav,,,
+list6,050T,n,p,g,crit_n_p,050_n_p_spl.wav,,,
+list1,050T,n,s,u,crit_n_s,050_n_s_spl.wav,,,
+list3,051T,e,p,g,crit_e_p,051_e_p_spl.wav,,,
+list4,051T,e,s,u,crit_e_s,051_e_s_spl.wav,,,
+list5,051T,l,p,g,crit_l_p,051_l_p_spl.wav,,,
+list6,051T,l,s,u,crit_l_s,051_l_s_spl.wav,,,
+list1,051T,n,p,g,crit_n_p,051_n_p_spl.wav,,,
+list2,051T,n,s,u,crit_n_s,051_n_s_spl.wav,,,
+list4,052T,e,p,g,crit_e_p,052_e_p_spl.wav,,,
+list5,052T,e,s,u,crit_e_s,052_e_s_spl.wav,,,
+list6,052T,l,p,g,crit_l_p,052_l_p_spl.wav,,,
+list1,052T,l,s,u,crit_l_s,052_l_s_spl.wav,,,
+list2,052T,n,p,g,crit_n_p,052_n_p_spl.wav,,,
+list3,052T,n,s,u,crit_n_s,052_n_s_spl.wav,,,
+list5,053T,e,p,g,crit_e_p,053_e_p_spl.wav,,,
+list6,053T,e,s,u,crit_e_s,053_e_s_spl.wav,,,
+list1,053T,l,p,g,crit_l_p,053_l_p_spl.wav,,,
+list2,053T,l,s,u,crit_l_s,053_l_s_spl.wav,,,
+list3,053T,n,p,g,crit_n_p,053_n_p_spl.wav,,,
+list4,053T,n,s,u,crit_n_s,053_n_s_spl.wav,,,
+list6,054T,e,p,g,crit_e_p,054_e_p_spl.wav,,,
+list1,054T,e,s,u,crit_e_s,054_e_s_spl.wav,,,
+list2,054T,l,p,g,crit_l_p,054_l_p_spl.wav,,,
+list3,054T,l,s,u,crit_l_s,054_l_s_spl.wav,,,
+list4,054T,n,p,g,crit_n_p,054_n_p_spl.wav,,,
+list5,054T,n,s,u,crit_n_s,054_n_s_spl.wav,,,
+list1,055T,e,p,g,crit_e_p,055_e_p_spl.wav,,,
+list2,055T,e,s,u,crit_e_s,055_e_s_spl.wav,,,
+list3,055T,l,p,g,crit_l_p,055_l_p_spl.wav,,,
+list4,055T,l,s,u,crit_l_s,055_l_s_spl.wav,,,
+list5,055T,n,p,g,crit_n_p,055_n_p_spl.wav,,,
+list6,055T,n,s,u,crit_n_s,055_n_s_spl.wav,,,
+list2,056T,e,p,g,crit_e_p,056_e_p_spl.wav,How much money was the artist going to make?,a lot,a little
+list3,056T,e,s,u,crit_e_s,056_e_s_spl.wav,How much money was the artist going to make?,a lot,a little
+list4,056T,l,p,g,crit_l_p,056_l_p_spl.wav,How much money was the artist going to make?,a lot,a little
+list5,056T,l,s,u,crit_l_s,056_l_s_spl.wav,How much money was the artist going to make?,a lot,a little
+list6,056T,n,p,g,crit_n_p,056_n_p_spl.wav,How much money was the artist going to make?,a lot,a little
+list1,056T,n,s,u,crit_n_s,056_n_s_spl.wav,How much money was the artist going to make?,a lot,a little
+list3,057T,e,p,g,crit_e_p,057_e_p_spl.wav,,,
+list4,057T,e,s,u,crit_e_s,057_e_s_spl.wav,,,
+list5,057T,l,p,g,crit_l_p,057_l_p_spl.wav,,,
+list6,057T,l,s,u,crit_l_s,057_l_s_spl.wav,,,
+list1,057T,n,p,g,crit_n_p,057_n_p_spl.wav,,,
+list2,057T,n,s,u,crit_n_s,057_n_s_spl.wav,,,
+list4,058T,e,p,g,crit_e_p,058_e_p_spl.wav,,,
+list5,058T,e,s,u,crit_e_s,058_e_s_spl.wav,,,
+list6,058T,l,p,g,crit_l_p,058_l_p_spl.wav,,,
+list1,058T,l,s,u,crit_l_s,058_l_s_spl.wav,,,
+list2,058T,n,p,g,crit_n_p,058_n_p_spl.wav,,,
+list3,058T,n,s,u,crit_n_s,058_n_s_spl.wav,,,
+list5,059T,e,p,g,crit_e_p,059_e_p_spl.wav,,,
+list6,059T,e,s,u,crit_e_s,059_e_s_spl.wav,,,
+list1,059T,l,p,g,crit_l_p,059_l_p_spl.wav,,,
+list2,059T,l,s,u,crit_l_s,059_l_s_spl.wav,,,
+list3,059T,n,p,g,crit_n_p,059_n_p_spl.wav,,,
+list4,059T,n,s,u,crit_n_s,059_n_s_spl.wav,,,
+list6,060T,e,p,g,crit_e_p,060_e_p_spl.wav,,,
+list1,060T,e,s,u,crit_e_s,060_e_s_spl.wav,,,
+list2,060T,l,p,g,crit_l_p,060_l_p_spl.wav,,,
+list3,060T,l,s,u,crit_l_s,060_l_s_spl.wav,,,
+list4,060T,n,p,g,crit_n_p,060_n_p_spl.wav,,,
+list5,060T,n,s,u,crit_n_s,060_n_s_spl.wav,,,
+list1,061T,p,p,g,,061_l_g-spl.wav,Where do the plates and bowels go?,cabinet,cupboard
+list2,061T,p,p,g,,061_l_g-spl.wav,Where do the plates and bowels go?,cabinet,cupboard
+list3,061T,p,p,g,,061_l_g-spl.wav,Where do the plates and bowels go?,cabinet,cupboard
+list4,061T,p,p,g,,061_l_g-spl.wav,Where do the plates and bowels go?,cabinet,cupboard
+list5,061T,p,p,g,,061_l_g-spl.wav,Where do the plates and bowels go?,cabinet,cupboard
+list6,061T,p,p,g,,061_l_g-spl.wav,Where do the plates and bowels go?,cabinet,cupboard
+list1,062T,p,p,g,,062_l_g-spl.wav,What was made?,dinner,lunch
+list2,062T,p,p,g,,062_l_g-spl.wav,What was made?,dinner,lunch
+list3,062T,p,p,g,,062_l_g-spl.wav,What was made?,dinner,lunch
+list4,062T,p,p,g,,062_l_g-spl.wav,What was made?,dinner,lunch
+list5,062T,p,p,g,,062_l_g-spl.wav,What was made?,dinner,lunch
+list6,062T,p,p,g,,062_l_g-spl.wav,What was made?,dinner,lunch
+list1,063T,p,p,g,,063_l_g-spl.wav,Where were the dog and cat playing?,the alley,the shop
+list2,063T,p,p,g,,063_l_g-spl.wav,Where were the dog and cat playing?,the alley,the shop
+list3,063T,p,p,g,,063_l_g-spl.wav,Where were the dog and cat playing?,the alley,the shop
+list4,063T,p,p,g,,063_l_g-spl.wav,Where were the dog and cat playing?,the alley,the shop
+list5,063T,p,p,g,,063_l_g-spl.wav,Where were the dog and cat playing?,the alley,the shop
+list6,063T,p,p,g,,063_l_g-spl.wav,Where were the dog and cat playing?,the alley,the shop
+list1,064T,p,p,g,,064_l_g-spl.wav,When do the appliances have to be replaced?,immediately,next year
+list2,064T,p,p,g,,064_l_g-spl.wav,When do the appliances have to be replaced?,immediately,next year
+list3,064T,p,p,g,,064_l_g-spl.wav,When do the appliances have to be replaced?,immediately,next year
+list4,064T,p,p,g,,064_l_g-spl.wav,When do the appliances have to be replaced?,immediately,next year
+list5,064T,p,p,g,,064_l_g-spl.wav,When do the appliances have to be replaced?,immediately,next year
+list6,064T,p,p,g,,064_l_g-spl.wav,When do the appliances have to be replaced?,immediately,next year
+list1,065T,p,p,g,,065_l_g-spl.wav,Where were the boots and sneakers supposed to be?,same shelf,different shelf
+list2,065T,p,p,g,,065_l_g-spl.wav,Where were the boots and sneakers supposed to be?,same shelf,different shelf
+list3,065T,p,p,g,,065_l_g-spl.wav,Where were the boots and sneakers supposed to be?,same shelf,different shelf
+list4,065T,p,p,g,,065_l_g-spl.wav,Where were the boots and sneakers supposed to be?,same shelf,different shelf
+list5,065T,p,p,g,,065_l_g-spl.wav,Where were the boots and sneakers supposed to be?,same shelf,different shelf
+list6,065T,p,p,g,,065_l_g-spl.wav,Where were the boots and sneakers supposed to be?,same shelf,different shelf
+list1,066T,p,p,g,,066_l_g-spl.wav,What should children do more?,sleep,exercise
+list2,066T,p,p,g,,066_l_g-spl.wav,What should children do more?,sleep,exercise
+list3,066T,p,p,g,,066_l_g-spl.wav,What should children do more?,sleep,exercise
+list4,066T,p,p,g,,066_l_g-spl.wav,What should children do more?,sleep,exercise
+list5,066T,p,p,g,,066_l_g-spl.wav,What should children do more?,sleep,exercise
+list6,066T,p,p,g,,066_l_g-spl.wav,What should children do more?,sleep,exercise
+list1,067T,p,p,g,,067_l_g-spl.wav,,,
+list2,067T,p,p,g,,067_l_g-spl.wav,,,
+list3,067T,p,p,g,,067_l_g-spl.wav,,,
+list4,067T,p,p,g,,067_l_g-spl.wav,,,
+list5,067T,p,p,g,,067_l_g-spl.wav,,,
+list6,067T,p,p,g,,067_l_g-spl.wav,,,
+list1,068T,p,p,g,,068_l_g-spl.wav,,,
+list2,068T,p,p,g,,068_l_g-spl.wav,,,
+list3,068T,p,p,g,,068_l_g-spl.wav,,,
+list4,068T,p,p,g,,068_l_g-spl.wav,,,
+list5,068T,p,p,g,,068_l_g-spl.wav,,,
+list6,068T,p,p,g,,068_l_g-spl.wav,,,
+list1,069T,p,p,g,,069_l_g-spl.wav,,,
+list2,069T,p,p,g,,069_l_g-spl.wav,,,
+list3,069T,p,p,g,,069_l_g-spl.wav,,,
+list4,069T,p,p,g,,069_l_g-spl.wav,,,
+list5,069T,p,p,g,,069_l_g-spl.wav,,,
+list6,069T,p,p,g,,069_l_g-spl.wav,,,
+list1,070T,p,p,g,,070_n_g.wav,What trail did they run on?,easiest,hardest
+list2,070T,p,p,g,,070_n_g.wav,What trail did they run on?,easiest,hardest
+list3,070T,p,p,g,,070_n_g.wav,What trail did they run on?,easiest,hardest
+list4,070T,p,p,g,,070_n_g.wav,What trail did they run on?,easiest,hardest
+list5,070T,p,p,g,,070_n_g.wav,What trail did they run on?,easiest,hardest
+list6,070T,p,p,g,,070_n_g.wav,What trail did they run on?,easiest,hardest
+list1,071T,p,p,g,,071_n_g.wav,Who thinks the organ needs fixing?,pianist,conductor
+list2,071T,p,p,g,,071_n_g.wav,Who thinks the organ needs fixing?,pianist,conductor
+list3,071T,p,p,g,,071_n_g.wav,Who thinks the organ needs fixing?,pianist,conductor
+list4,071T,p,p,g,,071_n_g.wav,Who thinks the organ needs fixing?,pianist,conductor
+list5,071T,p,p,g,,071_n_g.wav,Who thinks the organ needs fixing?,pianist,conductor
+list6,071T,p,p,g,,071_n_g.wav,Who thinks the organ needs fixing?,pianist,conductor
+list1,072T,p,p,g,,072_n_g.wav,When do Ian's symptoms get worse?,spring,fall
+list2,072T,p,p,g,,072_n_g.wav,When do Ian's symptoms get worse?,spring,fall
+list3,072T,p,p,g,,072_n_g.wav,When do Ian's symptoms get worse?,spring,fall
+list4,072T,p,p,g,,072_n_g.wav,When do Ian's symptoms get worse?,spring,fall
+list5,072T,p,p,g,,072_n_g.wav,When do Ian's symptoms get worse?,spring,fall
+list6,072T,p,p,g,,072_n_g.wav,When do Ian's symptoms get worse?,spring,fall
+list1,073T,s,s,u,,073_e_u-spl.wav,,,
+list2,073T,s,s,u,,073_e_u-spl.wav,,,
+list3,073T,s,s,u,,073_e_u-spl.wav,,,
+list4,073T,s,s,u,,073_e_u-spl.wav,,,
+list5,073T,s,s,u,,073_e_u-spl.wav,,,
+list6,073T,s,s,u,,073_e_u-spl.wav,,,
+list1,074T,s,s,u,,074_e_u-spl.wav,Where do the mayor and secretary volunteer?,soup kitchen,homeless shelter
+list2,074T,s,s,u,,074_e_u-spl.wav,Where do the mayor and secretary volunteer?,soup kitchen,homeless shelter
+list3,074T,s,s,u,,074_e_u-spl.wav,Where do the mayor and secretary volunteer?,soup kitchen,homeless shelter
+list4,074T,s,s,u,,074_e_u-spl.wav,Where do the mayor and secretary volunteer?,soup kitchen,homeless shelter
+list5,074T,s,s,u,,074_e_u-spl.wav,Where do the mayor and secretary volunteer?,soup kitchen,homeless shelter
+list6,074T,s,s,u,,074_e_u-spl.wav,Where do the mayor and secretary volunteer?,soup kitchen,homeless shelter
+list1,075T,s,s,u,,075_l_u-spl.wav,How often do the bus driver and teacher eat lunch together?,weekly,monthly
+list2,075T,s,s,u,,075_l_u-spl.wav,How often do the bus driver and teacher eat lunch together?,weekly,monthly
+list3,075T,s,s,u,,075_l_u-spl.wav,How often do the bus driver and teacher eat lunch together?,weekly,monthly
+list4,075T,s,s,u,,075_l_u-spl.wav,How often do the bus driver and teacher eat lunch together?,weekly,monthly
+list5,075T,s,s,u,,075_l_u-spl.wav,How often do the bus driver and teacher eat lunch together?,weekly,monthly
+list6,075T,s,s,u,,075_l_u-spl.wav,How often do the bus driver and teacher eat lunch together?,weekly,monthly
+list1,076T,s,s,u,,076_l_u-spl.wav,,,
+list2,076T,s,s,u,,076_l_u-spl.wav,,,
+list3,076T,s,s,u,,076_l_u-spl.wav,,,
+list4,076T,s,s,u,,076_l_u-spl.wav,,,
+list5,076T,s,s,u,,076_l_u-spl.wav,,,
+list6,076T,s,s,u,,076_l_u-spl.wav,,,
+list1,077T,s,s,u,,077_l_u-spl.wav,What had already been seasoned?,bell peppers,steak
+list2,077T,s,s,u,,077_l_u-spl.wav,What had already been seasoned?,bell peppers,steak
+list3,077T,s,s,u,,077_l_u-spl.wav,What had already been seasoned?,bell peppers,steak
+list4,077T,s,s,u,,077_l_u-spl.wav,What had already been seasoned?,bell peppers,steak
+list5,077T,s,s,u,,077_l_u-spl.wav,What had already been seasoned?,bell peppers,steak
+list6,077T,s,s,u,,077_l_u-spl.wav,What had already been seasoned?,bell peppers,steak
+list1,078T,s,s,u,,078_l_u-spl.wav,Which lot was the car parked in?,Lot B,Lot C
+list2,078T,s,s,u,,078_l_u-spl.wav,Which lot was the car parked in?,Lot B,Lot C
+list3,078T,s,s,u,,078_l_u-spl.wav,Which lot was the car parked in?,Lot B,Lot C
+list4,078T,s,s,u,,078_l_u-spl.wav,Which lot was the car parked in?,Lot B,Lot C
+list5,078T,s,s,u,,078_l_u-spl.wav,Which lot was the car parked in?,Lot B,Lot C
+list6,078T,s,s,u,,078_l_u-spl.wav,Which lot was the car parked in?,Lot B,Lot C
+list1,079T,s,s,u,,079_l_u-spl.wav,Who guarantees insurance?,doctor,nurse
+list2,079T,s,s,u,,079_l_u-spl.wav,Who guarantees insurance?,doctor,nurse
+list3,079T,s,s,u,,079_l_u-spl.wav,Who guarantees insurance?,doctor,nurse
+list4,079T,s,s,u,,079_l_u-spl.wav,Who guarantees insurance?,doctor,nurse
+list5,079T,s,s,u,,079_l_u-spl.wav,Who guarantees insurance?,doctor,nurse
+list6,079T,s,s,u,,079_l_u-spl.wav,Who guarantees insurance?,doctor,nurse
+list1,080T,s,s,u,,080_l_u-spl.wav,Where is a trip being planned to?,Italy,Spain
+list2,080T,s,s,u,,080_l_u-spl.wav,Where is a trip being planned to?,Italy,Spain
+list3,080T,s,s,u,,080_l_u-spl.wav,Where is a trip being planned to?,Italy,Spain
+list4,080T,s,s,u,,080_l_u-spl.wav,Where is a trip being planned to?,Italy,Spain
+list5,080T,s,s,u,,080_l_u-spl.wav,Where is a trip being planned to?,Italy,Spain
+list6,080T,s,s,u,,080_l_u-spl.wav,Where is a trip being planned to?,Italy,Spain
+list1,081T,s,s,u,,081_l_u-spl.wav,What are roses and tulips most used for?,bouquet,decoration
+list2,081T,s,s,u,,081_l_u-spl.wav,What are roses and tulips most used for?,bouquet,decoration
+list3,081T,s,s,u,,081_l_u-spl.wav,What are roses and tulips most used for?,bouquet,decoration
+list4,081T,s,s,u,,081_l_u-spl.wav,What are roses and tulips most used for?,bouquet,decoration
+list5,081T,s,s,u,,081_l_u-spl.wav,What are roses and tulips most used for?,bouquet,decoration
+list6,081T,s,s,u,,081_l_u-spl.wav,What are roses and tulips most used for?,bouquet,decoration
+list1,082T,s,s,u,,082_l_u-spl.wav,,,
+list2,082T,s,s,u,,082_l_u-spl.wav,,,
+list3,082T,s,s,u,,082_l_u-spl.wav,,,
+list4,082T,s,s,u,,082_l_u-spl.wav,,,
+list5,082T,s,s,u,,082_l_u-spl.wav,,,
+list6,082T,s,s,u,,082_l_u-spl.wav,,,
+list1,083T,s,s,u,,083_n_u.wav,What is outstanding at the local cafe?,tea,pastries
+list2,083T,s,s,u,,083_n_u.wav,What is outstanding at the local cafe?,tea,pastries
+list3,083T,s,s,u,,083_n_u.wav,What is outstanding at the local cafe?,tea,pastries
+list4,083T,s,s,u,,083_n_u.wav,What is outstanding at the local cafe?,tea,pastries
+list5,083T,s,s,u,,083_n_u.wav,What is outstanding at the local cafe?,tea,pastries
+list6,083T,s,s,u,,083_n_u.wav,What is outstanding at the local cafe?,tea,pastries
+list1,084T,s,s,u,,084_n_u.wav,What do the costume designer and director watch?,footage,bloopers
+list2,084T,s,s,u,,084_n_u.wav,What do the costume designer and director watch?,footage,bloopers
+list3,084T,s,s,u,,084_n_u.wav,What do the costume designer and director watch?,footage,bloopers
+list4,084T,s,s,u,,084_n_u.wav,What do the costume designer and director watch?,footage,bloopers
+list5,084T,s,s,u,,084_n_u.wav,What do the costume designer and director watch?,footage,bloopers
+list6,084T,s,s,u,,084_n_u.wav,What do the costume designer and director watch?,footage,bloopers
+list1,085T,N,NA,u,,085_n_u.wav,,,
+list2,085T,N,NA,u,,085_n_u.wav,,,
+list3,085T,N,NA,u,,085_n_u.wav,,,
+list4,085T,N,NA,u,,085_n_u.wav,,,
+list5,085T,N,NA,u,,085_n_u.wav,,,
+list6,085T,N,NA,u,,085_n_u.wav,,,
+list1,086T,N,NA,u,,086_n_u.wav,What keeps happening?,power failure,heckler yelling
+list2,086T,N,NA,u,,086_n_u.wav,What keeps happening?,power failure,heckler yelling
+list3,086T,N,NA,u,,086_n_u.wav,What keeps happening?,power failure,heckler yelling
+list4,086T,N,NA,u,,086_n_u.wav,What keeps happening?,power failure,heckler yelling
+list5,086T,N,NA,u,,086_n_u.wav,What keeps happening?,power failure,heckler yelling
+list6,086T,N,NA,u,,086_n_u.wav,What keeps happening?,power failure,heckler yelling
+list1,087T,N,NA,g,,087_e_g-spl.wav,What can handle fifteen pages?,stapler,printer
+list2,087T,N,NA,g,,087_e_g-spl.wav,What can handle fifteen pages?,stapler,printer
+list3,087T,N,NA,g,,087_e_g-spl.wav,What can handle fifteen pages?,stapler,printer
+list4,087T,N,NA,g,,087_e_g-spl.wav,What can handle fifteen pages?,stapler,printer
+list5,087T,N,NA,g,,087_e_g-spl.wav,What can handle fifteen pages?,stapler,printer
+list6,087T,N,NA,g,,087_e_g-spl.wav,What can handle fifteen pages?,stapler,printer
+list1,088T,N,NA,g,,088_e_g-spl.wav,,,
+list2,088T,N,NA,g,,088_e_g-spl.wav,,,
+list3,088T,N,NA,g,,088_e_g-spl.wav,,,
+list4,088T,N,NA,g,,088_e_g-spl.wav,,,
+list5,088T,N,NA,g,,088_e_g-spl.wav,,,
+list6,088T,N,NA,g,,088_e_g-spl.wav,,,
+list1,089T,N,NA,g,,089_e_g-spl.wav,Where were the extra cleats?,duffel bag,locker
+list2,089T,N,NA,g,,089_e_g-spl.wav,Where were the extra cleats?,duffel bag,locker
+list3,089T,N,NA,g,,089_e_g-spl.wav,Where were the extra cleats?,duffel bag,locker
+list4,089T,N,NA,g,,089_e_g-spl.wav,Where were the extra cleats?,duffel bag,locker
+list5,089T,N,NA,g,,089_e_g-spl.wav,Where were the extra cleats?,duffel bag,locker
+list6,089T,N,NA,g,,089_e_g-spl.wav,Where were the extra cleats?,duffel bag,locker
+list1,090T,N,NA,g,,090_e_g-spl.wav,What was free with five items?,shipping,tax
+list2,090T,N,NA,g,,090_e_g-spl.wav,What was free with five items?,shipping,tax
+list3,090T,N,NA,g,,090_e_g-spl.wav,What was free with five items?,shipping,tax
+list4,090T,N,NA,g,,090_e_g-spl.wav,What was free with five items?,shipping,tax
+list5,090T,N,NA,g,,090_e_g-spl.wav,What was free with five items?,shipping,tax
+list6,090T,N,NA,g,,090_e_g-spl.wav,What was free with five items?,shipping,tax
+list1,091T,N,NA,g,,091_l_g-spl.wav,What were the coffees for?,conference,presentation
+list2,091T,N,NA,g,,091_l_g-spl.wav,What were the coffees for?,conference,presentation
+list3,091T,N,NA,g,,091_l_g-spl.wav,What were the coffees for?,conference,presentation
+list4,091T,N,NA,g,,091_l_g-spl.wav,What were the coffees for?,conference,presentation
+list5,091T,N,NA,g,,091_l_g-spl.wav,What were the coffees for?,conference,presentation
+list6,091T,N,NA,g,,091_l_g-spl.wav,What were the coffees for?,conference,presentation
+list1,092T,p,p,g,,092_l_g-spl.wav,What startled the horses?,snake,wolf
+list2,092T,p,p,g,,092_l_g-spl.wav,What startled the horses?,snake,wolf
+list3,092T,p,p,g,,092_l_g-spl.wav,What startled the horses?,snake,wolf
+list4,092T,p,p,g,,092_l_g-spl.wav,What startled the horses?,snake,wolf
+list5,092T,p,p,g,,092_l_g-spl.wav,What startled the horses?,snake,wolf
+list6,092T,p,p,g,,092_l_g-spl.wav,What startled the horses?,snake,wolf
+list1,093T,N,NA,g,,093_n_g.wav,,,
+list2,093T,N,NA,g,,093_n_g.wav,,,
+list3,093T,N,NA,g,,093_n_g.wav,,,
+list4,093T,N,NA,g,,093_n_g.wav,,,
+list5,093T,N,NA,g,,093_n_g.wav,,,
+list6,093T,N,NA,g,,093_n_g.wav,,,
+list1,094T,N,NA,g,,094_n_g.wav,When did the trees fall over?,last year,this year
+list2,094T,N,NA,g,,094_n_g.wav,When did the trees fall over?,last year,this year
+list3,094T,N,NA,g,,094_n_g.wav,When did the trees fall over?,last year,this year
+list4,094T,N,NA,g,,094_n_g.wav,When did the trees fall over?,last year,this year
+list5,094T,N,NA,g,,094_n_g.wav,When did the trees fall over?,last year,this year
+list6,094T,N,NA,g,,094_n_g.wav,When did the trees fall over?,last year,this year
+list1,095T,s,s,g,,095_n_g.wav,,,
+list2,095T,s,s,g,,095_n_g.wav,,,
+list3,095T,s,s,g,,095_n_g.wav,,,
+list4,095T,s,s,g,,095_n_g.wav,,,
+list5,095T,s,s,g,,095_n_g.wav,,,
+list6,095T,s,s,g,,095_n_g.wav,,,
+list1,096T,s,s,g,,096_n_g.wav,What was left in the display case?,muffins,croissants
+list2,096T,s,s,g,,096_n_g.wav,What was left in the display case?,muffins,croissants
+list3,096T,s,s,g,,096_n_g.wav,What was left in the display case?,muffins,croissants
+list4,096T,s,s,g,,096_n_g.wav,What was left in the display case?,muffins,croissants
+list5,096T,s,s,g,,096_n_g.wav,What was left in the display case?,muffins,croissants
+list6,096T,s,s,g,,096_n_g.wav,What was left in the display case?,muffins,croissants
+list1,097T,N,NA,g,,097_n_g.wav,What system did the robbers get away with?,speaker,light
+list2,097T,N,NA,g,,097_n_g.wav,What system did the robbers get away with?,speaker,light
+list3,097T,N,NA,g,,097_n_g.wav,What system did the robbers get away with?,speaker,light
+list4,097T,N,NA,g,,097_n_g.wav,What system did the robbers get away with?,speaker,light
+list5,097T,N,NA,g,,097_n_g.wav,What system did the robbers get away with?,speaker,light
+list6,097T,N,NA,g,,097_n_g.wav,What system did the robbers get away with?,speaker,light
+list1,098T,N,NA,g,,098_n_g.wav,What did Mark get a sponsorship for?,shoes,shirts
+list2,098T,N,NA,g,,098_n_g.wav,What did Mark get a sponsorship for?,shoes,shirts
+list3,098T,N,NA,g,,098_n_g.wav,What did Mark get a sponsorship for?,shoes,shirts
+list4,098T,N,NA,g,,098_n_g.wav,What did Mark get a sponsorship for?,shoes,shirts
+list5,098T,N,NA,g,,098_n_g.wav,What did Mark get a sponsorship for?,shoes,shirts
+list6,098T,N,NA,g,,098_n_g.wav,What did Mark get a sponsorship for?,shoes,shirts
+list1,099T,N,NA,u,,099_e_u-spl.wav,How many glitter options are there?,twelve,eight
+list2,099T,N,NA,u,,099_e_u-spl.wav,How many glitter options are there?,twelve,eight
+list3,099T,N,NA,u,,099_e_u-spl.wav,How many glitter options are there?,twelve,eight
+list4,099T,N,NA,u,,099_e_u-spl.wav,How many glitter options are there?,twelve,eight
+list5,099T,N,NA,u,,099_e_u-spl.wav,How many glitter options are there?,twelve,eight
+list6,099T,N,NA,u,,099_e_u-spl.wav,How many glitter options are there?,twelve,eight
+list1,100T,N,NA,u,,100_e_u-spl.wav,How many books did Mike pack?,five,seven
+list2,100T,N,NA,u,,100_e_u-spl.wav,How many books did Mike pack?,five,seven
+list3,100T,N,NA,u,,100_e_u-spl.wav,How many books did Mike pack?,five,seven
+list4,100T,N,NA,u,,100_e_u-spl.wav,How many books did Mike pack?,five,seven
+list5,100T,N,NA,u,,100_e_u-spl.wav,How many books did Mike pack?,five,seven
+list6,100T,N,NA,u,,100_e_u-spl.wav,How many books did Mike pack?,five,seven
+list1,101T,N,NA,u,,101_e_u-spl.wav,,,
+list2,101T,N,NA,u,,101_e_u-spl.wav,,,
+list3,101T,N,NA,u,,101_e_u-spl.wav,,,
+list4,101T,N,NA,u,,101_e_u-spl.wav,,,
+list5,101T,N,NA,u,,101_e_u-spl.wav,,,
+list6,101T,N,NA,u,,101_e_u-spl.wav,,,
+list1,102T,N,NA,u,,102_e_u-spl.wav,,,
+list2,102T,N,NA,u,,102_e_u-spl.wav,,,
+list3,102T,N,NA,u,,102_e_u-spl.wav,,,
+list4,102T,N,NA,u,,102_e_u-spl.wav,,,
+list5,102T,N,NA,u,,102_e_u-spl.wav,,,
+list6,102T,N,NA,u,,102_e_u-spl.wav,,,
+list1,103T,N,NA,u,,103_e_u-spl.wav,What were the books about?,magic,cooking
+list2,103T,N,NA,u,,103_e_u-spl.wav,What were the books about?,magic,cooking
+list3,103T,N,NA,u,,103_e_u-spl.wav,What were the books about?,magic,cooking
+list4,103T,N,NA,u,,103_e_u-spl.wav,What were the books about?,magic,cooking
+list5,103T,N,NA,u,,103_e_u-spl.wav,What were the books about?,magic,cooking
+list6,103T,N,NA,u,,103_e_u-spl.wav,What were the books about?,magic,cooking
+list1,104T,N,NA,u,,104_l_u-spl.wav,,,
+list2,104T,N,NA,u,,104_l_u-spl.wav,,,
+list3,104T,N,NA,u,,104_l_u-spl.wav,,,
+list4,104T,N,NA,u,,104_l_u-spl.wav,,,
+list5,104T,N,NA,u,,104_l_u-spl.wav,,,
+list6,104T,N,NA,u,,104_l_u-spl.wav,,,
+list1,105T,N,NA,u,,105_l_u-spl.wav,What did Kat own a lot of?,jeans,sweaters
+list2,105T,N,NA,u,,105_l_u-spl.wav,What did Kat own a lot of?,jeans,sweaters
+list3,105T,N,NA,u,,105_l_u-spl.wav,What did Kat own a lot of?,jeans,sweaters
+list4,105T,N,NA,u,,105_l_u-spl.wav,What did Kat own a lot of?,jeans,sweaters
+list5,105T,N,NA,u,,105_l_u-spl.wav,What did Kat own a lot of?,jeans,sweaters
+list6,105T,N,NA,u,,105_l_u-spl.wav,What did Kat own a lot of?,jeans,sweaters
+list1,106T,N,NA,u,,106_l_u-spl.wav,,,
+list2,106T,N,NA,u,,106_l_u-spl.wav,,,
+list3,106T,N,NA,u,,106_l_u-spl.wav,,,
+list4,106T,N,NA,u,,106_l_u-spl.wav,,,
+list5,106T,N,NA,u,,106_l_u-spl.wav,,,
+list6,106T,N,NA,u,,106_l_u-spl.wav,,,
+list1,107T,N,NA,u,,107_n_u.wav,,,
+list2,107T,N,NA,u,,107_n_u.wav,,,
+list3,107T,N,NA,u,,107_n_u.wav,,,
+list4,107T,N,NA,u,,107_n_u.wav,,,
+list5,107T,N,NA,u,,107_n_u.wav,,,
+list6,107T,N,NA,u,,107_n_u.wav,,,
+list1,108T,N,NA,u,,108_n_u.wav,How many griddle stations were there?,ten,fifteen
+list2,108T,N,NA,u,,108_n_u.wav,How many griddle stations were there?,ten,fifteen
+list3,108T,N,NA,u,,108_n_u.wav,How many griddle stations were there?,ten,fifteen
+list4,108T,N,NA,u,,108_n_u.wav,How many griddle stations were there?,ten,fifteen
+list5,108T,N,NA,u,,108_n_u.wav,How many griddle stations were there?,ten,fifteen
+list6,108T,N,NA,u,,108_n_u.wav,How many griddle stations were there?,ten,fifteen
+list1,109T,p,p,u,,109_n_u.wav,What was being filled up?,balloons,bottles
+list2,109T,p,p,u,,109_n_u.wav,What was being filled up?,balloons,bottles
+list3,109T,p,p,u,,109_n_u.wav,What was being filled up?,balloons,bottles
+list4,109T,p,p,u,,109_n_u.wav,What was being filled up?,balloons,bottles
+list5,109T,p,p,u,,109_n_u.wav,What was being filled up?,balloons,bottles
+list6,109T,p,p,u,,109_n_u.wav,What was being filled up?,balloons,bottles
+list1,110T,N,NA,u,,110_n_u.wav,,,
+list2,110T,N,NA,u,,110_n_u.wav,,,
+list3,110T,N,NA,u,,110_n_u.wav,,,
+list4,110T,N,NA,u,,110_n_u.wav,,,
+list5,110T,N,NA,u,,110_n_u.wav,,,
+list6,110T,N,NA,u,,110_n_u.wav,,,
+list1,111T,N,NA,u,,111_e_u-spl.wav,,,
+list2,111T,N,NA,u,,111_e_u-spl.wav,,,
+list3,111T,N,NA,u,,111_e_u-spl.wav,,,
+list4,111T,N,NA,u,,111_e_u-spl.wav,,,
+list5,111T,N,NA,u,,111_e_u-spl.wav,,,
+list6,111T,N,NA,u,,111_e_u-spl.wav,,,
+list1,112T,N,NA,u,,112_l_u-spl.wav,,,
+list2,112T,N,NA,u,,112_l_u-spl.wav,,,
+list3,112T,N,NA,u,,112_l_u-spl.wav,,,
+list4,112T,N,NA,u,,112_l_u-spl.wav,,,
+list5,112T,N,NA,u,,112_l_u-spl.wav,,,
+list6,112T,N,NA,u,,112_l_u-spl.wav,,,
+list1,113T,N,NA,u,,113_l_u-spl.wav,,,
+list2,113T,N,NA,u,,113_l_u-spl.wav,,,
+list3,113T,N,NA,u,,113_l_u-spl.wav,,,
+list4,113T,N,NA,u,,113_l_u-spl.wav,,,
+list5,113T,N,NA,u,,113_l_u-spl.wav,,,
+list6,113T,N,NA,u,,113_l_u-spl.wav,,,
+list1,114T,s,s,u,,114_l_u-spl.wav,,,
+list2,114T,s,s,u,,114_l_u-spl.wav,,,
+list3,114T,s,s,u,,114_l_u-spl.wav,,,
+list4,114T,s,s,u,,114_l_u-spl.wav,,,
+list5,114T,s,s,u,,114_l_u-spl.wav,,,
+list6,114T,s,s,u,,114_l_u-spl.wav,,,
+list1,115T,s,s,u,,115_n_u.wav,,,
+list2,115T,s,s,u,,115_n_u.wav,,,
+list3,115T,s,s,u,,115_n_u.wav,,,
+list4,115T,s,s,u,,115_n_u.wav,,,
+list5,115T,s,s,u,,115_n_u.wav,,,
+list6,115T,s,s,u,,115_n_u.wav,,,
+list1,116T,s,s,u,,116_n_u.wav,What did Paul buy?,donuts,coffee
+list2,116T,s,s,u,,116_n_u.wav,What did Paul buy?,donuts,coffee
+list3,116T,s,s,u,,116_n_u.wav,What did Paul buy?,donuts,coffee
+list4,116T,s,s,u,,116_n_u.wav,What did Paul buy?,donuts,coffee
+list5,116T,s,s,u,,116_n_u.wav,What did Paul buy?,donuts,coffee
+list6,116T,s,s,u,,116_n_u.wav,What did Paul buy?,donuts,coffee
+list1,117T,s,s,u,,117_e_u-spl.wav,,,
+list2,117T,s,s,u,,117_e_u-spl.wav,,,
+list3,117T,s,s,u,,117_e_u-spl.wav,,,
+list4,117T,s,s,u,,117_e_u-spl.wav,,,
+list5,117T,s,s,u,,117_e_u-spl.wav,,,
+list6,117T,s,s,u,,117_e_u-spl.wav,,,
+list1,118T,N,NA,u,,118_l_u-spl.wav,,,
+list2,118T,N,NA,u,,118_l_u-spl.wav,,,
+list3,118T,N,NA,u,,118_l_u-spl.wav,,,
+list4,118T,N,NA,u,,118_l_u-spl.wav,,,
+list5,118T,N,NA,u,,118_l_u-spl.wav,,,
+list6,118T,N,NA,u,,118_l_u-spl.wav,,,
+list1,119T,N,NA,u,,119_l_u-spl.wav,,,
+list2,119T,N,NA,u,,119_l_u-spl.wav,,,
+list3,119T,N,NA,u,,119_l_u-spl.wav,,,
+list4,119T,N,NA,u,,119_l_u-spl.wav,,,
+list5,119T,N,NA,u,,119_l_u-spl.wav,,,
+list6,119T,N,NA,u,,119_l_u-spl.wav,,,
+list1,120T,N,NA,g,,120_l_g-spl.wav,When did the hat wash up?,four months later,fifteen months later
+list2,120T,N,NA,g,,120_l_g-spl.wav,When did the hat wash up?,four months later,fifteen months later
+list3,120T,N,NA,g,,120_l_g-spl.wav,When did the hat wash up?,four months later,fifteen months later
+list4,120T,N,NA,g,,120_l_g-spl.wav,When did the hat wash up?,four months later,fifteen months later
+list5,120T,N,NA,g,,120_l_g-spl.wav,When did the hat wash up?,four months later,fifteen months later
+list6,120T,N,NA,g,,120_l_g-spl.wav,When did the hat wash up?,four months later,fifteen months later
+list1,121T,N,NA,u,,121_e_u-spl.wav,,,
+list2,121T,N,NA,u,,121_e_u-spl.wav,,,
+list3,121T,N,NA,u,,121_e_u-spl.wav,,,
+list4,121T,N,NA,u,,121_e_u-spl.wav,,,
+list5,121T,N,NA,u,,121_e_u-spl.wav,,,
+list6,121T,N,NA,u,,121_e_u-spl.wav,,,
+list1,122T,N,NA,u,,122_n_u.wav,,,
+list2,122T,N,NA,u,,122_n_u.wav,,,
+list3,122T,N,NA,u,,122_n_u.wav,,,
+list4,122T,N,NA,u,,122_n_u.wav,,,
+list5,122T,N,NA,u,,122_n_u.wav,,,
+list6,122T,N,NA,u,,122_n_u.wav,,,
+list1,123T,s,s,g,,123_e_g-spl.wav,,,
+list2,123T,s,s,g,,123_e_g-spl.wav,,,
+list3,123T,s,s,g,,123_e_g-spl.wav,,,
+list4,123T,s,s,g,,123_e_g-spl.wav,,,
+list5,123T,s,s,g,,123_e_g-spl.wav,,,
+list6,123T,s,s,g,,123_e_g-spl.wav,,,
+list1,124T,s,s,g,,124_e_g-spl.wav,,,
+list2,124T,s,s,g,,124_e_g-spl.wav,,,
+list3,124T,s,s,g,,124_e_g-spl.wav,,,
+list4,124T,s,s,g,,124_e_g-spl.wav,,,
+list5,124T,s,s,g,,124_e_g-spl.wav,,,
+list6,124T,s,s,g,,124_e_g-spl.wav,,,
+list1,125T,s,s,g,,125_e_g-spl.wav,,,
+list2,125T,s,s,g,,125_e_g-spl.wav,,,
+list3,125T,s,s,g,,125_e_g-spl.wav,,,
+list4,125T,s,s,g,,125_e_g-spl.wav,,,
+list5,125T,s,s,g,,125_e_g-spl.wav,,,
+list6,125T,s,s,g,,125_e_g-spl.wav,,,
+list1,126T,s,s,g,,126_e_g-spl.wav,When does Zack receive a care package?,monthly,weekly
+list2,126T,s,s,g,,126_e_g-spl.wav,When does Zack receive a care package?,monthly,weekly
+list3,126T,s,s,g,,126_e_g-spl.wav,When does Zack receive a care package?,monthly,weekly
+list4,126T,s,s,g,,126_e_g-spl.wav,When does Zack receive a care package?,monthly,weekly
+list5,126T,s,s,g,,126_e_g-spl.wav,When does Zack receive a care package?,monthly,weekly
+list6,126T,s,s,g,,126_e_g-spl.wav,When does Zack receive a care package?,monthly,weekly
+list1,127T,N,NA,g,,127_e_g-spl.wav,,,
+list2,127T,N,NA,g,,127_e_g-spl.wav,,,
+list3,127T,N,NA,g,,127_e_g-spl.wav,,,
+list4,127T,N,NA,g,,127_e_g-spl.wav,,,
+list5,127T,N,NA,g,,127_e_g-spl.wav,,,
+list6,127T,N,NA,g,,127_e_g-spl.wav,,,
+list1,128T,p,p,g,,128_l_g-spl.wav,,,
+list2,128T,p,p,g,,128_l_g-spl.wav,,,
+list3,128T,p,p,g,,128_l_g-spl.wav,,,
+list4,128T,p,p,g,,128_l_g-spl.wav,,,
+list5,128T,p,p,g,,128_l_g-spl.wav,,,
+list6,128T,p,p,g,,128_l_g-spl.wav,,,
+list1,129T,s,s,g,,129_l_g-spl.wav,,,
+list2,129T,s,s,g,,129_l_g-spl.wav,,,
+list3,129T,s,s,g,,129_l_g-spl.wav,,,
+list4,129T,s,s,g,,129_l_g-spl.wav,,,
+list5,129T,s,s,g,,129_l_g-spl.wav,,,
+list6,129T,s,s,g,,129_l_g-spl.wav,,,
+list1,130T,N,NA,g,,130_l_g-spl.wav,What had technical issues?,speakers,projectors
+list2,130T,N,NA,g,,130_l_g-spl.wav,What had technical issues?,speakers,projectors
+list3,130T,N,NA,g,,130_l_g-spl.wav,What had technical issues?,speakers,projectors
+list4,130T,N,NA,g,,130_l_g-spl.wav,What had technical issues?,speakers,projectors
+list5,130T,N,NA,g,,130_l_g-spl.wav,What had technical issues?,speakers,projectors
+list6,130T,N,NA,g,,130_l_g-spl.wav,What had technical issues?,speakers,projectors
+list1,131T,s,s,g,,131_n_g.wav,,,
+list2,131T,s,s,g,,131_n_g.wav,,,
+list3,131T,s,s,g,,131_n_g.wav,,,
+list4,131T,s,s,g,,131_n_g.wav,,,
+list5,131T,s,s,g,,131_n_g.wav,,,
+list6,131T,s,s,g,,131_n_g.wav,,,
+list1,132T,N,NA,g,,132_n_g.wav,What is the self help book about?,saving money,making friends
+list2,132T,N,NA,g,,132_n_g.wav,What is the self help book about?,saving money,making friends
+list3,132T,N,NA,g,,132_n_g.wav,What is the self help book about?,saving money,making friends
+list4,132T,N,NA,g,,132_n_g.wav,What is the self help book about?,saving money,making friends
+list5,132T,N,NA,g,,132_n_g.wav,What is the self help book about?,saving money,making friends
+list6,132T,N,NA,g,,132_n_g.wav,What is the self help book about?,saving money,making friends
+list1,133T,s,s,g,,133_n_g.wav,What cases do the lawyer win?,arson,homicide
+list2,133T,s,s,g,,133_n_g.wav,What cases do the lawyer win?,arson,homicide
+list3,133T,s,s,g,,133_n_g.wav,What cases do the lawyer win?,arson,homicide
+list4,133T,s,s,g,,133_n_g.wav,What cases do the lawyer win?,arson,homicide
+list5,133T,s,s,g,,133_n_g.wav,What cases do the lawyer win?,arson,homicide
+list6,133T,s,s,g,,133_n_g.wav,What cases do the lawyer win?,arson,homicide
+list1,134T,p,p,u,,134_e_u-spl.wav,,,
+list2,134T,p,p,u,,134_e_u-spl.wav,,,
+list3,134T,p,p,u,,134_e_u-spl.wav,,,
+list4,134T,p,p,u,,134_e_u-spl.wav,,,
+list5,134T,p,p,u,,134_e_u-spl.wav,,,
+list6,134T,p,p,u,,134_e_u-spl.wav,,,
+list1,135T,p,p,u,,135_e_u-spl.wav,,,
+list2,135T,p,p,u,,135_e_u-spl.wav,,,
+list3,135T,p,p,u,,135_e_u-spl.wav,,,
+list4,135T,p,p,u,,135_e_u-spl.wav,,,
+list5,135T,p,p,u,,135_e_u-spl.wav,,,
+list6,135T,p,p,u,,135_e_u-spl.wav,,,
+list1,136T,s,s,u,,136_e_u-spl.wav,,,
+list2,136T,s,s,u,,136_e_u-spl.wav,,,
+list3,136T,s,s,u,,136_e_u-spl.wav,,,
+list4,136T,s,s,u,,136_e_u-spl.wav,,,
+list5,136T,s,s,u,,136_e_u-spl.wav,,,
+list6,136T,s,s,u,,136_e_u-spl.wav,,,
+list1,137T,s,s,u,,137_e_u-spl.wav,What does the roommate forget to turn off?,light,TV
+list2,137T,s,s,u,,137_e_u-spl.wav,What does the roommate forget to turn off?,light,TV
+list3,137T,s,s,u,,137_e_u-spl.wav,What does the roommate forget to turn off?,light,TV
+list4,137T,s,s,u,,137_e_u-spl.wav,What does the roommate forget to turn off?,light,TV
+list5,137T,s,s,u,,137_e_u-spl.wav,What does the roommate forget to turn off?,light,TV
+list6,137T,s,s,u,,137_e_u-spl.wav,What does the roommate forget to turn off?,light,TV
+list1,138T,p,p,u,,138_e_u-spl.wav,What offers incentives?,dealership,store
+list2,138T,p,p,u,,138_e_u-spl.wav,What offers incentives?,dealership,store
+list3,138T,p,p,u,,138_e_u-spl.wav,What offers incentives?,dealership,store
+list4,138T,p,p,u,,138_e_u-spl.wav,What offers incentives?,dealership,store
+list5,138T,p,p,u,,138_e_u-spl.wav,What offers incentives?,dealership,store
+list6,138T,p,p,u,,138_e_u-spl.wav,What offers incentives?,dealership,store
+list1,139T,s,s,u,,139_e_u-spl.wav,Why do the pets require specialty food?,allergies,taste
+list2,139T,s,s,u,,139_e_u-spl.wav,Why do the pets require specialty food?,allergies,taste
+list3,139T,s,s,u,,139_e_u-spl.wav,Why do the pets require specialty food?,allergies,taste
+list4,139T,s,s,u,,139_e_u-spl.wav,Why do the pets require specialty food?,allergies,taste
+list5,139T,s,s,u,,139_e_u-spl.wav,Why do the pets require specialty food?,allergies,taste
+list6,139T,s,s,u,,139_e_u-spl.wav,Why do the pets require specialty food?,allergies,taste
+list1,140T,p,p,u,,140_l_u-spl.wav,,,
+list2,140T,p,p,u,,140_l_u-spl.wav,,,
+list3,140T,p,p,u,,140_l_u-spl.wav,,,
+list4,140T,p,p,u,,140_l_u-spl.wav,,,
+list5,140T,p,p,u,,140_l_u-spl.wav,,,
+list6,140T,p,p,u,,140_l_u-spl.wav,,,
+list1,141T,p,p,u,,141_l_u-spl.wav,What is bought in bulk?,batteries,paper
+list2,141T,p,p,u,,141_l_u-spl.wav,What is bought in bulk?,batteries,paper
+list3,141T,p,p,u,,141_l_u-spl.wav,What is bought in bulk?,batteries,paper
+list4,141T,p,p,u,,141_l_u-spl.wav,What is bought in bulk?,batteries,paper
+list5,141T,p,p,u,,141_l_u-spl.wav,What is bought in bulk?,batteries,paper
+list6,141T,p,p,u,,141_l_u-spl.wav,What is bought in bulk?,batteries,paper
+list1,142T,p,p,u,,142_l_u-spl.wav,Where is the rival restaurant?,across town,next door
+list2,142T,p,p,u,,142_l_u-spl.wav,Where is the rival restaurant?,across town,next door
+list3,142T,p,p,u,,142_l_u-spl.wav,Where is the rival restaurant?,across town,next door
+list4,142T,p,p,u,,142_l_u-spl.wav,Where is the rival restaurant?,across town,next door
+list5,142T,p,p,u,,142_l_u-spl.wav,Where is the rival restaurant?,across town,next door
+list6,142T,p,p,u,,142_l_u-spl.wav,Where is the rival restaurant?,across town,next door
+list1,143T,p,p,u,,143_n_u.wav,What has Taylor been late to?,class,work
+list2,143T,p,p,u,,143_n_u.wav,What has Taylor been late to?,class,work
+list3,143T,p,p,u,,143_n_u.wav,What has Taylor been late to?,class,work
+list4,143T,p,p,u,,143_n_u.wav,What has Taylor been late to?,class,work
+list5,143T,p,p,u,,143_n_u.wav,What has Taylor been late to?,class,work
+list6,143T,p,p,u,,143_n_u.wav,What has Taylor been late to?,class,work
+list1,144T,N,NA,u,,144_n_u.wav,,,
+list2,144T,N,NA,u,,144_n_u.wav,,,
+list3,144T,N,NA,u,,144_n_u.wav,,,
+list4,144T,N,NA,u,,144_n_u.wav,,,
+list5,144T,N,NA,u,,144_n_u.wav,,,
+list6,144T,N,NA,u,,144_n_u.wav,,,
+list1,145T,s,s,u,,145_n_u.wav,When do waiters hate rush hour shifts?,weekends,weekdays
+list2,145T,s,s,u,,145_n_u.wav,When do waiters hate rush hour shifts?,weekends,weekdays
+list3,145T,s,s,u,,145_n_u.wav,When do waiters hate rush hour shifts?,weekends,weekdays
+list4,145T,s,s,u,,145_n_u.wav,When do waiters hate rush hour shifts?,weekends,weekdays
+list5,145T,s,s,u,,145_n_u.wav,When do waiters hate rush hour shifts?,weekends,weekdays
+list6,145T,s,s,u,,145_n_u.wav,When do waiters hate rush hour shifts?,weekends,weekdays
+list1,146T,s,s,u,,146_n_u.wav,,,
+list2,146T,s,s,u,,146_n_u.wav,,,
+list3,146T,s,s,u,,146_n_u.wav,,,
+list4,146T,s,s,u,,146_n_u.wav,,,
+list5,146T,s,s,u,,146_n_u.wav,,,
+list6,146T,s,s,u,,146_n_u.wav,,,
+list1,147T,N,NA,g,,147_e_g-spl.wav,,,
+list2,147T,N,NA,g,,147_e_g-spl.wav,,,
+list3,147T,N,NA,g,,147_e_g-spl.wav,,,
+list4,147T,N,NA,g,,147_e_g-spl.wav,,,
+list5,147T,N,NA,g,,147_e_g-spl.wav,,,
+list6,147T,N,NA,g,,147_e_g-spl.wav,,,
+list1,148T,N,NA,g,,148_e_g-spl.wav,,,
+list2,148T,N,NA,g,,148_e_g-spl.wav,,,
+list3,148T,N,NA,g,,148_e_g-spl.wav,,,
+list4,148T,N,NA,g,,148_e_g-spl.wav,,,
+list5,148T,N,NA,g,,148_e_g-spl.wav,,,
+list6,148T,N,NA,g,,148_e_g-spl.wav,,,
+list1,149T,N,NA,g,,149_e_g-spl.wav,,,
+list2,149T,N,NA,g,,149_e_g-spl.wav,,,
+list3,149T,N,NA,g,,149_e_g-spl.wav,,,
+list4,149T,N,NA,g,,149_e_g-spl.wav,,,
+list5,149T,N,NA,g,,149_e_g-spl.wav,,,
+list6,149T,N,NA,g,,149_e_g-spl.wav,,,
+list1,150T,N,NA,g,,150_e_g-spl.wav,,,
+list2,150T,N,NA,g,,150_e_g-spl.wav,,,
+list3,150T,N,NA,g,,150_e_g-spl.wav,,,
+list4,150T,N,NA,g,,150_e_g-spl.wav,,,
+list5,150T,N,NA,g,,150_e_g-spl.wav,,,
+list6,150T,N,NA,g,,150_e_g-spl.wav,,,
+list1,151T,N,NA,g,,151_e_g-spl.wav,,,
+list2,151T,N,NA,g,,151_e_g-spl.wav,,,
+list3,151T,N,NA,g,,151_e_g-spl.wav,,,
+list4,151T,N,NA,g,,151_e_g-spl.wav,,,
+list5,151T,N,NA,g,,151_e_g-spl.wav,,,
+list6,151T,N,NA,g,,151_e_g-spl.wav,,,
+list1,152T,N,NA,g,,152_l_g-spl.wav,,,
+list2,152T,N,NA,g,,152_l_g-spl.wav,,,
+list3,152T,N,NA,g,,152_l_g-spl.wav,,,
+list4,152T,N,NA,g,,152_l_g-spl.wav,,,
+list5,152T,N,NA,g,,152_l_g-spl.wav,,,
+list6,152T,N,NA,g,,152_l_g-spl.wav,,,
+list1,153T,N,NA,g,,153_l_g-spl.wav,,,
+list2,153T,N,NA,g,,153_l_g-spl.wav,,,
+list3,153T,N,NA,g,,153_l_g-spl.wav,,,
+list4,153T,N,NA,g,,153_l_g-spl.wav,,,
+list5,153T,N,NA,g,,153_l_g-spl.wav,,,
+list6,153T,N,NA,g,,153_l_g-spl.wav,,,
+list1,154T,N,NA,g,,154_l_g-spl.wav,,,
+list2,154T,N,NA,g,,154_l_g-spl.wav,,,
+list3,154T,N,NA,g,,154_l_g-spl.wav,,,
+list4,154T,N,NA,g,,154_l_g-spl.wav,,,
+list5,154T,N,NA,g,,154_l_g-spl.wav,,,
+list6,154T,N,NA,g,,154_l_g-spl.wav,,,
+list1,155T,N,NA,g,,155_n_g.wav,,,
+list2,155T,N,NA,g,,155_n_g.wav,,,
+list3,155T,N,NA,g,,155_n_g.wav,,,
+list4,155T,N,NA,g,,155_n_g.wav,,,
+list5,155T,N,NA,g,,155_n_g.wav,,,
+list6,155T,N,NA,g,,155_n_g.wav,,,
+list1,156T,s,s,g,,156_n_g.wav,,,
+list2,156T,s,s,g,,156_n_g.wav,,,
+list3,156T,s,s,g,,156_n_g.wav,,,
+list4,156T,s,s,g,,156_n_g.wav,,,
+list5,156T,s,s,g,,156_n_g.wav,,,
+list6,156T,s,s,g,,156_n_g.wav,,,
+list1,157T,N,NA,g,,157_n_g.wav,,,
+list2,157T,N,NA,g,,157_n_g.wav,,,
+list3,157T,N,NA,g,,157_n_g.wav,,,
+list4,157T,N,NA,g,,157_n_g.wav,,,
+list5,157T,N,NA,g,,157_n_g.wav,,,
+list6,157T,N,NA,g,,157_n_g.wav,,,
+list1,158T,s,s,g,,158_l_g-spl.wav,,,
+list2,158T,s,s,g,,158_l_g-spl.wav,,,
+list3,158T,s,s,g,,158_l_g-spl.wav,,,
+list4,158T,s,s,g,,158_l_g-spl.wav,,,
+list5,158T,s,s,g,,158_l_g-spl.wav,,,
+list6,158T,s,s,g,,158_l_g-spl.wav,,,
+list1,159T,s,s,g,,159_e_g-spl.wav,Since when has Maura known two languages?,high school,college
+list2,159T,s,s,g,,159_e_g-spl.wav,Since when has Maura known two languages?,high school,college
+list3,159T,s,s,g,,159_e_g-spl.wav,Since when has Maura known two languages?,high school,college
+list4,159T,s,s,g,,159_e_g-spl.wav,Since when has Maura known two languages?,high school,college
+list5,159T,s,s,g,,159_e_g-spl.wav,Since when has Maura known two languages?,high school,college
+list6,159T,s,s,g,,159_e_g-spl.wav,Since when has Maura known two languages?,high school,college
+list1,160T,N,NA,g,,160_e_g-spl.wav,What is in the beakers?,chemicals,water
+list2,160T,N,NA,g,,160_e_g-spl.wav,What is in the beakers?,chemicals,water
+list3,160T,N,NA,g,,160_e_g-spl.wav,What is in the beakers?,chemicals,water
+list4,160T,N,NA,g,,160_e_g-spl.wav,What is in the beakers?,chemicals,water
+list5,160T,N,NA,g,,160_e_g-spl.wav,What is in the beakers?,chemicals,water
+list6,160T,N,NA,g,,160_e_g-spl.wav,What is in the beakers?,chemicals,water
+list1,161T,N,NA,g,,161_e_g-spl.wav,What kind of ads should the company try?,radio,magazine
+list2,161T,N,NA,g,,161_e_g-spl.wav,What kind of ads should the company try?,radio,magazine
+list3,161T,N,NA,g,,161_e_g-spl.wav,What kind of ads should the company try?,radio,magazine
+list4,161T,N,NA,g,,161_e_g-spl.wav,What kind of ads should the company try?,radio,magazine
+list5,161T,N,NA,g,,161_e_g-spl.wav,What kind of ads should the company try?,radio,magazine
+list6,161T,N,NA,g,,161_e_g-spl.wav,What kind of ads should the company try?,radio,magazine
+list1,162T,N,NA,g,,162_e_g-spl.wav,What will be found soon?,leak,mold
+list2,162T,N,NA,g,,162_e_g-spl.wav,What will be found soon?,leak,mold
+list3,162T,N,NA,g,,162_e_g-spl.wav,What will be found soon?,leak,mold
+list4,162T,N,NA,g,,162_e_g-spl.wav,What will be found soon?,leak,mold
+list5,162T,N,NA,g,,162_e_g-spl.wav,What will be found soon?,leak,mold
+list6,162T,N,NA,g,,162_e_g-spl.wav,What will be found soon?,leak,mold
+list1,163T,s,s,g,,163_e_g-spl.wav,,,
+list2,163T,s,s,g,,163_e_g-spl.wav,,,
+list3,163T,s,s,g,,163_e_g-spl.wav,,,
+list4,163T,s,s,g,,163_e_g-spl.wav,,,
+list5,163T,s,s,g,,163_e_g-spl.wav,,,
+list6,163T,s,s,g,,163_e_g-spl.wav,,,
+list1,164T,s,s,g,,164_e_g-spl.wav, ,,
+list2,164T,s,s,g,,164_e_g-spl.wav, ,,
+list3,164T,s,s,g,,164_e_g-spl.wav, ,,
+list4,164T,s,s,g,,164_e_g-spl.wav, ,,
+list5,164T,s,s,g,,164_e_g-spl.wav, ,,
+list6,164T,s,s,g,,164_e_g-spl.wav, ,,
+list1,165T,s,s,g,,165_e_g-spl.wav,What will get worse next week?,weather,traffic
+list2,165T,s,s,g,,165_e_g-spl.wav,What will get worse next week?,weather,traffic
+list3,165T,s,s,g,,165_e_g-spl.wav,What will get worse next week?,weather,traffic
+list4,165T,s,s,g,,165_e_g-spl.wav,What will get worse next week?,weather,traffic
+list5,165T,s,s,g,,165_e_g-spl.wav,What will get worse next week?,weather,traffic
+list6,165T,s,s,g,,165_e_g-spl.wav,What will get worse next week?,weather,traffic
+list1,166T,N,NA,g,,166_l_g-spl.wav,,,
+list2,166T,N,NA,g,,166_l_g-spl.wav,,,
+list3,166T,N,NA,g,,166_l_g-spl.wav,,,
+list4,166T,N,NA,g,,166_l_g-spl.wav,,,
+list5,166T,N,NA,g,,166_l_g-spl.wav,,,
+list6,166T,N,NA,g,,166_l_g-spl.wav,,,
+list1,167T,N,NA,g,,167_n_g.wav,,,
+list2,167T,N,NA,g,,167_n_g.wav,,,
+list3,167T,N,NA,g,,167_n_g.wav,,,
+list4,167T,N,NA,g,,167_n_g.wav,,,
+list5,167T,N,NA,g,,167_n_g.wav,,,
+list6,167T,N,NA,g,,167_n_g.wav,,,
+list1,168T,N,NA,g,,168_n_g.wav,,,
+list2,168T,N,NA,g,,168_n_g.wav,,,
+list3,168T,N,NA,g,,168_n_g.wav,,,
+list4,168T,N,NA,g,,168_n_g.wav,,,
+list5,168T,N,NA,g,,168_n_g.wav,,,
+list6,168T,N,NA,g,,168_n_g.wav,,,
+list1,169T,N,NA,g,,169_n_g.wav,,,
+list2,169T,N,NA,g,,169_n_g.wav,,,
+list3,169T,N,NA,g,,169_n_g.wav,,,
+list4,169T,N,NA,g,,169_n_g.wav,,,
+list5,169T,N,NA,g,,169_n_g.wav,,,
+list6,169T,N,NA,g,,169_n_g.wav,,,
+list1,170T,N,NA,g,,170_n_g.wav,What knocked down the power line?,storm,wind
+list2,170T,N,NA,g,,170_n_g.wav,What knocked down the power line?,storm,wind
+list3,170T,N,NA,g,,170_n_g.wav,What knocked down the power line?,storm,wind
+list4,170T,N,NA,g,,170_n_g.wav,What knocked down the power line?,storm,wind
+list5,170T,N,NA,g,,170_n_g.wav,What knocked down the power line?,storm,wind
+list6,170T,N,NA,g,,170_n_g.wav,What knocked down the power line?,storm,wind
+list1,171T,N,NA,u,,171_e_u-spl.wav,What lessons should the football player take?,ballet,math
+list2,171T,N,NA,u,,171_e_u-spl.wav,What lessons should the football player take?,ballet,math
+list3,171T,N,NA,u,,171_e_u-spl.wav,What lessons should the football player take?,ballet,math
+list4,171T,N,NA,u,,171_e_u-spl.wav,What lessons should the football player take?,ballet,math
+list5,171T,N,NA,u,,171_e_u-spl.wav,What lessons should the football player take?,ballet,math
+list6,171T,N,NA,u,,171_e_u-spl.wav,What lessons should the football player take?,ballet,math
+list1,172T,s,s,u,,172_e_u-spl.wav,What does the machine break down?,plastic,fabric
+list2,172T,s,s,u,,172_e_u-spl.wav,What does the machine break down?,plastic,fabric
+list3,172T,s,s,u,,172_e_u-spl.wav,What does the machine break down?,plastic,fabric
+list4,172T,s,s,u,,172_e_u-spl.wav,What does the machine break down?,plastic,fabric
+list5,172T,s,s,u,,172_e_u-spl.wav,What does the machine break down?,plastic,fabric
+list6,172T,s,s,u,,172_e_u-spl.wav,What does the machine break down?,plastic,fabric
+list1,173T,N,NA,u,,173_e_u-spl.wav,,,
+list2,173T,N,NA,u,,173_e_u-spl.wav,,,
+list3,173T,N,NA,u,,173_e_u-spl.wav,,,
+list4,173T,N,NA,u,,173_e_u-spl.wav,,,
+list5,173T,N,NA,u,,173_e_u-spl.wav,,,
+list6,173T,N,NA,u,,173_e_u-spl.wav,,,
+list1,174T,p,p,u,,174_e_u-spl.wav,,,
+list2,174T,p,p,u,,174_e_u-spl.wav,,,
+list3,174T,p,p,u,,174_e_u-spl.wav,,,
+list4,174T,p,p,u,,174_e_u-spl.wav,,,
+list5,174T,p,p,u,,174_e_u-spl.wav,,,
+list6,174T,p,p,u,,174_e_u-spl.wav,,,
+list1,175T,p,p,u,,175_l_u-spl.wav,Where did Maggie buy her magazine?,store,online
+list2,175T,p,p,u,,175_l_u-spl.wav,Where did Maggie buy her magazine?,store,online
+list3,175T,p,p,u,,175_l_u-spl.wav,Where did Maggie buy her magazine?,store,online
+list4,175T,p,p,u,,175_l_u-spl.wav,Where did Maggie buy her magazine?,store,online
+list5,175T,p,p,u,,175_l_u-spl.wav,Where did Maggie buy her magazine?,store,online
+list6,175T,p,p,u,,175_l_u-spl.wav,Where did Maggie buy her magazine?,store,online
+list1,176T,s,s,u,,176_n_u.wav,When did the barista mess up orders?,last week,last night
+list2,176T,s,s,u,,176_n_u.wav,When did the barista mess up orders?,last week,last night
+list3,176T,s,s,u,,176_n_u.wav,When did the barista mess up orders?,last week,last night
+list4,176T,s,s,u,,176_n_u.wav,When did the barista mess up orders?,last week,last night
+list5,176T,s,s,u,,176_n_u.wav,When did the barista mess up orders?,last week,last night
+list6,176T,s,s,u,,176_n_u.wav,When did the barista mess up orders?,last week,last night
+list1,177T,N,NA,u,,177_n_u.wav,Where did I visit?,Sweden,Germany
+list2,177T,N,NA,u,,177_n_u.wav,Where did I visit?,Sweden,Germany
+list3,177T,N,NA,u,,177_n_u.wav,Where did I visit?,Sweden,Germany
+list4,177T,N,NA,u,,177_n_u.wav,Where did I visit?,Sweden,Germany
+list5,177T,N,NA,u,,177_n_u.wav,Where did I visit?,Sweden,Germany
+list6,177T,N,NA,u,,177_n_u.wav,Where did I visit?,Sweden,Germany
+list1,178T,p,p,u,,178_n_u.wav,,,
+list2,178T,p,p,u,,178_n_u.wav,,,
+list3,178T,p,p,u,,178_n_u.wav,,,
+list4,178T,p,p,u,,178_n_u.wav,,,
+list5,178T,p,p,u,,178_n_u.wav,,,
+list6,178T,p,p,u,,178_n_u.wav,,,
+list1,179T,s,s,u,,179_n_u.wav,,,
+list2,179T,s,s,u,,179_n_u.wav,,,
+list3,179T,s,s,u,,179_n_u.wav,,,
+list4,179T,s,s,u,,179_n_u.wav,,,
+list5,179T,s,s,u,,179_n_u.wav,,,
+list6,179T,s,s,u,,179_n_u.wav,,,
+list1,180T,p,p,u,,180_n_u.wav,Where does the crossing guard talk with people?,corner,street
+list2,180T,p,p,u,,180_n_u.wav,Where does the crossing guard talk with people?,corner,street
+list3,180T,p,p,u,,180_n_u.wav,Where does the crossing guard talk with people?,corner,street
+list4,180T,p,p,u,,180_n_u.wav,Where does the crossing guard talk with people?,corner,street
+list5,180T,p,p,u,,180_n_u.wav,Where does the crossing guard talk with people?,corner,street
+list6,180T,p,p,u,,180_n_u.wav,Where does the crossing guard talk with people?,corner,street
