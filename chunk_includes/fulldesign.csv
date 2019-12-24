@@ -23,12 +23,12 @@ list6,004T,l,p,g,crit_l_p,004_l_p_spl.wav,,,
 list1,004T,l,s,u,crit_l_s,004_l_s_spl.wav,,,
 list2,004T,n,p,g,crit_n_p,004_n_p_spl.wav,,,
 list3,004T,n,s,u,crit_n_s,004_n_s_spl.wav,,,
-list5,005T,e,p,g,crit_e_p,005_e_p_spl.wav,What were the police officer like?,shady,upstanding
-list6,005T,e,s,u,crit_e_s,005_e_s_spl.wav,What were the police officer like?,shady,upstanding
-list1,005T,l,p,g,crit_l_p,005_l_p_spl.wav,What were the police officer like?,shady,upstanding
-list2,005T,l,s,u,crit_l_s,005_l_s_spl.wav,What were the police officer like?,shady,upstanding
-list3,005T,n,p,g,crit_n_p,005_n_p_spl.wav,What were the police officer like?,shady,upstanding
-list4,005T,n,s,u,crit_n_s,005_n_s_spl.wav,What were the police officer like?,shady,upstanding
+list5,005T,e,p,g,crit_e_p,005_e_p_spl.wav,What were the police officers like?,shady,upstanding
+list6,005T,e,s,u,crit_e_s,005_e_s_spl.wav,What were the police officers like?,shady,upstanding
+list1,005T,l,p,g,crit_l_p,005_l_p_spl.wav,What were the police officers like?,shady,upstanding
+list2,005T,l,s,u,crit_l_s,005_l_s_spl.wav,What were the police officers like?,shady,upstanding
+list3,005T,n,p,g,crit_n_p,005_n_p_spl.wav,What were the police officers like?,shady,upstanding
+list4,005T,n,s,u,crit_n_s,005_n_s_spl.wav,What were the police officers like?,shady,upstanding
 list6,006T,e,p,g,crit_e_p,006_e_p_spl.wav,Who is the offer for?,buyer,seller
 list1,006T,e,s,u,crit_e_s,006_e_s_spl.wav,Who is the offer for?,buyer,seller
 list2,006T,l,p,g,crit_l_p,006_l_p_spl.wav,Who is the offer for?,buyer,seller
