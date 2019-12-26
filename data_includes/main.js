@@ -1,6 +1,8 @@
 //Required at the start of the file
 PennController.ResetPrefix(null)
 
+PennController.DebugOff()
+
 //Set the sequence of presentation for the experiment
 PennController.Sequence( "welcome" , "consent" ,"instruct1", "instruct2", "instruct3", "instruct4", "prac1", "prac1Q", "prac2", "prac3", "prac4", "prac4Q", "instruct5", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "instruct6" , "debriefing", "instruct7" , rshuffle("d_s","d_p") , "send", "final" )
 
