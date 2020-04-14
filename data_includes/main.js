@@ -28,7 +28,7 @@ PennController( "welcome",
       .print()
     ,
     //Create reminder about headphones
-    newText("headphones", "This experiment requires that you listen to audio through headphones, not speakers.")
+    newText("headphones", "This experiment requires that you listen to audio through headphones.")
       .print()
       .settings.color("red")
       .settings.center()
@@ -40,13 +40,13 @@ PennController( "welcome",
       .print()
       .settings.add( 0,50,newTextInput("profilicid")
                               .settings.log()
-                              .settings.before( newText("before", "Please enter your Profilic ID: ") )
+                              .settings.before( newText("before", "Please enter the first letter of your name: ") )
                               .print()
                     )
       .settings.center()
     ,
     //Create warning text
-    newText("warning", "<br>Please enter your Proflic ID before continuing")
+    newText("warning", "<br>Please enter the first letter of your name before continuing")
       .settings.color("red")
       .settings.bold()
       .settings.css("font-size", "2em")
@@ -64,10 +64,11 @@ PennController( "welcome",
           .failure( getText("warning").print() )
       )
     ,   // Create a Var element before going to the next screen
-    newVar("ParticipantID")
+    newVar("firstInitial")
       .settings.global()          // Make it globally accessible
       .set( getTextInput("profilicid") )  // And save the text from TextInput
-).log( "ParticipantID", getVar("ParticipantID") )
+).log( "firstInitial", getVar("firstInitial") )
+.log( "uniqueid", PennController.GetURLParameter("id") );
 
 
 
@@ -96,8 +97,7 @@ PennController( "consent",
         .settings.center()
         .settings.css("font-size","2em")
         .wait()
-)
-.log( "uniqueid" , PennController.GetURLParameter( "id" ) )
+).log( "uniqueid" , PennController.GetURLParameter( "id" ) )
 
 
 
@@ -636,6 +636,7 @@ PennController.Template(
 // Useful for .success and .failure -> https://www.pcibex.net/wiki/ontology/
 
   )
+  .log( "uniqueid" , PennController.GetURLParameter( "id" ) )
   .log( "List" , row.list )
   .log( "Item"   , row.item   )
   .log( "BreakLoc" , row.breakLoc )
