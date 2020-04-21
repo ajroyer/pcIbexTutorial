@@ -6,7 +6,7 @@ PennController.DebugOff()
 PennController.SetCounter()
 
 //Set the sequence of presentation for the experiment
-PennController.Sequence( "welcome" , "consent" ,"instruct1", "instruct2", "instruct3", "instruct4", "prac1", "prac1Q", "prac2", "prac3", "prac4", "prac4Q", "instruct5", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "instruct6" , "debriefing", "instruct7" , rshuffle("d_s","d_p") , "send", "final" )
+PennController.Sequence( "welcome" , "consent" , "demographics", "langback","instruct1", "instruct2", "instruct3", "instruct4", "prac1", "prac1Q", "prac2", "prac3", "prac4", "prac4Q", "instruct5", rshuffle(rshuffle(startsWith("crit_e"),startsWith("crit_l"),startsWith("crit_n")),rshuffle(startsWith("fill_e"),startsWith("fill_l"),startsWith("fill_n"))) , "instruct6" , "debriefing", "instruct7" , randomize("d_s","d_p") , "send", "final" )
 
 //Create the command for sending the results
 PennController.SendResults( "send" )
@@ -98,6 +98,135 @@ PennController( "consent",
         .settings.css("font-size","2em")
         .wait()
 ).log( "uniqueid" , PennController.GetURLParameter( "id" ) )
+
+
+
+
+//Demographics Details
+PennController( "demographics",
+    //Create title for page
+    newText("<h1>Language background questionnaire</h1>")
+      .settings.css("font-size", "2em")
+      .settings.center()
+      .print()
+    ,
+    newText("<h1>University of California, Los Angeles</h1>")
+      .settings.css("font-size", "0.5em")
+      .settings.center()
+      .print()
+    ,
+    //Create instructions for the experiment
+    newText("expInstr", "Thank you for participating in this research study. Please fill out all the following information. If you prefer not to answer a particular question, you may leave it blank:")
+      .print()
+      .settings.center()
+      .settings.css("font-size","1.5em")
+    ,
+     newTextInput("ageQ","Please enter your age in years")
+    	.log()
+    	.lines(0)
+    	.print()
+    ,    
+    newDropDown("transQ", "Please indicate whether or not you are transgender?")
+    	.add("yes","no")
+    	.print()
+    ,
+    newDropDown("genderQ", "Please indicate your gender")
+    	.add("man","woman","non-binary","gender non-conforming","other (fill in below)")
+    	.print()
+    ,
+    newTextInput("otherGenderQ","If you answered 'other' above, please answer here")
+    	.log()
+    	.lines(0)
+    	.print()
+    ,
+  	newDropDown("ethQ1", "Please indicate your race and/or ethnicity")
+    	.add("African", "Black", "Carribean", "East Asian", "Latinx/Hispanic", "Middle Eastern", "Native American", "Pacific Islander", "South Asian", "White", "Other" )
+    	.print()    
+    ,
+     	newDropDown("ethQ2", "Please make an additional race and/or ethnicity selection here if necessary")
+    	.add("African", "Black", "Carribean", "East Asian", "Latinx/Hispanic", "Middle Eastern", "Native American", "Pacific Islander", "South Asian", "White", "N/A" )
+    	.select("N/A")
+    	.print()    
+     ,
+     	newDropDown("ethQ3", "Please make an additional race and/or ethnicity selection here if necessary")
+    	.add("African", "Black", "Carribean", "East Asian", "Latinx/Hispanic", "Middle Eastern", "Native American", "Pacific Islander", "South Asian", "White", "N/A" )
+    	.select("N/A")
+    	.print()
+ 	,
+    newDropDown("impedQ", "Do you have any known speech or hearing impairment?")
+    	.add("yes","no")
+    	.print()
+    ,
+     newTextInput("impedYesQ","If yes, please explain:")
+    	.log()
+    	.lines(0)
+    	.print()
+    ,
+    newButton("submit", "Submit")
+      .print()
+      .settings.css("font-size", "2em")
+      .settings.center()
+      .settings.size(150,100)
+      .wait()
+).log( "uniqueid", PennController.GetURLParameter("id") );
+
+
+
+
+
+
+
+//Language Background details
+PennController( "langback",
+    //Create title for page
+    newText("<h1>Language background questionnaire</h1>")
+      .settings.css("font-size", "2em")
+      .settings.center()
+      .print()
+    ,
+    newText("<h1>University of California, Los Angeles</h1>")
+      .settings.css("font-size", "0.5em")
+      .settings.center()
+      .print()
+    ,
+    newDropDown("nativeEngQ", "Do you consider yourself to be a native speaker of American English (i.e. you started hearing/speaking English regularly before 12 years old)?")
+    	.add("yes","no")
+    	.print()
+    ,
+    newTextInput("notEngQ","If you answered 'no' above, please write in what you do consider to be your native language.")
+    	.log()
+    	.lines(0)
+    	.print()
+    ,
+    newTextInput("otherLangQ","What language(s) did you hear in the home as a child (from birth to 13 years old?")
+    	.log()
+    	.lines(0)
+    	.print()
+    ,
+    newTextInput("nonNativeLangQ","Do you speak and/or understand any languages other than your native language(s)? What age did you start learning these languages?")
+    	.log()
+    	.lines(0)
+    	.print()    
+    ,
+    newTextInput("What places have you lived (6+months) and how old were you while you were living in those places? (For example 'Location: Central Ohio, Age: birth to 21. Location: Los Angeles, Age: 21 to 27.')")
+    	.log()
+    	.lines(5)
+    	.prin
+    ,
+    newButton("submit", "Submit")
+      .print()
+      .settings.css("font-size", "2em")
+      .settings.center()
+      .settings.size(150,100)
+      .wait()
+).log( "uniqueid", PennController.GetURLParameter("id") );
+
+
+
+
+
+
+
 
 
 
@@ -633,7 +762,7 @@ PennController.Template(
 
 
 
-// Useful for .success and .failure -> https://www.pcibex.net/wiki/ontology/
+// Useful for .success and .failure -> https://www.pcibex.net/wiki/ontology/s
 
   )
   .log( "uniqueid" , PennController.GetURLParameter( "id" ) )
