@@ -177,7 +177,7 @@ PennController( "demographics",
 
 
 //Language Background details
-PennController( "langback",
+PennController( "background",
     //Create title for page
     newText("<h1>Language background questionnaire</h1>")
       .settings.css("font-size", "2em")
@@ -211,7 +211,7 @@ PennController( "langback",
     newTextInput("What places have you lived (6+months) and how old were you while you were living in those places? (For example 'Location: Central Ohio, Age: birth to 21. Location: Los Angeles, Age: 21 to 27.')")
     	.log()
     	.lines(5)
-    	.prin
+    	.print()
     ,
     newButton("submit", "Submit")
       .print()
