@@ -117,13 +117,12 @@ PennController( "demographics",
     ,
     //Create instructions for the experiment
     newText("expInstr", "Thank you for participating in this research study. Please fill out all the following information. If you prefer not to answer a particular question, you may leave it blank:")
-      .print()
       .settings.center()
       .settings.css("font-size","1.5em")
+      .print()
     ,
      newTextInput("ageQ","Please enter your age in years")
-    	.log()
-    	.lines(0)
+    	.lines(1)
     	.print()
     ,    
     newDropDown("transQ", "Please indicate whether or not you are transgender?")
@@ -135,7 +134,6 @@ PennController( "demographics",
     	.print()
     ,
     newTextInput("otherGenderQ","If you answered 'other' above, please answer here")
-    	.log()
     	.lines(0)
     	.print()
     ,
@@ -158,7 +156,6 @@ PennController( "demographics",
     	.print()
     ,
      newTextInput("impedYesQ","If yes, please explain:")
-    	.log()
     	.lines(0)
     	.print()
     ,
@@ -194,22 +191,18 @@ PennController( "background",
     	.print()
     ,
     newTextInput("notEngQ","If you answered 'no' above, please write in what you do consider to be your native language.")
-    	.log()
     	.lines(0)
     	.print()
     ,
     newTextInput("otherLangQ","What language(s) did you hear in the home as a child (from birth to 13 years old?")
-    	.log()
     	.lines(0)
     	.print()
     ,
     newTextInput("nonNativeLangQ","Do you speak and/or understand any languages other than your native language(s)? What age did you start learning these languages?")
-    	.log()
     	.lines(0)
     	.print()    
     ,
     newTextInput("What places have you lived (6+months) and how old were you while you were living in those places? (For example 'Location: Central Ohio, Age: birth to 21. Location: Los Angeles, Age: 21 to 27.')")
-    	.log()
     	.lines(5)
     	.print()
     ,
@@ -893,7 +886,7 @@ PennController.Template(
     newAudio("audioFilename", row.wavname)
         .play()
     ,
-    newScale("dialectLikert", "Unacceptable","Unsure","Acceptable",)
+    newScale("dialectLikert", "Unacceptable","Unsure","Acceptable")
         .settings.log()
         .settings.keys("1","2","3")
         .settings.labelsPosition("top")
